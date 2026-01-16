@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M350 数控系统技术资料库</title>
+    <style>
+        :root { --primary-color: #0366d6; --bg-color: #f6f8fa; --text-color: #24292e; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 1000px; margin: 40px auto; padding: 0 20px; color: var(--text-color); background-color: #fff; }
+        h1 { border-bottom: 2px solid #eaecef; padding-bottom: 0.3em; color: var(--primary-color); display: flex; align-items: center; }
+        h1:before { content: "📚"; margin-right: 10px; }
+        .desc { color: #586069; font-size: 1.1em; margin-bottom: 30px; border-left: 4px solid #dfe2e5; padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; transition: all 0.2s; background: #fff; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: var(--primary-color); }
+        .card h2 { margin-top: 0; font-size: 1.25rem; color: #24292e; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { margin: 10px 0; display: flex; align-items: flex-start; }
+        li:before { content: "📄"; margin-right: 10px; margin-top: 2px; }
+        a { color: var(--primary-color); text-decoration: none; font-weight: 500; word-break: break-all; }
+        a:hover { text-decoration: underline; }
+        .tag { font-size: 11px; padding: 2px 6px; border-radius: 10px; margin-left: 10px; white-space: nowrap; flex-shrink: 0; }
+        .tag-pdf { background: #ffebee; color: #c62828; }
+        .tag-doc { background: #e3f2fd; color: #1565c0; }
+        .tag-tool { background: #e8f5e9; color: #2e7d32; }
+        footer { margin-top: 60px; text-align: center; color: #6a737d; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>M350 数控系统开发资料在线中心</h1>
+    <p class="desc">本页面汇总了 M350/M6xx 系列控制器的所有核心手册、开发示例及配置工具，方便开发者在线查阅。</p>
+
+    <div class="grid">
+        <div class="card">
+            <h2>📘 核心手册 & 基础</h2>
+            <ul>
+                <li><a href="Docs/M3xx_M6xx数控系统手册V1_1(最新).pdf" target="_blank">M3xx/M6xx 系统操作说明书 (V1.1 最新版)</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/宏列表/M350 Macro Address General Overview.pdf" target="_blank">M350 宏地址表总览</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/G_M代码列表/G-M-code full list.xlsx - Sheet1.csv" target="_blank">G 代码 & M 代码全列表汇总</a><span class="tag tag-doc">CSV</span></li>
+                <li><a href="Docs/玩转M350_进阶篇.docx">玩转 M350 进阶技巧指南</a><span class="tag tag-doc">Word</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🛠️ 深度开发与通信</h2>
+            <ul>
+                <li><a href="Docs/Modbus开发资料/M350 modbus 手册.pdf" target="_blank">Modbus RTU 通信开发手册</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/RECORD[]宏函数说明/RECORD [] instruction description.pdf" target="_blank">RECORD[] 宏函数指令详解</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/M350自定义G代码/M350自定义G代码.docx">自定义 G 代码 (G100-G199) 开发</a><span class="tag tag-doc">Word</span></li>
+                <li><a href="Docs/网络共享设置/M350 Network Configuration Instructions.pdf" target="_blank">以太网/网络共享配置说明</a><span class="tag tag-pdf">PDF</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🔌 硬件接线与专项配置</h2>
+            <ul>
+                <li><a href="Docs/M350手轮接线注意事项/M350手轮接线注意事项.pdf" target="_blank">手轮(MPG)接线关键注意事项</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/绝对值伺服通信/M350与SD700绝对值伺服通信操作说明.pdf" target="_blank">绝对值伺服 (SD700) 调试指南</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/双Y主从轴双零点示例/Double_y_double_zero_Operating Instructions for M350.pdf" target="_blank">双Y主从轴 (龙门结构) 设置示例</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/280_281号参数说明/Explanation of M350 Parameters (Pr62 Pr280 Pr281).pdf" target="_blank">关键参数 (Pr280/281) 详细解释</a><span class="tag tag-pdf">PDF</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>💡 专项功能实现</h2>
+            <ul>
+                <li><a href="Docs/刀库定制详解(固定直排为例)/M350固定直排_对刀.pdf" target="_blank">ATC 自动刀库定制 (直排案例)</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/G31指令说明及自动分中案例/M350 instruction description-G31.pdf" target="_blank">G31 探测指令与自动分中案例</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/机械回零顺序/Mechanical Homing Principle of M350.pdf" target="_blank">机械回零 (Homing) 逻辑详解</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/扫码枪说明/M350扫码枪使用说明.pdf" target="_blank">USB 扫码枪连接与使用说明</a><span class="tag tag-pdf">PDF</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📊 映射表与辅助工具</h2>
+            <ul>
+                <li><a href="Docs/USB标准键盘按键映射表/M350标准按键功能映射表.xlsx - Sheet2.csv" target="_blank">USB 键盘按键功能映射表</a><span class="tag tag-tool">CSV</span></li>
+                <li><a href="Docs/K1-K16功能键索引/M350_K1_K7功能索引.pdf" target="_blank">K1-K16 外部功能键索引表</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/时间加密说明/时间加密补充操作说明.pdf" target="_blank">系统加密/时间注册操作指南</a><span class="tag tag-pdf">PDF</span></li>
+                <li><a href="Docs/系统自检界面说明/M350 system self-test.pdf" target="_blank">系统自检 (Self-Test) 界面进入方法</a><span class="tag tag-pdf">PDF</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>本项目由 <strong>FOINNC</strong> 技术支持团队维护</p>
+        <p><a href="https://github.com/foinnc/M350" style="color: #6a737d;">查看 GitHub 源代码仓库 (foinnc/M350)</a></p>
+    </footer>
+
+</body>
+</html>
