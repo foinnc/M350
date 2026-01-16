@@ -1,0 +1,34 @@
+FOINNC system registration machine V1_2
+
+
+Steps:
+
+1: Get the System ID;
+???Enter the "para page" interface of the controller, press "Advanced", "Lifetime setting" "System ID" in turn to pop up the system serial number and remaining time.
+???For example, the following serial numbers:
+???????FOINNC-0150-9d8301b6f5106490-0000
+
+2: Double-click to open the software "FOINNC system registration machine V1_2.exe";
+
+3: Enter the serial number of the first step into the serial number of the software board information column;
+
+4: Set the use time. If the use time is not limited, enter -1, if it is limited, enter an integer between 1 and 9999;
+
+5: Modify the handle super user password (default can be used)
+??This password can be distinguished from different manufacturers. Please keep it in a safe place. If you change the superuser password, please enter the controller "para page"-"Advanced"-"Password Settings"-"Super Administrator Password Settings"
+??Note: The factory default super management password is 888888;
+
+6: Generate a registration code file;
+????Click the [Generate Registration Code] button. If the entry is correct, a registration code file with the file name "fkey" will be generated in the register software folder;
+
+7_1: Decrypt the handle (automatically);
+???Copy the fkey file to the root directory of the USB flash drive, insert the USB flash drive interface of the handle and power on again, the handle will be decrypted automatically; you can follow the first step to check the new remaining time after booting;
+
+7_2: decrypt the handle (manually);
+????Copy fkey to the root directory of the USB disk-insert the USB disk
+????Enter "para page"-"Advanced"-"Lifetime setting"-"Lock or unlock"
+
+
+Note: After the remaining time is less than 48 hours, you will be prompted when the machine is turned on;
+?????Fkey file will be deleted automatically after successful decryption;
+?????If the decryption is unsuccessful, please check whether the serial number and super user password are entered correctly;
