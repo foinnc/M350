@@ -1,0 +1,106 @@
+DDCSE uses a convenient automatic algorithm for calculating the displacement of working coordinate systems (hereinafter, CS) for each tool.
+You only need to specify the Z coordinates of the workpiece surface once, for one tool. And for all other tools, the offset will be calculated automatically.
+
+Algorithm:
+-Set up automatic tool change.
+-Connect the "Fixed Probe" sensor and set its machine coordinates.
+-Set the setting "#805 Automatic tool setting after tool change?" to "Yes".
+-Insert any tool number into the spindle (automatic change).
+-It will be automatically probed on the "Fixed Probe" sensor.
+-After performing tool probing, the machine coordinates of the touch with the current tool, the “Fixed Probe” surface, will be saved in settings #930-#945;
+-Touch the tip of this tool to the surface of the workpiece. Use a piece of paper.
+-Execute "Monitor-Clear-Clear Z". Or run the command #[807+[#578-1]*5] = #882-#[1430+[#1300-1]]
+-Or, instead of manually determining the surface of the workpiece, you can perform probing of the surface of the workpiece, in mode "0" (execute 2 commands in sequence: "#1502=0" ; "M98P502"). Then the previous 2 points can be skipped.
+-Now, when changing a tool to any other number, the machine coordinates of the zero point in Z, in the current working system, will be calculated automatically. Before installing another workpiece, you no longer have to zero the Z axis on the workpiece surface.
+
+
+This can also be used for spindles with manual tool change:
+-Connect the "Fixed Probe" sensor and set its machine coordinates.
+-Insert any tool into the spindle.
+-Probe it on the "Fixed Probe" sensor. That is:
+-Execute command #1502=2 (defines the probing type).
+-Execute command M98P502 (starts probing).
+-After performing tool probing, the machine coordinates of the touch with the current tool, the "Fixed Probe" surface, will be saved in settings #930-#945;
+-Touch the tip of this tool to the surface of the workpiece. Use a piece of paper.
+-Execute "Monitor-Clear-Clear Z". Or run the command #[807+[#578-1]*5] = #882-#[1430+[#1300-1]]
+-Or, instead of manually determining the surface of the workpiece, you can perform probing of the surface of the workpiece, in mode "0" (execute 2 commands in sequence: "#1502=0" ; "M98P502"). Then the previous 2 points can be skipped.
+-Now, when installing any other instrument, you should perform its probing on the "Fixed Probe" sensor. Then, the machine coordinates of the zero point in Z, in the current working coordinate system, will be calculated automatically.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+An example of calculating the SC offset:
+
+Current coordinate systems：G54
+Current tool：T1
+Current tool length compensation: H1
+
+"Current workpiece coordinate along Z, in the current working CS (G54)" = "Current machine coordinate Z" - "Offset along Z in the current working CS (G54)" - "Temporary offset along Z, G52" - "Tool offset T1 in Z" - "Tool length H"
+
+This is what it looks like in G-code:
+
+#852 - Current coordinate of the workpiece along Z, in the current working SC;
+#882 - Current maсh. Z coordinate;
+#807 - G54 Z offset in the current working SC;
+#1430 - Setting "#930 T01 Z offset";
+#837 - Temporary Z offset, G52;
+#900 - Setting "#400 H01 tool length offset";
+
+#852=#882-#807-#1430-#837-#900
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Axes zeroing from G-code, with tool offset compensation.
+
+If for example:
+Current CS: G54
+Tool number: T1
+T1 Z Offset (setting #930): -25mm
+Then the command #807=#882 will set not "0" for the Z axis in G54, but "25".
+That is, writing “#807=#882” to reset Z is only possible if the Z offsets for all instruments are guaranteed to be zero.
+
+
+Example of zeroing with tool offset compensation, for the Z axis:
+Zeroing Z in any current SC:
+#[807+[#578-1]*5] = #882-#[1430+[#1300-1]]
+Zeroing Z in CS G54:
+#807 = #882-#[1430+[#1300-1]]
+
+Example of zeroing with tool offset compensation, for the X axis:
+Zeroing X in any current SC:
+#[805+[#578-1]*5] = #880-#[1390+[#1300-1]]
+Zeroing X in CS G54:
+#805 = #880-#[1390+[#1300-1]]
+
+Example of zeroing with tool offset compensation, for the Y axis:
+Zeroing Y in any current SC:
+#[806+[#578-1]*5] = #881-#[1410+[#1300-1]]
+Zeroing Y in CS G54:
+#805 = #880-#[1390+[#1300-1]]
+
+Please note that for the 4th and 5th axis, there are no tool offset settings.
+
+That's why:
+
+Example of zeroing, for the 4th axis:
+Zeroing the 4th axis in any current CS:
+#[808+[#578-1]*5] = #883
+Zeroing Y in CS G54:
+#808 = #883
+
+Example of zeroing, for the 5th axis:
+Zeroing the 5th axis in any current CS:
+#[809+[#578-1]*5] = #884
+Zeroing Y in CS G54:
+#809 = #884
+--------------------------------------------------------------------------------------------------------------------
+You can also change the current machine position of each axis by changing the value of the machine position variables.
+This is equivalent to performing the homing procedure. A "homing" icon appears next to the axis name on the main screen.
+Examples:
+
+#880=0 - Zeroing the current machine position of the X axis;
+#881=0 - Zeroing the current machine position of the Y axis;
+#882=0 - Zeroing the current machine position of the Z axis;
+#883=0 - Zeroing the current machine position of the 4th axis;
+#884=0 - Zeroing the current machine position of the 5th axis;
+
+One important use case for this is to quickly display the values of variables. For example, you need to find out the value of the variable "#1430".
+To do this, you write the command "#884=#1430" in MDI and execute it. After this, the machine position of the 5th axis will change to the value of the variable "#1430".
+This can be used as a quick version of the "RECORD" command.
