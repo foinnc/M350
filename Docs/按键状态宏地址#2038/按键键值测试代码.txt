@@ -1,0 +1,7 @@
+N1
+#1510=#2038 ;Retrieve the key value and press state.
+#1503 = 1(The current key value and state:[%.0f])
+G04 P1
+GOTO1
+
+

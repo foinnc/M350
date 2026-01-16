@@ -1,0 +1,4 @@
+#2038
+
+bit0-bit15：key value
+bit16：Press state: 0 - Released, 1 - Pressed

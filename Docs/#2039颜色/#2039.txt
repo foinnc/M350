@@ -1,0 +1,13 @@
+(=-1: Default color is green, >0: Actual color value.)
+
+#2039=16777215  (0xFFFFFF White)
+#1503=1 (0xFFFFFF White)
+G04 P3000
+
+#2039=16744576  (0xFF8080  Light Blue)
+#1503=1 (0xFF8080  Light Blue)
+G04 P3000
+
+#2039=-1 (Default color is green)
+#1503=1 (Default color is green)
+G04 P3000

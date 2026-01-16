@@ -1,0 +1,8 @@
+
+;Custom pause and resume method:
+
+#2038=0 ；Reset the key state to zero.
+
+WHILE [#2038 NE 65864] DO1; When the start key is pressed = 65864, and when released = 328.
+G04 P1
+END1
