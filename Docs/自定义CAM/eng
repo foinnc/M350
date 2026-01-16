@@ -1,0 +1,1172 @@
+&&
+
+#0 -p0 -a3 -a3 -t1 -s1"Motor starting speed" -s2"mm/min" -m1 -min=1.000 -max=999.000
+-s3"If the given speed is higher than this speed, the motor will start to acc/from this speed; otherwise the motor will run at the given speed./Effective range:[1-999]"
+
+#1 -p0 -a3 -t1 -s1"X-axis pulses per mm" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of pulses per revolution./Effective range:[50-99999]"
+#2 -p0 -a3 -t1 -s1"Y-axis pulses per mm" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of pulses per revolution./Effective range:[50-99999]"
+#3 -p0 -a3 -t1 -s1"Z-axis pulses per mm" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of pulses per revolution./Effective range:[50-99999]"
+#6 -p0 -a4 -t1 -s1"4th-axis pulses per unit" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of pulses per revolution./Effective range:[50-999999]"
+#7 -p0 -a4 -t2 -s1"4th-axis unit" -m1 -min=0.000 -max=1.000 -i0"pulse/deg" -i1"pulse/circle"
+-s3"Note: When this axis is used to drive the spindle, set this parameter/to 0!"
+#8 -p0 -a5 -t1 -s1"5th-axis pulses per unit" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of pulses per revolution./Effective range:[50-999999]"
+#9 -p0 -a5 -t2 -s1"5th-axis unit" -m1 -min=0.000 -max=1.000 -i0"pulse/deg" -i1"pulse/circle"
+-s3"Note: When this axis is used to drive the spindle, set this parameter/to 0!"
+
+#11 -p0 -a3 -t0 -s1"Delay between direction and pulse" -s2"ns" -m1 -min=0.000 -max=9999.000
+-s3"This parameter is 7000, which is generally sufficient for most drives./Effective range:[0-9999]"
+
+
+#12 -p0 -a3  -t2 -s1"X-axis direction electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"This parameter is used to determine the direction of X-axis motion."
+#13 -p0 -a3 -t2 -s1"Y-axis direction electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"This parameter is used to determine the direction of Y-axis motion"
+#14 -p0 -a3 -t2 -s1"Z-axis direction electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"This parameter is used to determine the direction of Z-axis motion"
+#15 -p0 -a4 -t2 -s1"4th-axis direction electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"This parameter is used to determine the direction of 4th-axis motion"
+#16 -p0 -a5 -t2 -s1"5th-axis direction electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"This parameter is used to determine the direction of 5th-axis motion"
+
+#17 -p0 -a3 -t2 -s1"X-axis pulse signal electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"If the X axis appears to be gradually offset during machining, /reverse this parameter."
+#18 -p0 -a3 -t2 -s1"Y-axis pulse signal electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"If the Y axis appears to be gradually offset during machining, /reverse this parameter."
+#19 -p0 -a3 -t2 -s1"Z-axis pulse signal electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"If the Z axis appears to be gradually offset during machining, /reverse this parameter."
+#20 -p0 -a4 -t2 -s1"4th-axis pulse signal electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"If the 4th axis appears to be gradually offset during machining, /reverse this parameter."
+#21 -p0 -a5 -t2 -s1"5th-axis pulse signal electric level" -m1 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"If the 5th axis appears to be gradually offset during machining, /reverse this parameter."
+
+
+#22 -p0 -a3 -t2 -s1"Enable axis mapping function" -m0 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Note: When this function is enabled, the two axies are linked only/during machining."
+#23 -p0 -a3 -t2 -s1"Primary axis selection" -m0 -min=0.000 -max=4.000 -i0"X-axis" -i1"Y-axis" -i2"Z-axis" -i3"4th-axis" -i4"5th-axis"
+#24 -p0 -a3 -t2 -s1"Mapping axis selection" -m0 -min=0.000 -max=4.000 -i0"X-axis" -i1"Y-axis" -i2"Z-axis" -i3"4th-axis" -i4"5th-axis"
+
+
+#30 =146 -p1 -a3 -a4  -t0 -s1"Machine type" -s2" " -m0 -min=100 -max=1000
+-s3"1xx:Double turntable, 2xx:Double swing head, 3xx:Shake and swing, 4xx:robot;/1 2 3:ABC swing,  4 5 6:ABC turntable;/E.g:146:AC turntable, 116:A swing and C Shake."	
+
+#31 =0.1 -p1 -a3 -a4  -t1 -s1"RTCP Resolution" -s2"unit" -m0 -min=0.001 -max=0.5
+
+#440 -p1 -a3 -a3 =0  -t2 -s1"X-axis name"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Restart takes effect!"
+#441 -p1 -a3 =1  -t2 -s1"Y-axis name"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Restart takes effect!"
+#442 -p1 -a3 =2  -t2 -s1"Z-axis name"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Restart takes effect!"
+#443 -p1 -a4   -t2 -s1"4th-axis name"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Restart takes effect!"
+#444 -p1 -a5   -t2 -s1"5th-axis name"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Restart takes effect!"
+
+#449 -p1 -a4  -t2 -s1"4th-axis Type"  -m1 -min=0.000 -max=1.000 -i0"Linear" -i1"Rotation"
+#450 -p1 -a5  -t2 -s1"5th-axis Type"  -m1 -min=0.000 -max=1.000 -i0"Linear" -i1"Rotation"
+
+#455 =0 -p1 -a4  -t1 -s1"4th-axis Offset X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#456 =0 -p1 -a5  -t1 -s1"5th-axis Offset X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+
+#461 =0 -p1 -a4  -t1 -s1"4th-axis Offset Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#462 =0 -p1 -a5  -t1 -s1"5th-axis Offset Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#467 =0 -p1 -a4  -t1 -s1"4th-axis Offset Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#468 =0 -p1 -a5  -t1 -s1"5th-axis Offset Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#473 =0 -p1 -a4  -t1 -s1"4th-axis Vector U"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#474 =0 -p1 -a5  -t1 -s1"5th-axis Vector U"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#479 =0 -p1 -a4  -t1 -s1"4th-axis Vector V"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#480 =0 -p1 -a5  -t1 -s1"5th-axis Vector V"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#485 =0 -p1 -a4  -t1 -s1"4th-axis Vector W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#486 =0 -p1 -a5  -t1 -s1"5th-axis Vector W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+
+#488 -p1 -a3   -t2 -s1"Programming axis of physical axis 1"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4th" -i4"5th"
+-s3"  "
+#489 -p1 -a3   -t2 -s1"Programming axis of physical axis 2"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4th" -i4"5th"
+-s3"  "
+#490 -p1 -a3   -t2 -s1"Programming axis of physical axis 3"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4th" -i4"5th"
+-s3"  "
+#491 -p1 -a4   -t2 -s1"Programming axis of physical axis 4"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4th" -i4"5th"
+-s3"  "
+#492 -p1 -a5   -t2 -s1"Programming axis of physical axis 5"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4th" -i4"5th"
+-s3"  "
+
+
+
+
+#35 -p0 -a3 -t1 -s1"X-axis max. speed in manual mode" -s2"mm/min" -m2 -min=99.000 -max=99999.000
+-s3"This parameter limits the frequency of the output pulse in the manual/mode to achieve the effect of limiting the speed when increasing SJR./This parameter should be greater than #40.Effective range:[99-99999]"	
+#36 -p0 -a3 -t1 -s1"Y-axis max. speed in manual mode" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"This parameter limits the frequency of the output pulse in the manual/mode to achieve the effect of limiting the speed when increasing SJR./This parameter should be greater than #41.Effective range:[99-99999]"	
+#37 -p0 -a3 -t1 -s1"Z-axis max. speed in manual mode" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"This parameter limits the frequency of the output pulse in the manual/mode to achieve the effect of limiting the speed when increasing SJR./This parameter should be greater than #42.Effective range:[99-99999]"	
+#38 -p0 -a4 -t1 -s1"4th-axis max. speed in manual mode" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"This parameter limits the frequency of the output pulse in the manual/mode to achieve the effect of limiting the speed when increasing SJR./This parameter should be greater than #43.Effective range:[99-99999]"	
+#39 -p0 -a5 -t1 -s1"5th-axis max. speed in manual mode" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"This parameter limits the frequency of the output pulse in the manual/mode to achieve the effect of limiting the speed when increasing SJR./This parameter should be greater than #44.Effective range:[99-99999]"	
+
+
+#40 -p0 -a3  -t1 -s1"X-axis manual control HIGH speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"		
+#41 -p0 -a3  -t1 -s1"Y-axis manual control HIGH speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#42 -p0 -a3  -t1 -s1"Z-axis manual control HIGH speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#43 -p0 -a4  -t1 -s1"4th-axis manual control HIGH speed" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#44 -p0 -a5  -t1 -s1"5th-axis manual control HIGH speed" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+
+#45 -p0 -a3  -t1 -s1"X-axis manual control LOW speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"		
+#46 -p0 -a3  -t1 -s1"Y-axis manual control LOW speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#47 -p0 -a3  -t1 -s1"Z-axis manual control LOW speed" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#48 -p0 -a4  -t1 -s1"4th-axis manual control LOW speed" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+#49 -p0 -a5  -t1 -s1"5th-axis manual control LOW speed" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is rpm./Effective range:[1-99999]"	
+
+#50 -p0 -a3 -t1 -s1"X-axis start acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#51 -p0 -a3 -t1 -s1"Y-axis start acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#52 -p0 -a3 -t1 -s1"Z-axis start acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#53 -p0 -a4 -t1 -s1"4th-axis start acceleration in manual mode" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#54 -p0 -a5 -t1 -s1"5th-axis start acceleration in manual mode" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+
+#55 -p0 -a3 -t1 -s1"X-axis stop acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#56 -p0 -a3 -t1 -s1"Y-axis stop acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#57 -p0 -a3 -t1 -s1"Z-axis stop acceleration in manual mode" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#58 -p0 -a4 -t1 -s1"4th-axis stop acceleration in manual mode" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+#59 -p0 -a5 -t1 -s1"5th-axis stop acceleration in manual mode" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Note: When the axis is used to drive the spindle, the unit of this /parameter is the number of revolution per s2./Effective range:[9-9999]"
+
+
+#285 -p0 -a3  -t1 -s1"X-axis max. ACC G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"G00 command maximum acceleration."
+#286 -p0 -a3  -t1 -s1"Y-axis max. ACC G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"G00 command maximum acceleration."
+#287 -p0 -a3  -t1 -s1"Z-axis max. ACC G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"G00 command maximum acceleration."
+#288 -p0 -a4  -t1 -s1"4th-axis max. ACC G00" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"G00 command maximum acceleration."
+
+#289 -p0 -a5  -t1 -s1"5th-axis max. ACC G00" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"G00 command maximum acceleration."
+
+
+#60 -p0 -a3  -t2 -s1"Speed selection" -m3 -min=0.000 -max=1.000 -i0"G-Code" -i1"Default"
+-s3"Default:speed using #61 Speed value,/Otherwise use the F command in the file;/This parameter can be quickly set on the Monitor page."
+#61 -p0 -a3  -t1 -s1"Default operating speed" -s2"mm/min" -m3 -min=1.000 -max=99999.000
+-s3"If the machining program has no F word or #60=Default, the current value is used. / This parameter can be quickly set on the Monitor page."
+
+#62 -p0 -a3  -t1 -s1"G01 ACC" -s2"mm/s2" -m3 -min=9.000 -max=9999.000
+-s3"G01\G02.G03 acceleration./This parameter should be set according to the actual situation of the machine."
+#63 -p0 -a3  -t1 -s1"G00 speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"This speed is the speed of the movement of each axis of the G0 segment."
+
+#64 -p0 -a3  -t1 -s1"Maximum speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximum speed of the machine during machining."
+
+#65 -p0 -a3  -t1 -s1"Z-axis lifting protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Z+ component maximum speed./G00 is also valid."
+#66 -p0 -a3  -t1 -s1"Z-axis dropping protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Z- component maximum speed./G00 is also valid."
+#67 -p0 -a3  -t1 -s1"X-axis protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"X-axis protection speed./G00 is also valid."
+#68 -p0 -a3  -t1 -s1"Y-axis protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Y-axis protection speed./G00 is also valid."
+
+#69 -p0 -a3  -t1 -s1"Z-axis safe height" -s2"mm" -m3 -min=0.000 -max=999.000
+-s3"Z-axis lift height when starting or restoring machining and go to work zero."
+#70 -p0 -a3  -t1 -s1"Z lift distance. when paused" -s2"mm" -m3 -min=0.000 -max=99.000
+-s3"Z lift distance. when paused."
+
+#71 -p0 -a3 =0  -t2 -s1"G0段运动规划使能"  -m0 -min=0.000 -max=1.000 -i0"禁止" -i1"使能"
+#72 =0 -p0 -a3 -t2 -s1"G0 command motion characteristics" -m0 -min=0.000 -max=1.000 -i0"Interpolation" -i1"Independent"
+-s3"Interpolation:synergistic movement of each axis./Independent:each axis independently moves at G0 speed."
+
+#73 -p0 -a3 -t2 -s1"Arc-interpolation algorithm" -m3 -min=0.000 -max=1.000 -i0"Hard alg." -i1"Soft alg."
+-s3"Hard alg.:interpolation accuracy is 0.5 pulses./Soft alg.:accuracy is set by parameter No. 74!"
+#74 -p0 -a3  -t1 -s1"Soft-arc algorithm linear error" -s2"mm" -m3 -min=0.001 -max=0.1
+#75 -p0 -a3  -t1 -s1"Circular centrifugal acceleration" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"!=0:G02 G03 acceleration is set by this parameter./==0:G02 G03 acceleration is set by parameter 62."
+
+#76 -p0 -a3  -t2 -s1"Macro scan switch" -m3 -min=0.000 -max=1.000 -i0"closed" -i1"open"
+-s3"closed:do not scan files before processing,/open:Scan files before processing"
+#77 -p0 -a3  -t0 -s1"Macro program file main program No." -m3 -min=0.000 -max=9999.000
+-s3"Macro program file main program No."
+
+#90 -p0 -a3  -t2 -s1"Action selection before starting" -s2"" -m3 -min=0.000 -max=1.000 -i0"No action" -i1"To Safety Z" 
+-s3"when starting or resuming ./Safety height value: No. 69 parameter."
+#91 -p0 -a3  -t2 -s1"Z-axis movement mode during pause" -s2"" -m3 -min=0.000 -max=1.000 -i0"No action" -i1"Z distance" 
+-s3"when pause. /Z lift distance: No. 70 parameter."
+
+
+#220 -p0 -a3  -t2 -s1"Go to home before processing?" -s2"" -m3 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Yes:processing cannot be started without go to zero before machining."
+
+#221 -p0 -a3  -t1 -s1"Ref speed of arc with radius 5mm" -s2"mm/min" -m3 -min=0.000 -max=3600000.000
+-s3"If ==0,The arc speed is related to parameters No. 62 and No. 75."
+
+#222 -p0 -a4  -t1 -s1"4th-axis protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"4th-axis protection speed./G00 is also valid."
+
+#223 -p0 -a5  -t1 -s1"5th-axis protection speed" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"5th-axis protection speed./G00 is also valid."
+
+#230 -p0 -a3  -t2 -s1"Execute action after Finished" -s2"" -m3 -min=0.000 -max=2.000 -i0"No action" -i1"Ref Pos" -i2"Work Zero"
+-s3"Add M30 at the end of the file./Ref Pos:Mach pos of No.122-126."
+
+
+
+
+
+
+
+#224 -p0 -a3  -t1 -s1"G73/G83 drilling retraction" -s2"mm" -m3 -min=0.000 -max=20
+-s3"G73 G83 drilling retraction."
+
+#225 =1 -p0 -a3  -t1 -s1"Feed rate change range" -s2"ms" -m0 -min=1 -max=100
+-s3"Magnification increment when handwheel exit and manual override adjustment."
+
+#226 =10 -p0 -a3  -t1 -s1"Magnification decrease in pause" -s2"ms" -m0 -min=1 -max=100
+-s3"Suspension rate change when decelerating to stop."
+
+#227 =500 -p0 -a3  -t1 -s1"Processing magnification change interval" -s2"us" -m0 -min=1 -max=100000
+-s3"Cooperate with parameter 225."
+
+#228 =1 -p0 -a3  -t1 -s1"Magnification change when resetting alarm" -s2"ms" -m0 -min=1 -max=100
+-s3"Magnification change when resetting alarm."
+
+
+#229 =100 -p0 -a3  -t1 -s1"Reset alarm rate change interval" -s2"us" -m0 -min=1 -max=100000
+-s3"Reset alarm rate change interval."
+
+#280 -p0 -a3  -t1 -s1"Line corner acceleration" -s2"mm/s2" -m0 -min=0.000 -max=9999.000
+-s3" "
+
+#281 -p0 -a3  -t1 -s1"J parameter of S-type acceleration curve" -s2"mm/s3" -m0 -min=0.000 -max=99999.000
+-s3" "
+#282 -p0 -a3  -t1 -s1"G00 ACC" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"Acceleration setting in G00 interpolation mode./0:G00 acceleration is parameter 62 /!=0:G00 acc is this parameter and does not actually exceed the 285-288 parameter value."
+
+
+
+
+#79 -p0 -a3  -t2 -s1"Spindle interface type" -s2"" -m5 -min=0.000 -max=2.000 -i0"Analog" -i1"Plu/dir" -i2"Multi-speed"
+-s3"Spindle interface type."
+#80 -p0 -a3  -t2 -s1"Spindle mapping axis" -m5 -min=0.000 -max=5.000 -i0"X-axis" -i1"Y-axis" -i2"Z-axis" -i3"4th-axis" -i4"5th-axis"
+-s3"The unit of all relevant parameters of the servo axis is R (circle)."
+#81 -p0 -a3  -t1 -s1"Spindle start delay" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Delay wait time after spindle start command (M03\M04) response."
+#82 -p0 -a3  -t1 -s1"Maximum spindle speed" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"Maximum spindle speed."
+#83 -p0 -a3  -t2 -s1"Ignore the S command" -s2"" -m5 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Yes:Start or resume machining, spindle speed adopts parameter No. 85,/This parameter can be quickly set on the Monitor page."
+#84 -p0 -a3  -t2 -s1"Stop spindle when program is paused?" -s2"" -m5 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"When paused, this parameter determines whether to stop the spindle."
+#85 -p0 -a3  -t1 -s1"Default spindle speed" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"If program does not  S word or No.82 is Yes, the speed of the spindle./This parameter can be quickly set on the Monitor page."
+#86=0 -p0 -a3  -t2 -s1"Spindle PWM electric level" -s2"" -m0 -min=0.000 -max=1.000 -i0"low" -i1"high"
+#87=0 -p0 -a3  -t0 -s1"PWM rising rate from 0V to 10V" -s2"" -m0 -min=0.000 -max=65535.000
+#88 -p0 -a3  -t0 -s1"Multi-speed section counts" -s2"" -m5 -min=2.000 -max=8.000
+-s3"Multi-speed section counts."
+#89 -p0 -a3  -t1 -s1"Spindle stop delay" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Delay wait time after spindle stop command (M05) response."
+
+
+#92 -p0 -a3  -t1 -s1"Duration of M8/M9 commands" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Delay wait time after cooling command response."
+#94 -p0 -a3  -t1 -s1"Duration of M10/M11 commands" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Delay wait time after lubrication command response."
+#95 -p0 -a3  -t1 -s1"IO input filter time width"  -s2"ms" -m6 -min=0 -max=1000000
+
+#96 -p0 -a3  -t0 -s1"Reset IO Configuration bit01-16"   -m6 -min=0 -max=65535
+-s3"For example: 7=0111/ OUT0 OUT1 OUT2 output is closed after reset, other ignore."
+#97 -p0 -a3  -t0 -s1"Reset IO Configuration bit17-21"   -m6 -min=0 -max=65535
+-s3"For example: 7=0111/ OUT17 OUT18 OUT19 output is closed after reset, other ignore."
+
+#98 -p0 -a3  -t0 -s1"Alarm output status configuration bit 01-16"   -m6 -min=0 -max=65535
+-s3"For example: 7=0111/ OUT0 OUT1 OUT2 output is Open after Alarm, other closed,/264 265 parameter corresponding bit is configured as 1."
+#99 -p0 -a3  -t0 -s1"Alarm output status configuration bit 17-21"   -m6 -min=0 -max=65535
+-s3"For example: 7=0111/ OUT17 OUT18 OUT19 output is Open after Alarm, other closed,/264 265 parameter corresponding bit is configured as 1."
+
+#264 -p0 -a3  -t0 -s1"Alarm output enable configuration bit 01-16"   -m6 -min=0 -max=65535
+-s3"Before setting parameter No.98,need to enable the corresponding bit first."
+#265 -p0 -a3  -t0 -s1"Alarm output enable configuration bit 17-21"   -m6 -min=0 -max=65535
+-s3"Before setting parameter No.99,need to enable the corresponding bit first."
+
+
+
+#210 -p0 -a3  -t0 -s1"K1 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-1.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#211 -p0 -a3  -t0 -s1"K2 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-2.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#212 -p0 -a3  -t0 -s1"K3 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-3.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#213 -p0 -a3  -t0 -s1"K4 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-4.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#214 -p0 -a3  -t0 -s1"K5 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-5.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#215 -p0 -a3  -t0 -s1"K6 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-6.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#216 -p0 -a3  -t0 -s1"K7 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-7.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#217 -p0 -a3  -t0 -s1"K8 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-8.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#218 -p0 -a3  -t0 -s1"K9 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-9.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#219 -p0 -a3  -t0 -s1"K10 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-10.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#231 -p0 -a3  -t0 -s1"K11 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-11.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#232 -p0 -a3  -t0 -s1"K12 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-12.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#233 -p0 -a3  -t0 -s1"K13 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-13.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#234 -p0 -a3  -t0 -s1"K14 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-14.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#251 -p0 -a3  -t0 -s1"K15 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-15.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+#252 -p0 -a3  -t0 -s1"K16 key Function"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"==0:run key-16.nc; /1-32:Close or Open OUT1-OUT32;/>1000:Function shortcuts."
+
+
+#272 -p0 -a3  -t0 -s1"extern key 1 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-1.nc,extnc1-1.nc,extnc2-1.nc; />1000:Function shortcuts."
+#273 -p0 -a3  -t0 -s1"extern key 2 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-2.nc,extnc1-2.nc,extnc2-2.nc; />1000:Function shortcuts."
+#274 -p0 -a3  -t0 -s1"extern key 3 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-3.nc,extnc1-3.nc,extnc2-3.nc; />1000:Function shortcuts."
+#275 -p0 -a3  -t0 -s1"extern key 4 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-4.nc,extnc1-4.nc,extnc2-4.nc; />1000:Function shortcuts."
+#276 -p0 -a3  -t0 -s1"extern key 5 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-5.nc,extnc1-5.nc,extnc2-5.nc; />1000:Function shortcuts."
+#277 -p0 -a3  -t0 -s1"extern key 6 Function"  -s2" " -m6 -min=0 -max=2000
+-s3"==0:run extnc0-6.nc,extnc1-6.nc,extnc2-6.nc; />1000:Function shortcuts."
+
+
+
+#100 -p1 -a3  -t2 -s1"Home mode" -m7 -min=0.000 -max=1.000 -i0"switch" -i1"Absolute"
+-s3"Switch: mechanical switch required,/Absolute: bus absolute servo."
+
+#101 -p0 -a3  -t1 -s1"Servo absolute laps at the X-axis Home" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Floating  type with direction."
+#102 -p0 -a3  -t1 -s1"Servo absolute laps at the Y-axis Home" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Floating  type with direction."
+#103 -p0 -a3  -t1 -s1"Servo absolute laps at the Z-axis Home" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Floating  type with direction."
+#104 -p0 -a4  -t1 -s1"Servo absolute laps at the 4th-axis Home" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Floating  type with direction."
+#105 -p0 -a5  -t1 -s1"Servo absolute laps at the 5th-axis Home" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Floating  type with direction."
+
+#106 -p0 -a3  -t0 -s1"Homing cycle count" -m7 -min=1 -max=5
+-s3"Repeated detection of the number of home switches."
+
+#107 -p0 -a3  -t1 -s1"X-axis homing speed" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Initial speed of the X-axis go home."
+#108 -p0 -a3  -t1 -s1"Y-axis homing speed" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Initial speed of the Y-axis go home."
+#109 -p0 -a3  -t1 -s1"Z-axis homing speed" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Initial speed of the Z-axis go home."
+#110 -p0 -a4  -t1 -s1"4th-axis homing speed" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Initial speed of the 4th-axis go home."
+#111 -p0 -a5 -t1 -s1"5th-axis homing speed" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Initial speed of the 5th-axis go home."
+
+
+
+#112 -p0 -a3  -t2 -s1"X-axis homing direction" -m7 -min=0.000 -max=1.000 -i0"Negative" -i1"Positive"
+-s3"The initial direction of motion of the X-axis after starting the X-axis go home."
+#113 -p0 -a3  -t2 -s1"Y-axis homing direction" -m7 -min=0.000 -max=1.000 -i0"Negative" -i1"Positive"
+-s3"The initial direction of motion of the Y-axis after starting the Y-axis go home."
+#114 -p0 -a3  -t2 -s1"Z-axis homing direction" -m7 -min=0.000 -max=1.000 -i0"Negative" -i1"Positive"
+-s3"The initial direction of motion of the Z-axis after starting the Z-axis go home."
+#115 -p0 -a4  -t2 -s1"4th-axis homing direction" -m7 -min=0.000 -max=1.000 -i0"Negative" -i1"Positive"
+-s3"The initial direction of motion of the 4th-axis after starting the 4th-axis go home."
+#116 -p0 -a5 -t2 -s1"5th-axis homing direction" -m7 -min=0.000 -max=1.000 -i0"Negative" -i1"Positive"
+-s3"The initial direction of motion of the 5th-axis after starting the 5th-axis go home."
+#117 -p0 -a3  -t1 -s1"Maximum error of home  switch" -s2"mm" -m7 -min=0.000 -max=1
+-s3"0:ignore,!=0:Enable."
+#118 -p0 -a3  -t1 -s1"Second precision positioning speed" -s2"mm/min" -m7 -min=1.000 -max=999.000
+-s3"Use parameter 0: Motor starting speed."
+
+#122 -p0 -a3  -t1 -s1"Mach position after X go home" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach position."
+#123 -p0 -a3  -t1 -s1"Mach position after Y go home" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach position."
+#124 -p0 -a3  -t1 -s1"Mach position after Z go home" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach position."
+#125 -p0 -a4  -t1 -s1"Mach position after 4th go home" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Mach position."
+#126 -p0 -a5  -t1 -s1"Mach position after 5th go home" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Mach position."
+
+
+#235 -p0 -a3  -t1 -s1"X-axis Mach zero offset" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach pos at the mechanical zero switch."
+#236 -p0 -a3  -t1 -s1"Y-axis Mach zero offset" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach pos at the mechanical zero switch."
+#237 -p0 -a3  -t1 -s1"Z-axis Mach zero offset" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach pos at the mechanical zero switch."
+#238 -p0 -a4  -t1 -s1"4th-axis Mach zero offset" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach pos at the mechanical zero switch."
+#239 -p0 -a5  -t1 -s1"5th-axis Mach zero offset" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Mach pos at the mechanical zero switch."
+
+
+#127 -p0 -a3  -t2 -s1"Home after booting" -m7 -min=0.000 -max=1.000 -i0"Yes" -i1"No"
+-s3"Yes:Boot pop-up dialog box prompts whether to go home."
+
+
+#128 -p0 -a3  -t2 -s1"Is the Floating tool set valid?" -m8 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+#129 -p0 -a3  -t1 -s1"Floating tool set thickness" -s2"mm" -m8 -min=0 -max=99.000
+#130 -p0 -a3  -t2 -s1"Is the fixed tool set valid?" -m8 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+#131 -p0 -a3  -t0 -s1"Probing cycle count" -m8 -min=1 -max=5
+-s3"Repeated detection times."
+#132 -p0 -a3  -t1 -s1"Initial speed of Probing" -m8 -min=50.000 -max=99999.000
+-s3"The initial down speed of the Z axis after starting the tool setting."
+#133 -p0 -a3  -t1 -s1"Probe Tool block thickness" -s2"mm" -m0 -min=-99.000 -max=99.000
+-s3"Useful for floating tool."
+#134 -p0 -a3  -t2 -s1"对刀初始位置" -m0 -min=0.000 -max=1.000 -i0"当前位置" -i1"固定位置"
+-s3"对刀初始位置设置为当前位置,则启动对刀操作后,Z轴直接进行探测./否则,机床移动到预先设置的位置后,Z轴再进行探测."
+#135 -p0 -a3  -t1 -s1"Fixed probe X mach pos" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Starting to search for a mechanical location."
+#136 -p0 -a3  -t1 -s1"Fixed probe Y mach pos" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Starting to search for a mechanical location."
+#137 -p0 -a3  -t1 -s1"Fixed probe Z mach pos" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Starting to search for a mechanical location."
+#138 -p0 -a4  -t1 -s1"Fixed probe 4th mach pos" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Starting to search for a mechanical location."
+#139 -p0 -a5  -t1 -s1"Fixed probe 5th mach pos" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Starting to search for a mechanical location."
+
+#140 -p0 -a3  -t1 -s1"Retraction distance after the end of probe" -s2"mm" -m8 -min=0.000 -max=999.000
+-s3"This parameter is relative."
+
+#150 -p0 -a3 -t2 -s1"Stop mode when X-axis hard limit trigger" -m9 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#151 -p0 -a3 -t2 -s1"Stop mode when Y-axis hard limit trigger" -m9 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#152 -p0 -a3 -t2 -s1"Stop mode when Z-axis hard limit trigger" -m9 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#153 -p0 -a4 -t2 -s1"Stop mode when 4th-axis hard limit trigger" -m9 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#154 -p0 -a5 -t2 -s1"Stop mode when 5th-axis hard limit trigger" -m9 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+
+#155 -p1 -a3  -t2 -s1"Enable software limits" -m10 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Total control switch for soft limit function./Single axis, you can set the negative limit value to be larger than the positive limit."
+
+#156 -p0 -a3 -t2 -s1"Stop mode when X-axis software limit trigger" -m10 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#157 -p0 -a3 -t2 -s1"Stop mode when Y-axis software limit trigger" -m10 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#158 -p0 -a3 -t2 -s1"Stop mode when Z-axis software limit trigger" -m10 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#159 -p0 -a4 -t2 -s1"Stop mode when 4th-axis software limit trigger" -m10 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+#160 -p0 -a5 -t2 -s1"Stop mode when 5th-axis software limit trigger" -m10 -min=0.000 -max=1.000 -i0"Deceleration" -i1"Emergency"
+
+
+#161 -p0 -a3 -t1 -s1"Negative X-axis software limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#162 -p0 -a3 -t1 -s1"Negative Y-axis software limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#163 -p0 -a3 -t1 -s1"Negative Z-axis software limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#164 -p0 -a4 -t1 -s1"Negative 4th-axis software limit" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#165 -p0 -a5 -t1 -s1"Negative 5th-axis software limit" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+
+#166 -p0 -a3 -t1 -s1"Positive X-axis soft limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#167 -p0 -a3 -t1 -s1"Positive Y-axis soft limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#168 -p0 -a3 -t1 -s1"Positive Z-axis soft limit" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#169 -p0 -a4 -t1 -s1"Positive 4th-axis soft limit" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+#170 -p0 -a5 -t1 -s1"Positive 5th-axis soft limit" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"If the value of the negative limit is greater than the positive limit,/the soft limit is invalid."
+
+#171 -p0 -a3  -t2 -s1"Enable MPG control" -m11 -min=0.000 -max=1.000 -i0"Yes" -i1"No"
+-s3"Yes:the machine stops until the buffer data is released./No:Slow down immediately after the handwheel stops shaking."
+#172 -p0 -a3  -t1 -s1"MPG precision"  -m11 -min=0.001 -max=0.01
+-s3"When the handwheel is X1, the distance of the handwheel shaft is shaken."
+#173 -p0 -a3  -t2 -s1"Enable ESTOP signal on MPG" -m11 -min=0.000 -max=1.000 -i0"No enable" -i1"Enable"
+-s3"Enable switch for reset function on the MPG."
+#174 -p0 -a3  -t2 -s1"Electric level of ESTOP on MPG" -m11 -min=0.000 -max=1.000 -i0"low" -i1"high"
+-s3"Please set this parameter according to the actual MPG device."
+#175 -p0 -a3  -t2 -s1"MPG Dir" -m11 -min=0.000 -max=1.000 -i0"Positive" -i1"Negative"
+#176 -p0 -a3  -t1 -s1"Handwheel X1 speed" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Handwheel X1 speed."
+#177 -p0 -a3  -t1 -s1"Handwheel X10 speed" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Handwheel X10 speed."
+#178 -p0 -a3  -t1 -s1"Handwheel X100 speed" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Handwheel X100 speed."
+
+#179 -p0 -a3  -t1 -s1"Handwheel stop adjustment increment value"  -m11 -min=0.001 -max=0.5
+-s3"When the handwheel stops shaking, the rate is reduced."
+
+#180 -p0 -a3  -t1 -s1"Handwheel change adjustment increment value"  -m11 -min=0.001 -max=0.5
+-s3"Handwheel change adjustment increment value."
+
+#181 -p0 -a3  -t1 -s1"X-axis hand wheel manual Acc" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"X-axis hand wheel manual Acc."
+#182 -p0 -a3  -t1 -s1"Y-axis hand wheel manual Acc" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Y-axis hand wheel manual Acc."
+#183 -p0 -a3  -t1 -s1"Z-axis hand wheel manual Acc" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Z-axis hand wheel manual Acc."
+#184 -p0 -a4  -t1 -s1"4th-axis hand wheel manual Acc" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"4th-axis hand wheel manual Acc."
+#185 -p0 -a5  -t1 -s1"5th-axis hand wheel manual Acc" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"5th-axis hand wheel manual Acc."
+
+#190 -p0 -a3  -t2 -s1"Enable X-axis backlash" -m13 -min=0.000 -max=1.000 -i0"No" -i1"Yes"	
+-s3"Enable X-axis backlash."
+#191 -p0 -a3  -t2 -s1"Enable Y-axis backlash" -m13 -min=0.000 -max=1.000 -i0"No" -i1"Yes"	
+-s3"Enable Y-axis backlash."
+#192 -p0 -a3  -t2 -s1"Enable Z-axis backlash" -m13 -min=0.000 -max=1.000 -i0"No" -i1"Yes"	
+-s3"Enable Z-axis backlash."
+#193=0 -p0 -a4  -t2 -s1"Enable 4th-axis backlash" -m13 -min=0.000 -max=1.000 -i0"No" -i1"Yes"	
+-s3"Enable 4th-axis backlash."
+#194=0 -p0 -a5  -t2 -s1"Enable 5th-axis backlash" -m13 -min=0.000 -max=1.000 -i0"No" -i1"Yes"	
+-s3"Enable 5th-axis backlash."
+
+
+
+#195 -p0 -a3 -t1 -s1"X-axis backlash distance" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"X-axis backlash distance."
+#196 -p0 -a3 -t1 -s1"Y-axis backlash distance" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Y-axis backlash distance."
+#197 -p0 -a3 -t1 -s1"Z-axis backlash distance" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Z-axis backlash distance."
+#198 -p0 -a4 -t1 -s1"4th-axis backlash distance" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"4th-axis backlash distance."
+#199 -p0 -a5 -t1 -s1"5th-axis backlash distance" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"5th-axis backlash distance."
+
+
+#200  -p0 -a3  -t1 -s1"Backlash speed" -s2"mm/min" -m13 -min=0.000 -max=99999.000
+-s3"If the current speed is less than parameter No. 0, the speed  No.0 parameter."
+
+#400 -p0 -a3  -t1 -s1"H01 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#401 -p0 -a3  -t1 -s1"H02 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#402 -p0 -a3  -t1 -s1"H03 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#403 -p0 -a3  -t1 -s1"H04 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#404 -p0 -a3  -t1 -s1"H05 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#405 -p0 -a3  -t1 -s1"H06 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#406 -p0 -a3  -t1 -s1"H07 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#407 -p0 -a3  -t1 -s1"H08 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#408 -p0 -a3  -t1 -s1"H09 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#409 -p0 -a3  -t1 -s1"H10 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#410 -p0 -a3  -t1 -s1"H11 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#411 -p0 -a3  -t1 -s1"H12 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#412 -p0 -a3  -t1 -s1"H13 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#413 -p0 -a3  -t1 -s1"H14 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#414 -p0 -a3  -t1 -s1"H15 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#415 -p0 -a3  -t1 -s1"H16 tool length offset" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"G43\G44 Hxx."
+#420 -p0 -a3  -t1 -s1"D01 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#421 -p0 -a3  -t1 -s1"D02 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#422 -p0 -a3  -t1 -s1"D04 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#423 -p0 -a3  -t1 -s1"D04 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#424 -p0 -a3  -t1 -s1"D05 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#425 -p0 -a3  -t1 -s1"D06 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#426 -p0 -a3  -t1 -s1"D07 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#427 -p0 -a3  -t1 -s1"D08 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#428 -p0 -a3  -t1 -s1"D09 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#429 -p0 -a3  -t1 -s1"D10 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#430 -p0 -a3  -t1 -s1"D11 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#431 -p0 -a3  -t1 -s1"D12 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#432 -p0 -a3  -t1 -s1"D13 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#433 -p0 -a3  -t1 -s1"D14 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#434 -p0 -a3  -t1 -s1"D15 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+#435 -p0 -a3  -t1 -s1"D16 tool Radius offset" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"G41\G42 Dxx."
+
+
+
+#800 -p0 -a3  -t0 -s1"Current tool No." -m14 -min=0 -max=20
+-s3"Tool number greater than 20 is the virtual tool number."
+#801 -p0 -a3  -t0 -s1"Total number of tools" -m14 -min=0 -max=20
+-s3"The set value is the actual magazine capacity does not exceed 20(<=20)."
+
+#802 -p0 -a3  -t2 -s1"Tool magazine type" -m14 -min=0.000 -max=4.000 -i0"NULL" -i1"Multiple" -i2"Follow row" -i3"Fixed row" -i4"Servo disc"
+-s3"Tool type selection: Support multiple、Follow row、Fixed row、Servo disc etc."
+
+#803 -p1 -a3  -t2 -s1"The virtual Tool function turned on?" -m14 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"More than the magazine capacity is a virtual tool."
+
+#804 -p0 -a3  -t2 -s1"Is the tool change prompt valid?" -m0 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Whether to pause and prompt to change the tool when the tool change."
+#805 -p0 -a3  -t2 -s1"Automatic tool setting after tool change?" -m14 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Automatic tool setting after tool change."
+#806 -p0 -a3  -t1 -s1"The highest pos when chang Tool" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Z-axis mach position."
+#807 -p0 -a3  -t1 -s1"The low pos when chang Tool" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Z-axis mach position."
+#808 -p0 -a3  -t1 -s1"X-axis tool change front Mach position" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"X-axis machine pos of deceleration position before entering the tool magazine."
+#809 -p0 -a3  -t1 -s1"Y-axis tool change front Mach position" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Y-axis machine pos of deceleration position before entering the tool magazine."
+#810 -p0 -a3  -t1 -s1"Z-axis tool change front Mach position" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Z-axis machine pos of deceleration position before entering the tool magazine."
+#811 -p0 -a3  -t1 -s1"Spindle move speed when changing the tool" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Spindle move speed when changing the tool."
+#812 -p0 -a3  -t1 -s1"Z-axis lifting speed when changing the tool" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Z-axis lifting speed when changing the tool."
+#813 -p0 -a3  -t1 -s1"Move the magazine speed horizontally" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Move the magazine speed horizontally."
+#814 -p0 -a3  -t0 -s1"Spindle lock output delay" -s2"ms" -m14 -min=0 -max=600000
+-s3"Spindle lock output delay."
+#815 -p0 -a3  -t2 -s1"Go to the  position before the tool change ？" -m14 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+-s3"Z go to the upper position, and XYA returns to  position before the tool change."
+
+#816 -p0 -a3  -t1 -s1"X mach pos when manually changing the tool" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"X mach pos when manually changing the tool."
+#817 -p0 -a3  -t1 -s1"Y mach pos when manually changing the tool" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Y mach pos when manually changing the tool."
+#818 -p0 -a3  -t1 -s1"Z mach pos when manually changing the tool" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Z mach pos when manually changing the tool."
+
+#819 -p0 -a3  -t1 -s1"Z axis downward movement speed" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Speed when moving to position 807."
+
+#820 -p0 -a3  -t1 -s1"Pushing start X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#821 -p0 -a3  -t1 -s1"Pushing start Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#822 -p0 -a3  -t0 -s1"Push delay" -s2"ms" -m14 -min=0 -max=600000
+#823 -p0 -a3  -t1 -s1"Pushing end X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#824 -p0 -a3  -t1 -s1"Pushing end Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#825 -p0 -a3  -t1 -s1"Pushing completed X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#826 -p0 -a3  -t1 -s1"Pushing completed Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#827 -p0 -a3  -t1 -s1"Push speed" -s2"mm/min" -m14 -min=9 -max=99999
+
+
+#830 -p0 -a3  -t1 -s1"T01 X mach pos--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#831 -p0 -a3  -t1 -s1"T02 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#832 -p0 -a3  -t1 -s1"T03 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#833 -p0 -a3  -t1 -s1"T04 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#834 -p0 -a3  -t1 -s1"T05 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#835 -p0 -a3  -t1 -s1"T06 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#836 -p0 -a3  -t1 -s1"T07 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#837 -p0 -a3  -t1 -s1"T08 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#838 -p0 -a3  -t1 -s1"T09 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#839 -p0 -a3  -t1 -s1"T10 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#840 -p0 -a3  -t1 -s1"T11 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#841 -p0 -a3  -t1 -s1"T12 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#842 -p0 -a3  -t1 -s1"T12 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#843 -p0 -a3  -t1 -s1"T14 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#844 -p0 -a3  -t1 -s1"T15 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#845 -p0 -a3  -t1 -s1"T16 X mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+
+#850 -p0 -a3  -t1 -s1"T01 Y mach pos--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#851 -p0 -a3  -t1 -s1"T02 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#852 -p0 -a3  -t1 -s1"T03 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#853 -p0 -a3  -t1 -s1"T04 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#854 -p0 -a3  -t1 -s1"T05 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#855 -p0 -a3  -t1 -s1"T06 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#856 -p0 -a3  -t1 -s1"T07 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#857 -p0 -a3  -t1 -s1"T08 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#858 -p0 -a3  -t1 -s1"T09 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#859 -p0 -a3  -t1 -s1"T10 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#860 -p0 -a3  -t1 -s1"T11 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#861 -p0 -a3  -t1 -s1"T12 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#862 -p0 -a3  -t1 -s1"T13 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#863 -p0 -a3  -t1 -s1"T14 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#864 -p0 -a3  -t1 -s1"T15 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#865 -p0 -a3  -t1 -s1"T16 Y mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+
+#870 -p0 -a3  -t1 -s1"T01 Z mach pos--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#871 -p0 -a3  -t1 -s1"T02 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#872 -p0 -a3  -t1 -s1"T03 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#873 -p0 -a3  -t1 -s1"T04 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#874 -p0 -a3  -t1 -s1"T05 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#875 -p0 -a3  -t1 -s1"T06 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#876 -p0 -a3  -t1 -s1"T07 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#877 -p0 -a3  -t1 -s1"T08 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#878 -p0 -a3  -t1 -s1"T09 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#879 -p0 -a3  -t1 -s1"T10 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#880 -p0 -a3  -t1 -s1"T11 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#881 -p0 -a3  -t1 -s1"T12 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#882 -p0 -a3  -t1 -s1"T13 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#883 -p0 -a3  -t1 -s1"T14 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#884 -p0 -a3  -t1 -s1"T15 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+#885 -p0 -a3  -t1 -s1"T16 Z mach pos" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Mach position."
+
+
+
+#890 -p0 -a3  -t1 -s1"T01 X offset--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#891 -p0 -a3  -t1 -s1"T02 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#892 -p0 -a3  -t1 -s1"T03 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#893 -p0 -a3  -t1 -s1"T04 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#894 -p0 -a3  -t1 -s1"T05 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#895 -p0 -a3  -t1 -s1"T06 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#896 -p0 -a3  -t1 -s1"T07 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#897 -p0 -a3  -t1 -s1"T08 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#898 -p0 -a3  -t1 -s1"T09 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#899 -p0 -a3  -t1 -s1"T10 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#900 -p0 -a3  -t1 -s1"T11 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#901 -p0 -a3  -t1 -s1"T12 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#902 -p0 -a3  -t1 -s1"T13 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#903 -p0 -a3  -t1 -s1"T14 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#904 -p0 -a3  -t1 -s1"T15 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#905 -p0 -a3  -t1 -s1"T16 X offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#910 -p0 -a3  -t1 -s1"T01 Y offset--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#911 -p0 -a3  -t1 -s1"T02 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#912 -p0 -a3  -t1 -s1"T03 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#913 -p0 -a3  -t1 -s1"T04 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#914 -p0 -a3  -t1 -s1"T05 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#915 -p0 -a3  -t1 -s1"T06 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#916 -p0 -a3  -t1 -s1"T07 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#917 -p0 -a3  -t1 -s1"T08 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#918 -p0 -a3  -t1 -s1"T09 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#919 -p0 -a3  -t1 -s1"T10 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#920 -p0 -a3  -t1 -s1"T11 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#921 -p0 -a3  -t1 -s1"T12 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#922 -p0 -a3  -t1 -s1"T13 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#923 -p0 -a3  -t1 -s1"T14 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#924 -p0 -a3  -t1 -s1"T15 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#925 -p0 -a3  -t1 -s1"T16 Y offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#930 -p0 -a3  -t1 -s1"T01 Z offset--------------------" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#931 -p0 -a3  -t1 -s1"T02 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#932 -p0 -a3  -t1 -s1"T03 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#933 -p0 -a3  -t1 -s1"T04 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#934 -p0 -a3  -t1 -s1"T05 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#935 -p0 -a3  -t1 -s1"T06 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#936 -p0 -a3  -t1 -s1"T07 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#937 -p0 -a3  -t1 -s1"T08 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#938 -p0 -a3  -t1 -s1"T09 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#939 -p0 -a3  -t1 -s1"T10 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#940 -p0 -a3  -t1 -s1"T11 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#941 -p0 -a3  -t1 -s1"T12 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#942 -p0 -a3  -t1 -s1"T13 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#943 -p0 -a3  -t1 -s1"T14 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#944 -p0 -a3  -t1 -s1"T15 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#945 -p0 -a3  -t1 -s1"T16 Z offset" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#973 -p0 -a3  -t1 -s1"Virtual tool Z offset 01" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#974 -p0 -a3  -t1 -s1"Virtual tool Z offset 02" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#975 -p0 -a3  -t1 -s1"Virtual tool Z offset 03" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#976 -p0 -a3  -t1 -s1"Virtual tool Z offset 04" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#977 -p0 -a3  -t1 -s1"Virtual tool Z offset 05" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#978 -p0 -a3  -t1 -s1"Virtual tool Z offset 06" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#979 -p0 -a3  -t1 -s1"Virtual tool Z offset 07" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#980 -p0 -a3  -t1 -s1"Virtual tool Z offset 08" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#981 -p0 -a3  -t1 -s1"Virtual tool Z offset 09" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#982 -p0 -a3  -t1 -s1"Virtual tool Z offset 10" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#983 -p0 -a3  -t1 -s1"Virtual tool Z offset 11" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#984 -p0 -a3  -t1 -s1"Virtual tool Z offset 12" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#985 -p0 -a3  -t1 -s1"Virtual tool Z offset 13" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#986 -p0 -a3  -t1 -s1"Virtual tool Z offset 14" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#987 -p0 -a3  -t1 -s1"Virtual tool Z offset 15" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#988 -p0 -a3  -t1 -s1"Virtual tool Z offset 16" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#989 -p0 -a3  -t1 -s1"Virtual tool Z offset 17" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#990 -p0 -a3  -t1 -s1"Virtual tool Z offset 18" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#991 -p0 -a3  -t1 -s1"Virtual tool Z offset 19" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#992 -p0 -a3  -t1 -s1"Virtual tool Z offset 20" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#999 =0 -p0 -a3 -t2 -s1"coordinate offset method" -m14 -min=0.000 -max=2.000 -i0"standard " -i1"tool offset" -i2"other"
+
+#240 -p0 -a3  -t2 -s1"Language" -s3"0:Eng,1:中文,2:Рус" -m15 -min=0.000 -max=2.000 -i0"Eng" -i1"中文" -i2"Рус"
+-s3"Reboot to take effect."
+#241 -p0 -a3  -t2 -s1"Enable buzzer feedback" -m15 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+#242 -p0 -a3  -t2 -s1"主界面显示方案" -m0 -min=0.000 -max=2.000 -i0"方案1" -i1"方案2" -i2"方案3"
+#244 -p0 -a3  -t2 -s1"Enable realtime toolpath" -m15 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+#245 -p0 -a3  -t2 -s1"Toolpath mode" -m15 -min=0.000 -max=2.000 -i0"Statue" -i1"Line" -i2"3D"
+#246=600 -p0 -a3  -t0 -s1"Max. polyline segments" -m0 -min=100.000 -max=3600.000
+#247 -p0 -a3  -t1 -s1"Interpolation period" -s2"S" -m15 -min=0.001 -max=0.010
+-s3"The smaller the interpolation period, the higher the machining accuracy,/the smaller the machining impact, but the longer the machining time."
+#248 -p0 -a3  -t1  -s1"LOGO display time" -s2"S" -m15 -min=0.1 -max=10.0
+
+#266 -p1 -a3 -t2 -s1"Serial 1 baud rate" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Restart takes effect"
+#267 -p1 -a3 -t2 -s1"Serial 2 baud rate" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Restart takes effect"
+
+#268 -p1 -a3 -t2 -s1"External keyboard type" -m15 -min=0.000 -max=2.000 -i0"NULL" -i1"M3K" -i2"other"
+-s3"Restart takes effect"
+
+
+#269 -p0 -a3  -t2 -s1"Debug printing enable" -m15 -min=0.000 -max=1.000 -i0"No" -i1"Yes"
+
+#278 -p1 -a3 -t2 -s1"USB keyboard type" -m15 -min=0.000 -max=2.000 -i0"closed" -i1"keyboard" -i2"Scanner"
+-s3"Restart takes effect"
+
+
+#279 -p1 -a3 -t2 -s1"Barcode file location" -m15 -min=0.000 -max=2.000 -i0"Local" -i1"Udisk" -i2"NetDisk"
+-s3"Restart takes effect"
+
+#283 -p1 -a3 -t2 -s1"Barcode scanning processing" -m15 -min=0.000 -max=2.000 -i0"No" -i1"Yes" -i2"Test"
+-s3"Contact the supplier to determine the model before opening,/Restart takes effect."
+#284 -p1 -a3 -t2 -s1"Network boot mode" -m15 -min=0.000 -max=2.000 -i0"Close" -i1"auto-IP " -i2"manu-IP" 
+-s3" "
+
+
+
+#270 = 888888 -p0 -a3  -t0 -s1"用户权限密匙" -m0 -min=0.000 -max=999999.000
+#249 =4 -p0 -a3  -t0=4.000 -s1"J参数梯度" -m0 -min=2.000 -max=512.000
+#250 -p0 -a3  -t1=0.000 -s1"Maximum machining contour error" -s2"mm" -m0 -min=0.000 -max=0.100
+#271 -p0 -a3  -t1  -s1"Maximum  contour " -s2"mm" -m15 -min=0.000 -max=0.100
+
+
+
+
+#254 -p0 -a3  -t1=200.0 -s1"刀轨宽度" -m0 -min=0.000 -max=999.999
+#255 -p0 -a3  -t1=200.0 -s1"刀轨高度" -m0 -min=0.000 -max=999.999
+#256 -p0 -a3  -t1=3.0 -s1"刀轨厚度" -m0 -min=0.000 -max=999.999
+#257 -p0 -a3  -t1=3.0 -s1"雕像模式下刀轨画板厚度" -m0 -min=0.000 -max=999.999
+#258 -p0 -a3  -t1=100.0 -s1"画板原点X轴位置" -m0 -min=0.000 -max=999.999
+#259 -p0 -a3  -t1=100.0 -s1"画板原点Y轴位置" -m0 -min=0.000 -max=999.999
+#260 -p0 -a3  -t1=3.0 -s1"画板原点Z轴位置" -m0 -min=0.000 -max=999.999
+#261 =0 -p0 -a3  -t1 -s1"X-axis rotation angle in 3D toolpath mode" -s2"deg" -m0 -min=-180.000 -max=180.0
+#262 =0 -p0 -a3  -t1 -s1"Y-axis rotation angle in 3D toolpath mode" -s2"deg" -m0 -min=-180.000 -max=180.0
+#263 =0 -p0 -a3  -t1 -s1"Z-axis rotation angle in 3D toolpath mode" -s2"deg" -m0 -min=-180.000 -max=180.0
+
+#500 -p0 -a3  -t0 -s1"X-axis servo alarm signal" -m16 -min=0.000 -max=24.000
+#503 -p0 -a3  -t0 -s1"Y-axis servo alarm signal" -m16 -min=0.000 -max=24.000
+#506 -p0 -a3  -t0 -s1"Z-axis servo alarm signal" -m16 -min=0.000 -max=24.000
+#509 -p0 -a3  -t0 -s1"Spindle alarm signal" -m16 -min=0.000 -max=24.000
+#512 -p0 -a5  -t0 -s1"5th-axis servo alarm signal" -m16 -min=0.000 -max=24.000
+
+
+#515 -p0 -a3  -t0 -s1"negative X-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#518 -p0 -a3  -t0 -s1"negative Y-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#521 -p0 -a3  -t0 -s1"negative Z-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#524 -p0 -a4  -t0 -s1"negative 4th-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#527 -p0 -a5  -t0 -s1"negative 5th-axis hard limit signal" -m16 -min=0.000 -max=24.000
+
+
+#530 -p0 -a3  -t0 -s1"positive X-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#533 -p0 -a3  -t0 -s1"positive Y-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#536 -p0 -a3  -t0 -s1"positive Z-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#539 -p0 -a4  -t0 -s1"positive 4th-axis hard limit signal" -m16 -min=0.000 -max=24.000
+#542 -p0 -a5  -t0 -s1"positive 5th-axis hard limit signal" -m16 -min=0.000 -max=24.000
+
+
+#545 -p0 -a3  -t0 -s1"X-axis zero signal" -m16 -min=0.000 -max=24.000
+#548 -p0 -a3  -t0 -s1"Y-axis zero signal" -m16 -min=0.000 -max=24.000
+#551 -p0 -a3  -t0 -s1"Z-axis zero signal" -m16 -min=0.000 -max=24.000
+#554 -p0 -a4  -t0 -s1"4th-axis zero signal" -m16 -min=0.000 -max=24.000
+#557 -p0 -a5  -t0 -s1"5th-axis zero signal" -m16 -min=0.000 -max=24.000
+
+
+#575 -p0 -a3  -t0 -s1"Fixed Probe signal" -m16 -min=0.000 -max=24.000
+#578 -p0 -a3  -t0 -s1"Floating Probe signal" -m16 -min=0.000 -max=24.000
+
+
+#581 -p0 -a3  -t0 -s1"extern key 1" -m16 -min=0.000 -max=24.000
+#584 -p0 -a3  -t0 -s1"extern key 2" -m16 -min=0.000 -max=24.000
+#587 -p0 -a3  -t0 -s1"extern key 3" -m16 -min=0.000 -max=24.000
+#590 -p0 -a3  -t0 -s1"extern key 4" -m16 -min=0.000 -max=24.000
+#593 -p0 -a3  -t0 -s1"extern key 5" -m16 -min=0.000 -max=24.000
+#596 -p0 -a3  -t0 -s1"extern key 6" -m16 -min=0.000 -max=24.000
+#599 -p0 -a3  -t0 -s1"extern START" -m16 -min=0.000 -max=24.000
+#602 -p0 -a3  -t0 -s1"extern PAUSE" -m16 -min=0.000 -max=24.000
+#605 -p0 -a3  -t0 -s1"extern Estop" -m16 -min=0.000 -max=24.000
+
+#620 -p0 -a3  -t0 -s1"Spindle stop signal(M300)" -m16 -min=0.000 -max=24.000
+#623 -p0 -a3  -t0 -s1"Tool release input signal(M301)" -m16 -min=0.000 -max=24.000
+#626 -p0 -a3  -t0 -s1"Tool lock input signal(M302)" -m16 -min=0.000 -max=24.000
+#629 -p0 -a3  -t0 -s1"Tool open input signal(M303)" -m16 -min=0.000 -max=24.000
+#632 -p0 -a3  -t0 -s1"Dust cover open/close input signal(M305/M306)" -m16 -min=0.000 -max=24.000
+
+#635 -p0 -a3  -t0 -s1"Nverter alarm input signal" -m16 -min=0.000 -max=24.000
+#638 -p0 -a3  -t0 -s1"Custom alarm input signal 1" -m16 -min=0.000 -max=24.000
+#641 -p0 -a3  -t0 -s1"Custom alarm input signal 2" -m16 -min=0.000 -max=24.000
+#644 -p0 -a3  -t0 -s1"Custom alarm input signal 3" -m16 -min=0.000 -max=24.000
+#647 -p0 -a3  -t0 -s1"Custom alarm input signal 4" -m16 -min=0.000 -max=24.000
+#650 -p0 -a3  -t0 -s1"Custom alarm input signal 5" -m16 -min=0.000 -max=24.000
+#697 -p0 -a3  -t0 -s1"Tool close input signal(M304)" -m16 -min=0.000 -max=24.000
+
+
+#715 -p0 -a3  -t0 -s1"Spindle forward rotation control signal" -m17 -min=0.000 -max=20.000
+#718 -p0 -a3  -t0 -s1"Spindle reverse rotation control signal" -m17 -min=0.000 -max=20.000
+
+#721 -p0 -a3  -t0 -s1"Spindle section speed 1" -m17 -min=0.000 -max=20.000
+#724 -p0 -a3  -t0 -s1"Spindle section speed 2" -m17 -min=0.000 -max=20.000
+#727 -p0 -a3  -t0 -s1"Spindle section speed 3" -m17 -min=0.000 -max=20.000
+
+#730 -p0 -a3  -t0 -s1"M8/M9 control signal" -m17 -min=0.000 -max=20.000
+#733 -p0 -a3  -t0 -s1"M10/M11 control signal" -m17 -min=0.000 -max=20.000
+
+#736 -p0 -a3  -t0 -s1"System alarm signal" -m17 -min=0.000 -max=20.000
+#739 -p0 -a3  -t0 -s1"System running signal" -m17 -min=0.000 -max=20.000
+#742 -p0 -a3  -t0 -s1"System brake signal" -m17 -min=0.000 -max=20.000
+#745 -p0 -a3  -t0 -s1"System ready signal" -m17 -min=0.000 -max=20.000
+
+#750 -p0 -a3  -t0 -s1"Tool release/lock signal (M154/M155)" -m17 -min=0.000 -max=20.000
+#753 -p0 -a3  -t0 -s1"Tool launch/retract signal(M152/M153)" -m17 -min=0.000 -max=20.000
+#756 -p0 -a3  -t0 -s1"Front positioning on/off signal(M156/M157)" -m17 -min=0.000 -max=20.000
+#759 -p0 -a3  -t0 -s1"Vacuum pump on/off output signal(M158/M159)" -m17 -min=0.000 -max=20.000
+#762 -p0 -a3  -t0 -s1"Dust cover open/close output signal (M150/M151)" -m17 -min=0.000 -max=20.000
+#765 -p0 -a3  -t0 -s1"Push cylinder open/close signal(M160/M161)" -m17 -min=0.000 -max=20.000
+#768 -p0 -a3  -t0 -s1"Vacuum cleaner on/off signal (M162/M163)" -m17 -min=0.000 -max=20.000
+#771 -p0 -a3  -t0 -s1"Left positioning on/off signal(M164/M165)" -m17 -min=0.000 -max=20.000
+#774 -p0 -a3  -t0 -s1"Vacuum valve open/close signal(M166/M167)" -m17 -min=0.000 -max=20.000
+#777 -p0 -a3  -t0 -s1"Multi-process 1 open/close signal(M168/M169)" -m17 -min=0.000 -max=20.000
+#780 -p0 -a3  -t0 -s1"Multi-process 2 open/close signal(M170/M171)" -m17 -min=0.000 -max=20.000
+#783 -p0 -a3  -t0 -s1"Multi-process 3 open/close signal(M172/M173)" -m17 -min=0.000 -max=20.000
+#786 -p0 -a3  -t0 -s1"Multi-process 4 open/close signal(M174/M175)" -m17 -min=0.000 -max=20.000
+#789 -p0 -a3  -t0 -s1"Cooling 1 on/off signal(M176/M177)" -m17 -min=0.000 -max=20.000
+#792 -p0 -a3  -t0 -s1"Cooling 2 on/off signal(M178/M179)" -m17 -min=0.000 -max=20.000
+
+
+#950 -p0 -a3  -t0 -s1"T1 file No." -s2"T1xx.nc" -m18 -min=0 -max=99
+-s3"01:T101.nc, 0:NULL"
+#951 -p0 -a3  -t0 -s1"T1 file No." -s2"T2_xx.nc" -m18 -min=-0 -max=99
+-s3"02:T201.nc, 0:NULL"
+#952 -p0 -a3  -t1 -s1"Safety height Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#953 -p0 -a3  -t1 -s1"Starting point Y" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#954 -p0 -a3  -t1 -s1"Starting point Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#955 -p0 -a3  -t1 -s1"Xpos1" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#956 -p0 -a3  -t1 -s1"Xpos2" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#957 -p0 -a3  -t1 -s1"Xpos3" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#958 -p0 -a3  -t1 -s1"Xpos4" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#959 -p0 -a3  -t1 -s1"Xpos5" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+#960 -p0 -a3  -t1 -s1"Xpos6" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Work coordinate value."
+
+#965 -p0 -a3  -t0 -s1"pause between T1 and T2" -s2" " -m18 -min=0 -max=1
+-s3"0:NO 1:YES"
+
+#966 -p0 -a3  -t1 -s1"T1 spindle speed" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"T1 spindle speed."
+
+#967 -p0 -a3  -t1 -s1"T1 spindle speed" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"T1 spindle speed."
+
+#968 -p0 -a3  -t0 -s1"NC file index No." -s2"camxx.nc" -m18 -min=0 -max=9999
+-s3"0-9999:cam0-cam9999.nc"
+#969 -p0 -a3  -t0 -s1"自定义G代码号" -s2"Gxx" -m0 -min=100 -max=200
+-s3"100-199: 对应G100-G199; 200:非宏编程方式."
+
+
+
+#1000 -p0 -a3  -t1 -s1"End point X" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3" "
+#1001 -p0 -a3  -t1 -s1"End point Y" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3" "
+#1002 -p0 -a3  -t1 -s1"End point Z" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"  "
+#1003 -p0 -a4  -t1 -s1"End point 4th" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"  "
+#1004 -p0 -a5  -t1 -s1"End point 5th" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"  "
+
+
+#1006 -p0 -a3  -t1 -s1"End point X" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3" "
+#1007 -p0 -a3  -t1 -s1"End point Y" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3" "
+#1008 -p0 -a3  -t1 -s1"End point Z" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3" "
+#1009 -p0 -a4  -t1 -s1"End point 4th" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3" "
+#1010 -p0 -a5  -t1 -s1"End point 5th" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3" "
+#1011 -p0 -a3  -t0 -s1"Speed F" -s2"mm/min" -m21 -min=1 -max=99999.000
+-s3" "
+
+#1012 -p0 -a3  -t1 -s1"Arc start  point X0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1013 -p0 -a3  -t1 -s1"Arc start  point Y0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1014 -p0 -a3  -t1 -s1"Arc start  point Z0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1015 -p0 -a4  -t1 -s1"Arc start  point 4th0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1016 -p0 -a5  -t1 -s1"Arc start  point 5th0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+
+#1017 -p0 -a3  -t1 -s1"Arc point X1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1018 -p0 -a3  -t1 -s1"Arc point Y1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1019 -p0 -a3  -t1 -s1"Arc point Z1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1020 -p0 -a4  -t1 -s1"Arc point 4th1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1021 -p0 -a5  -t1 -s1"Arc point 5th1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+
+#1022 -p0 -a3  -t1 -s1"Arc end point X2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1023 -p0 -a3  -t1 -s1"Arc end point Y2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1024 -p0 -a3  -t1 -s1"Arc end point Z2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" ."
+#1025 -p0 -a4  -t1 -s1"Arc end point 4th2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1026 -p0 -a5  -t1 -s1"Arc end point 5th2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3" "
+#1027 -p0 -a3  -t0 -s1"Speed F" -s2"mm/min" -m22 -min=1 -max=99999.000
+-s3" "
+
+
+#1030 -p0 -a3  -t0 -s1"Input port number IN_xx" -s2"mm" -m23 -min=1 -max=24
+-s3"1:IN01 2:IN02 3:IN03 ..."
+#1031 -p0 -a3  -t0 -s1"Valid level state" -s2" " -m23 -min=0 -max=1
+-s3"NPN switch type, 0: Normally open 1: Normally closed."
+
+
+#1035 -p0 -a3  -t0 -s1"Output port number OUT_xx" -s2"mm" -m24 -min=1 -max=21
+-s3"1:OUT01 2:OUT02 3:OUT03 ..."
+#1036 -p0 -a5  -t0 -s1"Output level" -s2" " -m24 -min=0 -max=1
+-s3"0: Output close 1: Output open"
+
+
+#1040 -p0 -a3  -t0 -s1"Jump line number" -s2"mm" -m25 -min=1 -max=999
+-s3"1:N001 2:N002 ..."
+#1041 -p0 -a5  -t0 -s1"Times of cycles" -s2" " -m25 -min=0 -max=9999
+-s3"0: Unlimited loop,> 0: Times of cycles."
+
+
+#1045 -p0 -a3  -t0 -s1"Delay time (milliseconds)" -s2"mm" -m26 -min=1 -max=99999
+-s3"Unit is milliseconds, 1 second = 1000 milliseconds"
+
+
+#1100 -p0 -a3  -t0 -s1"Z-axis security location" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"MACH pos."
+#1101 -p0 -a3  -t0 -s1"X-axis scan starting point" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"MACH pos."
+#1102 -p0 -a3  -t0 -s1"Y-axis scan starting point" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"MACH pos."
+#1103 -p0 -a3  -t0 -s1"Z-axis scan starting point" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"MACH pos."
+#1104 -p0 -a3  -t0 -s1"X-axis scan maximum stroke" -s2" " -m30 -min=10 -max=99999.999
+-s3" ."
+#1105 -p0 -a3  -t0 -s1"Y-axis scan maximum stroke" -s2" " -m30 -min=10 -max=99999.999
+-s3" ."
+#1106 -p0 -a3  -t0 -s1"Scan speed" -s2" " -m30 -min=1 -max=99999.999
+-s3" mm/min."
+#1107-p0 -a3  -t0 -s1"Scan input port number" -s2" " -m30 -min=1 -max=24
+-s3"1:IN01 2:IN02 3:IN03 ..."
+#1108-p0 -a3  -t0 -s1"Port effective level" -s2" " -m30 -min=0 -max=1
+-s3" 0/1"
+
+#1120 -p0 -a3  -t0 -s1"Parameter name 1" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Description of parameter 1."
+#1121 -p0 -a3  -t0 -s1"Parameter name 2" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Description of parameter 1."
+#1122 -p0 -a3  -t0 -s1"Parameter name 3" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Description of parameter 3."
+
+
+
+
+
+
+&&
