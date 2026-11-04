@@ -1,0 +1,1176 @@
+&& 
+  
+#0 -p0 -a3 -a3 -t1 -s1"Motor-Anlaufgeschwindigkeit" -s2"mm/min" -m1 -min=1.000 -max=999.000
+-s3"Bei hoeherem Sollwert beginnt die Beschleunigung ab diesem Wert./Sonst wird direkt mit der vorgegebenen Geschwindigkeit gefahren./Bereich: [1-999]"
+
+#1 -p0 -a3 -t1 -s1"X: Impulse je Einheit" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb: Impulse je Umdrehung./Bereich: [50-99999]"
+#2 -p0 -a3 -t1 -s1"Y: Impulse je Einheit" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb: Impulse je Umdrehung./Bereich: [50-99999]"
+#3 -p0 -a3 -t1 -s1"Z: Impulse je Einheit" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb: Impulse je Umdrehung./Bereich: [50-99999]"
+#6 -p0 -a4 -t1 -s1"4. Achse: Impulse je Einheit" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Bei Verwendung als Spindelantrieb: Impulse je Umdrehung./Bereich: [50-999999]"
+#7 -p0 -a4 -t2 -s1"4. Achse: Impulseinheit" -m1 -min=0.000 -max=1.000 -i0"Imp./Grad" -i1"Imp./Umdr."
+-s3"Bei Verwendung dieser Achse als Spindelantrieb auf 0 stellen!"
+#8 -p0 -a5 -t1 -s1"5. Achse: Impulse je Einheit" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Bei Verwendung als Spindelantrieb: Impulse je Umdrehung./Bereich: [50-999999]"
+#9 -p0 -a5 -t2 -s1"5. Achse: Impulseinheit" -m1 -min=0.000 -max=1.000 -i0"Imp./Grad" -i1"Imp./Umdr."
+-s3"Bei Verwendung dieser Achse als Spindelantrieb auf 0 stellen!"
+
+#11 -p0 -a3 -t0 -s1"Zeitabstand Richtungssignal - Impuls" -s2"ns" -m1 -min=0.000 -max=9999.000
+-s3"7000 ist fuer die meisten Antriebe ausreichend./Bereich: [0-9999]"
+
+
+#12 -p0 -a3  -t2 -s1"X: Pegel des Richtungssignals" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Legt die Bewegungsrichtung fest. An die Maschine anpassen."
+#13 -p0 -a3 -t2 -s1"Y: Pegel des Richtungssignals" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Legt die Bewegungsrichtung fest. An die Maschine anpassen."
+#14 -p0 -a3 -t2 -s1"Z: Pegel des Richtungssignals" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Legt die Bewegungsrichtung fest. An die Maschine anpassen."
+#15 -p0 -a4 -t2 -s1"4. Achse: Pegel des Richtungssignals" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Legt die Bewegungsrichtung fest. An die Maschine anpassen."
+#16 -p0 -a5 -t2 -s1"5. Achse: Pegel des Richtungssignals" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Legt die Bewegungsrichtung fest. An die Maschine anpassen."
+
+#17 -p0 -a3 -t2 -s1"X: Ruhepegel des Impulsausgangs" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Bei schleichendem Positionsversatz den Pegel umkehren./Achtung: Dies ist der Ausgangspegel OHNE Impuls./Der eigentliche Impuls hat den entgegengesetzten Pegel!"
+#18 -p0 -a3 -t2 -s1"Y: Ruhepegel des Impulsausgangs" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Bei schleichendem Positionsversatz den Pegel umkehren./Achtung: Dies ist der Ausgangspegel OHNE Impuls./Der eigentliche Impuls hat den entgegengesetzten Pegel!"
+#19 -p0 -a3 -t2 -s1"Z: Ruhepegel des Impulsausgangs" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Bei schleichendem Positionsversatz den Pegel umkehren./Achtung: Dies ist der Ausgangspegel OHNE Impuls./Der eigentliche Impuls hat den entgegengesetzten Pegel!"
+#20 -p0 -a4 -t2 -s1"4. Achse: Ruhepegel des Impulsausgangs" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Bei schleichendem Positionsversatz den Pegel umkehren./Achtung: Dies ist der Ausgangspegel OHNE Impuls./Der eigentliche Impuls hat den entgegengesetzten Pegel!"
+#21 -p0 -a5 -t2 -s1"5. Achse: Ruhepegel des Impulsausgangs" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Bei schleichendem Positionsversatz den Pegel umkehren./Achtung: Dies ist der Ausgangspegel OHNE Impuls./Der eigentliche Impuls hat den entgegengesetzten Pegel!"
+
+
+#22 -p0 -a3 -t2 -s1"Achskopplung bei Bearbeitung" -m0 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+-s3"Die Folgeachse folgt der Leitachse nur bei der Bearbeitung./Im MDI-Betrieb werden beide Achsen unabhaengig verfahren."
+#23 -p0 -a3 -t2 -s1"Leitachse der Achskopplung" -m0 -min=0.000 -max=4.000 -i0"X-Achse" -i1"Y-Achse" -i2"Z-Achse" -i3"4. Achse" -i4"5. Achse"
+#24 -p0 -a3 -t2 -s1"Folgeachse der Achskopplung" -m0 -min=0.000 -max=4.000 -i0"X-Achse" -i1"Y-Achse" -i2"Z-Achse" -i3"4. Achse" -i4"5. Achse"
+
+
+#30 =146 -p1 -a3 -a4  -t0 -s1"Maschinenkinematik" -s2" " -m0 -min=100 -max=1000
+-s3"1xx: Doppel-Drehtisch; 2xx: Doppel-Schwenkkopf/3xx: gemischt; 4xx: Roboter. 1 2 3: ABC-Kopf; 4 5 6: ABC-Tisch/Beispiel: 146 = AC-Drehtisch; 116 = A-Schwenkkopf mit C-Drehtisch."	
+
+#31 =0.1 -p1 -a3 -a4  -t1 -s1"RTCP-Aufloesung" -s2"Einheit" -m0 -min=0.001 -max=0.5
+
+#440 -p1 -a3 -a3 =0  -t2 -s1"X: Achsbezeichnung"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Wird nach dem Speichern und Neustart wirksam."
+#441 -p1 -a3 =1  -t2 -s1"Y: Achsbezeichnung"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Wird nach dem Speichern und Neustart wirksam."
+#442 -p1 -a3 =2  -t2 -s1"Z: Achsbezeichnung"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Wird nach dem Speichern und Neustart wirksam."
+#443 -p1 -a4   -t2 -s1"4. Achse: Achsbezeichnung"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Wird nach dem Speichern und Neustart wirksam."
+#444 -p1 -a5   -t2 -s1"5. Achse: Achsbezeichnung"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Wird nach dem Speichern und Neustart wirksam."
+
+#449 -p1 -a4  -t2 -s1"4. Achse: Achstyp"  -m1 -min=0.000 -max=1.000 -i0"Linearachse" -i1"Rundachse"
+#450 -p1 -a5  -t2 -s1"5. Achse: Achstyp"  -m1 -min=0.000 -max=1.000 -i0"Linearachse" -i1"Rundachse"
+
+#455 =0 -p1 -a4  -t1 -s1"4. Achse: Versatz X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#456 =0 -p1 -a5  -t1 -s1"5. Achse: Versatz X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+
+#461 =0 -p1 -a4  -t1 -s1"4. Achse: Versatz Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#462 =0 -p1 -a5  -t1 -s1"5. Achse: Versatz Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#467 =0 -p1 -a4  -t1 -s1"4. Achse: Versatz Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#468 =0 -p1 -a5  -t1 -s1"5. Achse: Versatz Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#473 =0 -p1 -a4  -t1 -s1"4. Achse: Vektorkomponente U"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#474 =0 -p1 -a5  -t1 -s1"5. Achse: Vektorkomponente U"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#479 =0 -p1 -a4  -t1 -s1"4. Achse: Vektorkomponente V"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#480 =0 -p1 -a5  -t1 -s1"5. Achse: Vektorkomponente V"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#485 =0 -p1 -a4  -t1 -s1"4. Achse: Vektorkomponente W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#486 =0 -p1 -a5  -t1 -s1"5. Achse: Vektorkomponente W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+
+#488 -p1 -a3   -t2 -s1"Physische Achse 1: Programmierachse"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4. Achse" -i4"5. Achse"
+-s3"  "
+#489 -p1 -a3   -t2 -s1"Physische Achse 2: Programmierachse"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4. Achse" -i4"5. Achse"
+-s3"  "
+#490 -p1 -a3   -t2 -s1"Physische Achse 3: Programmierachse"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4. Achse" -i4"5. Achse"
+-s3"  "
+#491 -p1 -a4   -t2 -s1"Physische Achse 4: Programmierachse"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4. Achse" -i4"5. Achse"
+-s3"  "
+#492 -p1 -a5   -t2 -s1"Physische Achse 5: Programmierachse"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"4. Achse" -i4"5. Achse"
+-s3"  "
+
+
+
+
+#35 -p0 -a3 -t1 -s1"X: Max. Handfahrgeschwindigkeit" -s2"mm/min" -m2 -min=99.000 -max=99999.000
+-s3"Begrenzt die Handfahrt auch bei erhoehtem SJR./Wert groesser als #40 einstellen./Bereich: [99-99999]"	
+#36 -p0 -a3 -t1 -s1"Y: Max. Handfahrgeschwindigkeit" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"Begrenzt die Handfahrt auch bei erhoehtem SJR./Wert groesser als #41 einstellen./Bereich: [99-99999]"	
+#37 -p0 -a3 -t1 -s1"Z: Max. Handfahrgeschwindigkeit" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"Begrenzt die Handfahrt auch bei erhoehtem SJR./Wert groesser als #42 einstellen./Bereich: [99-99999]"	
+#38 -p0 -a4 -t1 -s1"4. Achse: Max. Handfahrgeschwindigkeit" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"Begrenzt die Handfahrt auch bei erhoehtem SJR./Wert groesser als #43 einstellen./Bereich: [99-99999]"	
+#39 -p0 -a5 -t1 -s1"5. Achse: Max. Handfahrgeschwindigkeit" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"Begrenzt die Handfahrt auch bei erhoehtem SJR./Wert groesser als #44 einstellen./Bereich: [99-99999]"	
+
+
+#40 -p0 -a3  -t1 -s1"X: Handfahrt schnell" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"		
+#41 -p0 -a3  -t1 -s1"Y: Handfahrt schnell" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#42 -p0 -a3  -t1 -s1"Z: Handfahrt schnell" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#43 -p0 -a4  -t1 -s1"4. Achse: Handfahrt schnell" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#44 -p0 -a5  -t1 -s1"5. Achse: Handfahrt schnell" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+
+#45 -p0 -a3  -t1 -s1"X: Handfahrt langsam" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"		
+#46 -p0 -a3  -t1 -s1"Y: Handfahrt langsam" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#47 -p0 -a3  -t1 -s1"Z: Handfahrt langsam" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#48 -p0 -a4  -t1 -s1"4. Achse: Handfahrt langsam" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+#49 -p0 -a5  -t1 -s1"5. Achse: Handfahrt langsam" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Bei Verwendung als Spindelantrieb gilt die Einheit rpm./Bereich: [1-99999]"	
+
+#50 -p0 -a3 -t1 -s1"X: Beschleunigung Handfahrt" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#51 -p0 -a3 -t1 -s1"Y: Beschleunigung Handfahrt" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#52 -p0 -a3 -t1 -s1"Z: Beschleunigung Handfahrt" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#53 -p0 -a4 -t1 -s1"4. Achse: Beschleunigung Handfahrt" -s2"deg/s2" -m2 -min=1.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#54 -p0 -a5 -t1 -s1"5. Achse: Beschleunigung Handfahrt" -s2"deg/s2" -m2 -min=1.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+
+#55 -p0 -a3 -t1 -s1"X: Verzoegerung Handfahrt" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#56 -p0 -a3 -t1 -s1"Y: Verzoegerung Handfahrt" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#57 -p0 -a3 -t1 -s1"Z: Verzoegerung Handfahrt" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#58 -p0 -a4 -t1 -s1"4. Achse: Verzoegerung Handfahrt" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+#59 -p0 -a5 -t1 -s1"5. Achse: Verzoegerung Handfahrt" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Bei Verwendung als Spindelantrieb: Umdrehungen je s^2./Bereich: [9-9999]"
+
+
+#285 -p0 -a3  -t1 -s1"X: Max. Beschleunigung G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Maximale Beschleunigung und Verzoegerung bei G00."
+#286 -p0 -a3  -t1 -s1"Y: Max. Beschleunigung G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Maximale Beschleunigung und Verzoegerung bei G00."
+#287 -p0 -a3  -t1 -s1"Z: Max. Beschleunigung G00" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Maximale Beschleunigung und Verzoegerung bei G00."
+#288 -p0 -a4  -t1 -s1"4. Achse: Max. Beschleunigung G00" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"Maximale Beschleunigung und Verzoegerung bei G00."
+
+#289 -p0 -a5  -t1 -s1"5. Achse: Max. Beschleunigung G00" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"Maximale Beschleunigung und Verzoegerung bei G00."
+
+#78 -p0 -a3  -t1 -s1"Aktuelles Koordinatensystem" -s2" " -m0 -min=1.000 -max=7.000
+
+#60 -p0 -a3  -t2 -s1"Vorschubvorgabe" -m3 -min=0.000 -max=1.000 -i0"F-Befehl" -i1"Standard"
+-s3"Standard: Vorschub aus #61 verwenden./F-Befehl: Vorschub aus dem NC-Programm verwenden./Auch auf der Hauptseite direkt einstellbar."
+#61 -p0 -a3  -t1 -s1"Standardvorschub" -s2"mm/min" -m3 -min=1.000 -max=99999.000
+-s3"Gilt ohne F-Befehl oder bei #60 = Standard./Auch auf der Hauptseite direkt einstellbar."
+
+#62 -p0 -a3  -t1 -s1"Bahnbeschleunigung G01" -s2"mm/s2" -m3 -min=9.000 -max=9999.000
+-s3"Beschleunigung bei G01, G02 und G03./An die mechanischen Eigenschaften der Maschine anpassen."
+#63 -p0 -a3  -t1 -s1"Eilganggeschwindigkeit G00" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Unabhaengige Fahrt: Geschwindigkeit jeder einzelnen Achse./Interpolation: resultierende Bahngeschwindigkeit."
+
+#64 -p0 -a3  -t1 -s1"Max. Bearbeitungsgeschwindigkeit" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeit bei der Bearbeitung./Gilt auch bei erhoehtem Vorschub-Override (FRO)."
+
+#65 -p0 -a3  -t1 -s1"Z+: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in Z+./Gilt auch bei G00."
+#66 -p0 -a3  -t1 -s1"Z-: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in Z-./Gilt auch bei G00."
+#67 -p0 -a3  -t1 -s1"X: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in X./Gilt auch bei G00."
+#68 -p0 -a3  -t1 -s1"Y: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in Y./Gilt auch bei G00."
+
+#69 -p0 -a3  -t1 -s1"Z-Sicherheitsposition" -s2"mm" -m3 -min=0.000 -max=999.000
+-s3"Z-Sicherheitsposition im Werkstueckkoordinatensystem./Bei Start oder Fortsetzen (#90=1) und Fahrt zum Werkstuecknullpunkt/wird Z angehoben, wenn es unterhalb dieser Position steht."
+#70 -p0 -a3  -t1 -s1"Z-Rueckzug bei Vorschubhalt" -s2"mm" -m3 -min=0.000 -max=99.000
+-s3"Relativer Z-Rueckzugsweg bei Unterbrechung der Bearbeitung."
+
+#71 -p0 -a3 =0  -t2 -s1"G0    "  -m0 -min=0.000 -max=1.000 -i0"  " -i1"  "
+#72 =0 -p0 -a3 -t2 -s1"Bewegungsart G00" -m0 -min=0.000 -max=1.000 -i0"Interpolation" -i1"Unabhaengig"
+-s3"Interpolation: koordinierte Fahrt, gleichzeitige Zielankunft./Unabhaengig: jede Achse faehrt einzeln mit G00-Geschwindigkeit."
+
+#73 -p0 -a3 -t2 -s1"Kreisinterpolationsverfahren" -m3 -min=0.000 -max=1.000 -i0"Hardware" -i1"Software"
+-s3"Hardware: Genauigkeit 0.5 Impulse; Software: Vorgabe in #74./Hardware erfordert gleiche Impulseinheiten der Kreisachsen."
+#74 -p0 -a3  -t1 -s1"Toleranz der Software-Kreisinterpolation" -s2"mm" -m3 -min=0.001 -max=0.1
+#75 -p0 -a3  -t1 -s1"Radialbeschleunigung im Kreisbogen" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"Ungleich 0: dieser Wert begrenzt den Vorschub bei G02 und G03./0: Beschleunigung aus #62 verwenden."
+
+#76 -p0 -a3  -t2 -s1"Makro-Voranalyse" -m3 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+-s3"Aus: keine Dateianalyse vor der Bearbeitung./Ein: Programmstruktur vor der Bearbeitung analysieren."
+#77 -p0 -a3  -t0 -s1"Hauptprogrammnummer der Makrodatei" -m3 -min=0.000 -max=9999.000
+-s3"Bei mehreren Programmnummern in einer Datei hier/die Nummer des auszufuehrenden Hauptprogramms angeben."
+
+#90 -p0 -a3  -t2 -s1"Z-Verhalten vor Bearbeitungsstart" -s2"" -m3 -min=0.000 -max=1.000 -i0"Keine Aktion" -i1"Z-Sicherheit" 
+-s3"Aktion beim Start oder Fortsetzen der Bearbeitung./Z-Sicherheitsposition wird mit #69 festgelegt."
+#91 -p0 -a3  -t2 -s1"Z-Verhalten bei Vorschubhalt" -s2"" -m3 -min=0.000 -max=1.000 -i0"Keine Aktion" -i1"Z-Rueckzug" 
+-s3"Aktion bei Unterbrechung der Bearbeitung./Z-Rueckzugsweg wird mit #70 festgelegt."
+
+#93 -p0 -a3  -t2 -s1"Fortsetzen nach Vorschubhalt" -s2"" -m3 -min=0.000 -max=1.000 -i0"Ab Startpunkt" -i1"Ab Istposition" 
+-s3" "
+
+#220 -p0 -a3  -t2 -s1"Referenzfahrt vor Bearbeitung erforderlich" -s2"" -m3 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Ja: Automatikbetrieb erst nach abgeschlossener Referenzfahrt."
+
+#221 -p0 -a3  -t1 -s1"Kreisvorschub-Referenzwert bei R = 5 mm" -s2"mm/min" -m3 -min=0.000 -max=3600000.000
+-s3"Referenzvorschub fuer einen Kreisbogen mit Radius 5 mm./Bei 0 wird der Kreisvorschub aus #62 und #75 bestimmt."
+
+#222 -p0 -a4  -t1 -s1"4. Achse: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in 4. Achse./Gilt auch bei G00."
+
+#223 -p0 -a5  -t1 -s1"5. Achse: Geschwindigkeitsgrenze" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Maximale Geschwindigkeitskomponente in 5. Achse./Gilt auch bei G00."
+
+#230 -p0 -a3  -t2 -s1"Aktion nach Programmende" -s2"" -m3 -min=0.000 -max=2.000 -i0"Keine Aktion" -i1"Referenzpunkt" -i2"Werkst.-Null"
+-s3"M30 am Programmende einfuegen./Referenzpunkt: Maschinenposition aus #122-126."
+
+#253 -p0 -a3  -t2 -s1"Vorschub-Override bei G00 wirksam" -s2"" -m3 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+
+
+
+
+
+#224 -p0 -a3  -t1 -s1"Rueckzugsweg G73/G83" -s2"mm" -m3 -min=0.000 -max=20
+-s3"Werkzeug-Rueckzugsweg der Bohrzyklen G73 und G83."
+
+#225 =1 -p0 -a3  -t1 -s1"Schrittweite des Vorschub-Overrides" -s2"ms" -m0 -min=1 -max=100
+-s3"Override-Schrittweite beim Verlassen der Handradsteuerung/oder bei manueller Override-Aenderung."
+
+#226 =10 -p0 -a3  -t1 -s1"Override-Schrittweite bei Vorschubhalt" -s2"ms" -m0 -min=1 -max=100
+-s3"Schrittweise Absenkung des Vorschub-Overrides beim Abbremsen/bis zum Stillstand bei Vorschubhalt."
+
+#227 =500 -p0 -a3  -t1 -s1"Zeitintervall der Override-Aenderung" -s2"us" -m0 -min=1 -max=100000
+-s3"Zeitabstand der Override-Schritte; zusammen mit #225 wirksam."
+
+#228 =1 -p0 -a3  -t1 -s1"Override-Schrittweite bei Reset/Alarm" -s2"ms" -m0 -min=1 -max=100
+-s3"Schrittweite der Override-Absenkung bei Reset oder Alarm."
+
+
+#229 =100 -p0 -a3  -t1 -s1"Override-Intervall bei Reset/Alarm" -s2"us" -m0 -min=1 -max=100000
+-s3"Zeitabstand der Override-Schritte bei Reset oder Alarm."
+
+#280 -p0 -a3  -t1 -s1"Beschleunigung am Satzeckpunkt" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3" "
+
+#281 -p0 -a3  -t1 -s1"Ruck J der S-Kurve" -s2"mm/s3" -m3 -min=0.000 -max=99999.000
+-s3" "
+#282 -p0 -a3  -t1 -s1"Bahnbeschleunigung G00" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"Beschleunigung bei G00-Interpolation. 0: Wert aus #62./Ungleich 0: dieser Wert, begrenzt durch #285-289 je Achse."
+
+#295 -p0 -a3  -t0 -s1"Maximaler Vorschub-Override" -s2"%" -m3 -min=50.000 -max=300.000
+-s3" "
+
+
+#79 -p0 -a3  -t2 -s1"Spindelschnittstelle" -s2"" -m5 -min=0.000 -max=2.000 -i0"Analog" -i1"Puls/Richtung" -i2"Mehrstufig"
+-s3"Art der Ansteuerung des Spindelantriebs."
+#80 -p0 -a3  -t2 -s1"Antriebsachse der Servospindel" -m5 -min=0.000 -max=5.000 -i0"X-Achse" -i1"Y-Achse" -i2"Z-Achse" -i3"4. Achse" -i4"5. Achse"
+-s3"Bei Verwendung als Servospindel beziehen sich die zugehoerigen/Achsparameter auf Umdrehungen (R)."
+#81 -p0 -a3  -t1 -s1"Wartezeit nach Spindelstart" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Wartezeit nach Ausfuehrung von M03 oder M04."
+#82 -p0 -a3  -t1 -s1"Maximale Spindeldrehzahl" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"Maximale Drehzahl des Spindelantriebs."
+#83 -p0 -a3  -t2 -s1"S-Befehl ignorieren" -s2"" -m5 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Ja: Bei Start oder Fortsetzen startet die Spindel im Rechtslauf./Drehzahl aus #85. S-Befehle werden ignoriert./Auch auf der Hauptseite direkt einstellbar."
+#84 -p0 -a3  -t2 -s1"Spindelstopp bei Vorschubhalt" -s2"" -m5 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Legt fest, ob die Spindel bei Vorschubhalt ebenfalls stoppt."
+#85 -p0 -a3  -t1 -s1"Standard-Spindeldrehzahl" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"Drehzahl ohne S-Befehl oder bei ignoriertem S-Befehl (#83)./Auch auf der Hauptseite direkt einstellbar."
+#86=0 -p0 -a3  -t2 -s1"Signalpegel der Spindel-PWM" -s2"" -m0 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+#87=0 -p0 -a3  -t0 -s1"PWM-Anstiegsrate von 0 V auf 10 V" -s2"" -m0 -min=0.000 -max=65535.000
+#88 -p0 -a3  -t0 -s1"Anzahl der Spindeldrehzahlstufen" -s2"" -m5 -min=2.000 -max=8.000
+-s3"Gesamtzahl der Stufen bei mehrstufiger Spindelansteuerung."
+#89 -p0 -a3  -t1 -s1"Wartezeit nach Spindelstopp" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Wartezeit nach Ausfuehrung von M05."
+
+
+#92 -p0 -a3  -t1 -s1"Wartezeit nach M8/M9" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Wartezeit nach dem Kuehlmittelbefehl."
+#94 -p0 -a3  -t1 -s1"Wartezeit nach M10/M11" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Wartezeit nach dem Schmierbefehl."
+#95 -p0 -a3  -t1 -s1"Filterzeit der E/A-Eingaenge"  -s2"ms" -m6 -min=0 -max=1000000
+
+#96 -p0 -a3  -t0 -s1"Ausgaenge bei Reset ausschalten: 01-16"   -m6 -min=0 -max=65535
+-s3"Bit = 1: entsprechenden Ausgang bei Reset ausschalten./Beispiel: 7=0111 schaltet OUT01-OUT03 aus; andere unveraendert."
+#97 -p0 -a3  -t0 -s1"Ausgaenge bei Reset ausschalten: 17-21"   -m6 -min=0 -max=65535
+-s3"Beispiel: 7=0111 schaltet OUT17, OUT18 und OUT19 bei Reset aus./Andere Ausgaenge bleiben unveraendert."
+
+#98 -p0 -a3  -t0 -s1"Ausgangszustand bei Alarm: 01-16"   -m6 -min=0 -max=65535
+-s3"Beispiel: 7=0111 schaltet OUT01, OUT02 und OUT03 bei Alarm ein./Andere freigegebene Ausgaenge werden ausgeschaltet./Entsprechende Bits zuvor in #264 und #265 auf 1 setzen."
+#99 -p0 -a3  -t0 -s1"Ausgangszustand bei Alarm: 17-21"   -m6 -min=0 -max=65535
+-s3"Beispiel: 7=0111 schaltet OUT17, OUT18 und OUT19 bei Alarm ein./Andere freigegebene Ausgaenge werden ausgeschaltet./Entsprechende Bits zuvor in #264 und #265 auf 1 setzen."
+
+#264 -p0 -a3  -t0 -s1"Ausgangsfreigabe bei Alarm: 01-16"   -m6 -min=0 -max=65535
+-s3"Vor dem Einstellen von #98 die entsprechenden Bits auf 1 setzen."
+#265 -p0 -a3  -t0 -s1"Ausgangsfreigabe bei Alarm: 17-21"   -m6 -min=0 -max=65535
+-s3"Vor dem Einstellen von #99 die entsprechenden Bits auf 1 setzen."
+
+
+
+#210 -p0 -a3  -t0 -s1"Funktion der Taste K1"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-1.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#211 -p0 -a3  -t0 -s1"Funktion der Taste K2"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-2.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#212 -p0 -a3  -t0 -s1"Funktion der Taste K3"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-3.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#213 -p0 -a3  -t0 -s1"Funktion der Taste K4"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-4.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#214 -p0 -a3  -t0 -s1"Funktion der Taste K5"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-5.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#215 -p0 -a3  -t0 -s1"Funktion der Taste K6"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-6.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#216 -p0 -a3  -t0 -s1"Funktion der Taste K7"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-7.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#217 -p0 -a3  -t0 -s1"Funktion der Taste K8"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-8.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#218 -p0 -a3  -t0 -s1"Funktion der Taste K9"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-9.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#219 -p0 -a3  -t0 -s1"Funktion der Taste K10"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-10.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#231 -p0 -a3  -t0 -s1"Funktion der Taste K11"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-11.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#232 -p0 -a3  -t0 -s1"Funktion der Taste K12"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-12.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#233 -p0 -a3  -t0 -s1"Funktion der Taste K13"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-13.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#234 -p0 -a3  -t0 -s1"Funktion der Taste K14"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-14.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#251 -p0 -a3  -t0 -s1"Funktion der Taste K15"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-15.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#252 -p0 -a3  -t0 -s1"Funktion der Taste K16"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: key-16.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+
+
+#272 -p0 -a3  -t0 -s1"Funktion der externen Taste 1"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-1.nc, extnc1-1.nc, extnc2-1.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#273 -p0 -a3  -t0 -s1"Funktion der externen Taste 2"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-2.nc, extnc1-2.nc, extnc2-2.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#274 -p0 -a3  -t0 -s1"Funktion der externen Taste 3"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-3.nc, extnc1-3.nc, extnc2-3.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#275 -p0 -a3  -t0 -s1"Funktion der externen Taste 4"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-4.nc, extnc1-4.nc, extnc2-4.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#276 -p0 -a3  -t0 -s1"Funktion der externen Taste 5"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-5.nc, extnc1-5.nc, extnc2-5.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+#277 -p0 -a3  -t0 -s1"Funktion der externen Taste 6"  -s2" " -m6 -min=0 -max=2000
+-s3"0: extnc0-6.nc, extnc1-6.nc, extnc2-6.nc ausfuehren./1-32: OUT1-OUT32 ein- oder ausschalten./>1000: Funktionskurzwahl."
+
+
+
+#100 -p1 -a3  -t2 -s1"Verfahren zur Referenzpunkterfassung" -m7 -min=0.000 -max=1.000 -i0"Schalter" -i1"Absolutgeber"
+-s3"Schalter: mechanischer Referenzschalter erforderlich./Absolutgeber: Absolutwert-Servoantrieb ueber Bus."
+
+#101 -p0 -a3  -t1 -s1"X: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
+#102 -p0 -a3  -t1 -s1"Y: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
+#103 -p0 -a3  -t1 -s1"Z: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
+#104 -p0 -a4  -t1 -s1"4. Achse: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
+#105 -p0 -a5  -t1 -s1"5. Achse: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
+
+#106 -p0 -a3  -t0 -s1"Anzahl der Referenzpunkt-Antastungen" -m7 -min=1 -max=5
+-s3"Anzahl wiederholter Schalterantastungen bei der Referenzfahrt."
+
+#107 -p0 -a3  -t1 -s1"X: Suchgeschwindigkeit Referenzfahrt" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Anfangsgeschwindigkeit beim Start der Referenzfahrt."
+#108 -p0 -a3  -t1 -s1"Y: Suchgeschwindigkeit Referenzfahrt" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Anfangsgeschwindigkeit beim Start der Referenzfahrt."
+#109 -p0 -a3  -t1 -s1"Z: Suchgeschwindigkeit Referenzfahrt" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Anfangsgeschwindigkeit beim Start der Referenzfahrt."
+#110 -p0 -a4  -t1 -s1"4. Achse: Suchgeschwindigkeit Referenzfahrt" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Anfangsgeschwindigkeit beim Start der Referenzfahrt."
+#111 -p0 -a5 -t1 -s1"5. Achse: Suchgeschwindigkeit Referenzfahrt" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Anfangsgeschwindigkeit beim Start der Referenzfahrt."
+
+
+
+#112 -p0 -a3  -t2 -s1"X: Richtung der Referenzfahrt" -m7 -min=0.000 -max=1.000 -i0"Negativ" -i1"Positiv"
+-s3"Anfangsrichtung beim Start der Referenzfahrt."
+#113 -p0 -a3  -t2 -s1"Y: Richtung der Referenzfahrt" -m7 -min=0.000 -max=1.000 -i0"Negativ" -i1"Positiv"
+-s3"Anfangsrichtung beim Start der Referenzfahrt."
+#114 -p0 -a3  -t2 -s1"Z: Richtung der Referenzfahrt" -m7 -min=0.000 -max=1.000 -i0"Negativ" -i1"Positiv"
+-s3"Anfangsrichtung beim Start der Referenzfahrt."
+#115 -p0 -a4  -t2 -s1"4. Achse: Richtung der Referenzfahrt" -m7 -min=0.000 -max=1.000 -i0"Negativ" -i1"Positiv"
+-s3"Anfangsrichtung beim Start der Referenzfahrt."
+#116 -p0 -a5 -t2 -s1"5. Achse: Richtung der Referenzfahrt" -m7 -min=0.000 -max=1.000 -i0"Negativ" -i1"Positiv"
+-s3"Anfangsrichtung beim Start der Referenzfahrt."
+#117 -p0 -a3  -t1 -s1"Max. Abweichung des Referenzschalters" -s2"mm" -m7 -min=0.000 -max=1
+-s3"0: keine Pruefung. Ungleich 0: maximale Abweichung pruefen."
+#118 -p0 -a3  -t1 -s1"Geschwindigkeit der Feinreferenzierung" -s2"mm/min" -m7 -min=1.000 -max=999.000
+-s3"Bei 0 wird die Motor-Anlaufgeschwindigkeit aus #0 verwendet."
+
+#122 -p0 -a3  -t1 -s1"X: Maschinenposition am Referenzpunkt" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
+#123 -p0 -a3  -t1 -s1"Y: Maschinenposition am Referenzpunkt" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
+#124 -p0 -a3  -t1 -s1"Z: Maschinenposition am Referenzpunkt" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
+#125 -p0 -a4  -t1 -s1"4. Achse: Maschinenposition am Referenzpunkt" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
+#126 -p0 -a5  -t1 -s1"5. Achse: Maschinenposition am Referenzpunkt" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
+
+
+#235 -p0 -a3  -t1 -s1"X: Maschinennullpunkt-Versatz" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenkoordinate an der Schaltposition des Referenzschalters."
+#236 -p0 -a3  -t1 -s1"Y: Maschinennullpunkt-Versatz" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenkoordinate an der Schaltposition des Referenzschalters."
+#237 -p0 -a3  -t1 -s1"Z: Maschinennullpunkt-Versatz" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenkoordinate an der Schaltposition des Referenzschalters."
+#238 -p0 -a4  -t1 -s1"4. Achse: Maschinennullpunkt-Versatz" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenkoordinate an der Schaltposition des Referenzschalters."
+#239 -p0 -a5  -t1 -s1"5. Achse: Maschinennullpunkt-Versatz" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Maschinenkoordinate an der Schaltposition des Referenzschalters."
+
+
+#127 -p0 -a3  -t2 -s1"Referenzfahrt-Abfrage beim Einschalten" -m7 -min=0.000 -max=1.000 -i0"Ja" -i1"Nein"
+-s3"Ja: Beim Einschalten wird gefragt, ob referenziert werden soll."
+
+
+#128 -p0 -a3  -t2 -s1"Mobiler Werkzeugtaster aktiv" -m8 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+#129 -p0 -a3  -t1 -s1"Hoehe des mobilen Werkzeugtasters" -s2"mm" -m8 -min=0 -max=99.000
+#130 -p0 -a3  -t2 -s1"Fester Werkzeugtaster aktiv" -m8 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+#131 -p0 -a3  -t0 -s1"Anzahl der Werkzeug-Antastungen" -m8 -min=1 -max=5
+-s3"Anzahl wiederholter Antastungen bei der Werkzeugmessung."
+#132 -p0 -a3  -t1 -s1"Startgeschwindigkeit der Werkzeugmessung" -s2"mm/min" -m8 -min=50.000 -max=99999.000
+-s3"Anfaengliche Z-Abwaertsgeschwindigkeit bei der Werkzeugmessung."
+#133 -p0 -a3  -t1 -s1"Hoehe des Antastblocks" -s2"mm" -m0 -min=-99.000 -max=99.000
+-s3"Gilt fuer die Werkzeugmessung mit mobilem Werkzeugtaster."
+#134 -p0 -a3  -t2 -s1"    " -m0 -min=0.000 -max=1.000 -i0"   " -i1"   "
+-s3"    "
+#135 -p0 -a3  -t1 -s1"X: Startposition am festen Wkz.-Taster" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Maschinenkoordinate zum Start der Messung am festen Werkzeugtaster."
+#136 -p0 -a3  -t1 -s1"Y: Startposition am festen Wkz.-Taster" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Maschinenkoordinate zum Start der Messung am festen Werkzeugtaster."
+#137 -p0 -a3  -t1 -s1"Z: Startposition am festen Wkz.-Taster" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Maschinenkoordinate zum Start der Messung am festen Werkzeugtaster."
+#138 -p0 -a4  -t1 -s1"4. Achse: Startposition am festen Wkz.-Taster" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Maschinenkoordinate zum Start der Messung am festen Werkzeugtaster."
+#139 -p0 -a5  -t1 -s1"5. Achse: Startposition am festen Wkz.-Taster" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Maschinenkoordinate zum Start der Messung am festen Werkzeugtaster."
+
+#140 -p0 -a3  -t1 -s1"Rueckzugsweg nach Werkzeugmessung" -s2"mm" -m8 -min=0.000 -max=999.000
+-s3"Relativer Z-Hub nach abgeschlossener Werkzeug-Antastung."
+
+#141 -p0 -a3  -t1 -s1"Z-Sicherheit vor Werkzeugmessung (Maschine)" -s2"mm" -m8 -min=-9999 -max=9999.000
+-s3"  "
+#149 -p0 -a3 -t2 -s1"Dateisortierung" -m0 -min=0.000 -max=2.000 -i0"Name" -i1"Erweiterung" -i2"Datum"
+#150 -p0 -a3 -t2 -s1"X: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#151 -p0 -a3 -t2 -s1"Y: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#152 -p0 -a3 -t2 -s1"Z: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#153 -p0 -a4 -t2 -s1"4. Achse: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#154 -p0 -a5 -t2 -s1"5. Achse: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+
+#155 -p1 -a3  -t2 -s1"Software-Endschalter aktiv" -m10 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+-s3"Hauptfreigabe der Software-Endschalter./Je Achse gilt: negative Grenze >= positive Grenze deaktiviert sie."
+
+#156 -p0 -a3 -t2 -s1"X: Stopp am Software-Endschalter" -m10 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#157 -p0 -a3 -t2 -s1"Y: Stopp am Software-Endschalter" -m10 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#158 -p0 -a3 -t2 -s1"Z: Stopp am Software-Endschalter" -m10 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#159 -p0 -a4 -t2 -s1"4. Achse: Stopp am Software-Endschalter" -m10 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+#160 -p0 -a5 -t2 -s1"5. Achse: Stopp am Software-Endschalter" -m10 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
+
+
+#161 -p0 -a3 -t1 -s1"X: Negativer Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#162 -p0 -a3 -t1 -s1"Y: Negativer Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#163 -p0 -a3 -t1 -s1"Z: Negativer Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#164 -p0 -a4 -t1 -s1"4. Achse: Negativer Software-Endschalter" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#165 -p0 -a5 -t1 -s1"5. Achse: Negativer Software-Endschalter" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+
+#166 -p0 -a3 -t1 -s1"X: Positiver Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#167 -p0 -a3 -t1 -s1"Y: Positiver Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#168 -p0 -a3 -t1 -s1"Z: Positiver Software-Endschalter" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#169 -p0 -a4 -t1 -s1"4. Achse: Positiver Software-Endschalter" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+#170 -p0 -a5 -t1 -s1"5. Achse: Positiver Software-Endschalter" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Ist die negative Grenze groesser oder gleich der positiven,/sind die Software-Endschalter dieser Achse unwirksam."
+
+#171 -p0 -a3  -t2 -s1"Handrad-Praezisionsmodus" -m11 -min=0.000 -max=1.000 -i0"Ein" -i1"Aus"
+-s3"0 Ein: Nach Handradstopp alle gespeicherten Impulse ausgeben./1 Aus: Bei Handradstopp sofort abbremsen."
+#172 -p0 -a3  -t1 -s1"Handrad X1: Weg je Rastung"  -m11 -min=0.001 -max=0.01
+-s3"Achsweg bei einer Handradrastung mit Faktor X1."
+#173 -p0 -a3  -t2 -s1"Handrad-Not-Halt-Signal aktiv" -m11 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"
+-s3"Aktiviert die Reset-Funktion ueber das Not-Halt-Signal am Handrad."
+#174 -p0 -a3  -t2 -s1"Pegel des Handrad-Not-Halt-Signals" -m11 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Entsprechend dem Signalpegel des verwendeten Handrads einstellen."
+#175 -p0 -a3  -t2 -s1"Handrad-Drehrichtung" -m11 -min=0.000 -max=1.000 -i0"Positiv" -i1"Negativ"
+#176 -p0 -a3  -t1 -s1"Handrad X1: Geschwindigkeit" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Achsgeschwindigkeit beim Handradfaktor X1."
+#177 -p0 -a3  -t1 -s1"Handrad X10: Geschwindigkeit" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Achsgeschwindigkeit beim Handradfaktor X10."
+#178 -p0 -a3  -t1 -s1"Handrad X100: Geschwindigkeit" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Achsgeschwindigkeit beim Handradfaktor X100."
+
+#179 -p0 -a3  -t1 -s1"Handrad-Test: Override-Absenkung bei Stopp"  -m11 -min=0.001 -max=0.5
+-s3"Override-Schrittweite beim Abbremsen, wenn das Handrad/in der handradgefuehrten Bearbeitung gestoppt wird."
+
+#180 -p0 -a3  -t1 -s1"Handrad-Test: Override-Schrittweite"  -m11 -min=0.001 -max=0.5
+-s3"Override-Schrittweite bei Aenderung der Handraddrehzahl/in der handradgefuehrten Bearbeitung."
+
+#181 -p0 -a3  -t1 -s1"X: Beschleunigung im Handradbetrieb" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Beschleunigung und Verzoegerung der Achse im Handradbetrieb."
+#182 -p0 -a3  -t1 -s1"Y: Beschleunigung im Handradbetrieb" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Beschleunigung und Verzoegerung der Achse im Handradbetrieb."
+#183 -p0 -a3  -t1 -s1"Z: Beschleunigung im Handradbetrieb" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Beschleunigung und Verzoegerung der Achse im Handradbetrieb."
+#184 -p0 -a4  -t1 -s1"4. Achse: Beschleunigung im Handradbetrieb" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"Beschleunigung und Verzoegerung der Achse im Handradbetrieb."
+#185 -p0 -a5  -t1 -s1"5. Achse: Beschleunigung im Handradbetrieb" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"Beschleunigung und Verzoegerung der Achse im Handradbetrieb."
+
+#190 -p0 -a3  -t2 -s1"X: Umkehrspielkompensation aktiv" -m13 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"	
+-s3"Kompensiert das eingestellte Umkehrspiel bei Richtungswechseln/waehrend der Bearbeitung."
+#191 -p0 -a3  -t2 -s1"Y: Umkehrspielkompensation aktiv" -m13 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"	
+-s3"Kompensiert das eingestellte Umkehrspiel bei Richtungswechseln/waehrend der Bearbeitung."
+#192 -p0 -a3  -t2 -s1"Z: Umkehrspielkompensation aktiv" -m13 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"	
+-s3"Kompensiert das eingestellte Umkehrspiel bei Richtungswechseln/waehrend der Bearbeitung."
+#193=0 -p0 -a4  -t2 -s1"4. Achse: Umkehrspielkompensation aktiv" -m13 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"	
+-s3"Kompensiert das eingestellte Umkehrspiel bei Richtungswechseln/waehrend der Bearbeitung."
+#194=0 -p0 -a5  -t2 -s1"5. Achse: Umkehrspielkompensation aktiv" -m13 -min=0.000 -max=1.000 -i0"Aus" -i1"Ein"	
+-s3"Kompensiert das eingestellte Umkehrspiel bei Richtungswechseln/waehrend der Bearbeitung."
+
+
+
+#195 -p0 -a3 -t1 -s1"Umkehrspiel X-Achse" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Umkehrspiel der X-Achse./Den Wert entsprechend dem tatsaechlichen Maschinenspiel einstellen."
+#196 -p0 -a3 -t1 -s1"Umkehrspiel Y-Achse" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Umkehrspiel der Y-Achse./Den Wert entsprechend dem tatsaechlichen Maschinenspiel einstellen."
+#197 -p0 -a3 -t1 -s1"Umkehrspiel Z-Achse" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Umkehrspiel der Z-Achse./Den Wert entsprechend dem tatsaechlichen Maschinenspiel einstellen."
+#198 -p0 -a4 -t1 -s1"Umkehrspiel 4. Achse" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"Umkehrspiel der 4. Achse./Den Wert entsprechend dem tatsaechlichen Maschinenspiel einstellen."
+#199 -p0 -a5 -t1 -s1"Umkehrspiel 5. Achse" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"Umkehrspiel der 5. Achse./Den Wert entsprechend dem tatsaechlichen Maschinenspiel einstellen."
+
+
+#200  -p0 -a3  -t1 -s1"Geschwindigkeit Umkehrspielausgleich" -s2"mm/min" -m13 -min=0.000 -max=99999.000
+-s3"Geschwindigkeit beim Ausgleich des Umkehrspiels./Bei einem Wert unter 1.0 wird der aktuelle Vorschub verwendet."
+
+#400 -p0 -a3  -t1 -s1"H01 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H01 bei G43 bzw. G44."
+#401 -p0 -a3  -t1 -s1"H02 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H02 bei G43 bzw. G44."
+#402 -p0 -a3  -t1 -s1"H03 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H03 bei G43 bzw. G44."
+#403 -p0 -a3  -t1 -s1"H04 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H04 bei G43 bzw. G44."
+#404 -p0 -a3  -t1 -s1"H05 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H05 bei G43 bzw. G44."
+#405 -p0 -a3  -t1 -s1"H06 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H06 bei G43 bzw. G44."
+#406 -p0 -a3  -t1 -s1"H07 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H07 bei G43 bzw. G44."
+#407 -p0 -a3  -t1 -s1"H08 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H08 bei G43 bzw. G44."
+#408 -p0 -a3  -t1 -s1"H09 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H09 bei G43 bzw. G44."
+#409 -p0 -a3  -t1 -s1"H10 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H10 bei G43 bzw. G44."
+#410 -p0 -a3  -t1 -s1"H11 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H11 bei G43 bzw. G44."
+#411 -p0 -a3  -t1 -s1"H12 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H12 bei G43 bzw. G44."
+#412 -p0 -a3  -t1 -s1"H13 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H13 bei G43 bzw. G44."
+#413 -p0 -a3  -t1 -s1"H14 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H14 bei G43 bzw. G44."
+#414 -p0 -a3  -t1 -s1"H15 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H15 bei G43 bzw. G44."
+#415 -p0 -a3  -t1 -s1"H16 Werkzeuglaengenkorrektur" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Laengenkorrektur fuer H16 bei G43 bzw. G44."
+#420 -p0 -a3  -t1 -s1"D01 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D01 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#421 -p0 -a3  -t1 -s1"D02 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D02 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#422 -p0 -a3  -t1 -s1"D03 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D03 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#423 -p0 -a3  -t1 -s1"D04 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D04 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#424 -p0 -a3  -t1 -s1"D05 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D05 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#425 -p0 -a3  -t1 -s1"D06 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D06 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#426 -p0 -a3  -t1 -s1"D07 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D07 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#427 -p0 -a3  -t1 -s1"D08 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D08 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#428 -p0 -a3  -t1 -s1"D09 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D09 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#429 -p0 -a3  -t1 -s1"D10 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D10 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#430 -p0 -a3  -t1 -s1"D11 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D11 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#431 -p0 -a3  -t1 -s1"D12 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D12 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#432 -p0 -a3  -t1 -s1"D13 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D13 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#433 -p0 -a3  -t1 -s1"D14 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D14 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#434 -p0 -a3  -t1 -s1"D15 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D15 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+#435 -p0 -a3  -t1 -s1"D16 Werkzeugradiuskorrektur" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Radiuskorrektur fuer D16 bei G41 bzw. G42./Ein negativer Wert kehrt die Korrekturseite links bzw. rechts um."
+
+
+
+#800 -p0 -a3  -t0 -s1"Aktuelle Werkzeugnummer" -m14 -min=0 -max=20
+-s3"Werkzeugnummern oberhalb der Magazinkapazitaet (Parameter 801)/bezeichnen virtuelle Werkzeuge."
+#801 -p0 -a3  -t0 -s1"Magazinkapazitaet" -m14 -min=0 -max=20
+-s3"Anzahl der tatsaechlichen Werkzeugplaetze einstellen./Maximal 20 Plaetze."
+
+#802 -p0 -a3  -t2 -s1"Werkzeugmagazintyp" -m14 -min=0.000 -max=4.000 -i0"Kein Magazin" -i1"Mehrspindel" -i2"Mitfahr. Reihe" -i3"Feste Reihe" -i4"Servoteller"
+-s3"Kein Magazin, Mehrspindel, mitfahrendes Reihenmagazin,/festes Reihenmagazin oder Servoteller auswaehlen."
+
+#803 -p1 -a3  -t2 -s1"Virtuelle Werkzeuge freigeben" -m14 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Bei Freigabe und Werkzeugnummer oberhalb der Magazinkapazitaet/wird ein virtueller Werkzeugwechsel ausgefuehrt."
+
+#804 -p0 -a3  -t2 -s1"Werkzeugwechsel bestaetigen" -m0 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Bei einem Werkzeugwechselbefehl anhalten/und zur Bestaetigung des Wechsels auffordern."
+#805 -p0 -a3  -t2 -s1"Automatisch messen nach Werkzeugwechsel" -m14 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Nach dem Werkzeugwechsel automatisch das Werkzeug vermessen."
+#806 -p0 -a3  -t1 -s1"Obere Z-Position beim Werkzeugwechsel" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z der oberen Werkzeugwechselposition."
+#807 -p0 -a3  -t1 -s1"Untere Z-Position beim Werkzeugwechsel" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z der unteren Werkzeugwechselposition."
+#808 -p0 -a3  -t1 -s1"Vorposition Werkzeugwechsel X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X der Abbremsposition/vor dem Einfahren in das Werkzeugmagazin."
+#809 -p0 -a3  -t1 -s1"Vorposition Werkzeugwechsel Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y der Abbremsposition/vor dem Einfahren in das Werkzeugmagazin."
+#810 -p0 -a3  -t1 -s1"Vorposition Werkzeugwechsel Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z der Abbremsposition/vor dem Einfahren in das Werkzeugmagazin."
+#811 -p0 -a3  -t1 -s1"Verfahrgeschwindigkeit Werkzeugwechsel" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Verfahrgeschwindigkeit der Spindel beim Werkzeugwechsel."
+#812 -p0 -a3  -t1 -s1"Hubgeschwindigkeit Z beim Werkzeugwechsel" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Geschwindigkeit zur oberen Z-Position beim Werkzeugwechsel."
+#813 -p0 -a3  -t1 -s1"Geschwindigkeit am Magazin (horizontal)" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Geschwindigkeit beim horizontalen Ein- und Ausfahren/am Werkzeugmagazin."
+#814 -p0 -a3  -t0 -s1"Wartezeit nach Spindelklemmung" -s2"ms" -m14 -min=0 -max=600000
+-s3"Verzoegerung nach Ausgabe des Spindelklemmsignals/beim Werkzeugwechsel."
+#815 -p0 -a3  -t2 -s1"Rueckkehr nach Werkzeugwechsel" -m14 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+-s3"Z faehrt zur oberen Werkzeugwechselposition./X, Y und A kehren zur Maschinenposition vor dem Wechsel zurueck."
+
+#816 -p0 -a3  -t1 -s1"Manueller Werkzeugwechsel X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X fuer den manuellen Werkzeugwechsel."
+#817 -p0 -a3  -t1 -s1"Manueller Werkzeugwechsel Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y fuer den manuellen Werkzeugwechsel."
+#818 -p0 -a3  -t1 -s1"Manueller Werkzeugwechsel Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z fuer den manuellen Werkzeugwechsel."
+
+#819 -p0 -a3  -t1 -s1"Senkgeschwindigkeit Z beim Werkzeugwechsel" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Geschwindigkeit zur unteren Z-Position (Parameter 807)."
+
+#820 -p0 -a3  -t1 -s1"Abschieber Startposition X (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#821 -p0 -a3  -t1 -s1"Abschieber Startposition Y (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#822 -p0 -a3  -t0 -s1"Wartezeit Abschieber" -s2"ms" -m14 -min=0 -max=600000
+#823 -p0 -a3  -t1 -s1"Abschieber Endposition X (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#824 -p0 -a3  -t1 -s1"Abschieber Endposition Y (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#825 -p0 -a3  -t1 -s1"Abschieber Rueckzugsposition X (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#826 -p0 -a3  -t1 -s1"Abschieber Rueckzugsposition Y (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#827 -p0 -a3  -t1 -s1"Geschwindigkeit Abschieber" -s2"mm/min" -m14 -min=9 -max=99999
+
+
+#830 -p0 -a3  -t1 -s1"T01 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T01."
+#831 -p0 -a3  -t1 -s1"T02 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T02."
+#832 -p0 -a3  -t1 -s1"T03 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T03."
+#833 -p0 -a3  -t1 -s1"T04 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T04."
+#834 -p0 -a3  -t1 -s1"T05 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T05."
+#835 -p0 -a3  -t1 -s1"T06 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T06."
+#836 -p0 -a3  -t1 -s1"T07 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T07."
+#837 -p0 -a3  -t1 -s1"T08 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T08."
+#838 -p0 -a3  -t1 -s1"T09 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T09."
+#839 -p0 -a3  -t1 -s1"T10 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T10."
+#840 -p0 -a3  -t1 -s1"T11 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T11."
+#841 -p0 -a3  -t1 -s1"T12 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T12."
+#842 -p0 -a3  -t1 -s1"T13 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T13."
+#843 -p0 -a3  -t1 -s1"T14 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T14."
+#844 -p0 -a3  -t1 -s1"T15 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T15."
+#845 -p0 -a3  -t1 -s1"T16 Maschinenposition X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate X des Werkzeugplatzes T16."
+
+#850 -p0 -a3  -t1 -s1"T01 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T01."
+#851 -p0 -a3  -t1 -s1"T02 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T02."
+#852 -p0 -a3  -t1 -s1"T03 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T03."
+#853 -p0 -a3  -t1 -s1"T04 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T04."
+#854 -p0 -a3  -t1 -s1"T05 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T05."
+#855 -p0 -a3  -t1 -s1"T06 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T06."
+#856 -p0 -a3  -t1 -s1"T07 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T07."
+#857 -p0 -a3  -t1 -s1"T08 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T08."
+#858 -p0 -a3  -t1 -s1"T09 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T09."
+#859 -p0 -a3  -t1 -s1"T10 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T10."
+#860 -p0 -a3  -t1 -s1"T11 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T11."
+#861 -p0 -a3  -t1 -s1"T12 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T12."
+#862 -p0 -a3  -t1 -s1"T13 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T13."
+#863 -p0 -a3  -t1 -s1"T14 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T14."
+#864 -p0 -a3  -t1 -s1"T15 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T15."
+#865 -p0 -a3  -t1 -s1"T16 Maschinenposition Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Y des Werkzeugplatzes T16."
+
+#870 -p0 -a3  -t1 -s1"T01 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T01."
+#871 -p0 -a3  -t1 -s1"T02 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T02."
+#872 -p0 -a3  -t1 -s1"T03 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T03."
+#873 -p0 -a3  -t1 -s1"T04 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T04."
+#874 -p0 -a3  -t1 -s1"T05 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T05."
+#875 -p0 -a3  -t1 -s1"T06 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T06."
+#876 -p0 -a3  -t1 -s1"T07 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T07."
+#877 -p0 -a3  -t1 -s1"T08 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T08."
+#878 -p0 -a3  -t1 -s1"T09 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T09."
+#879 -p0 -a3  -t1 -s1"T10 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T10."
+#880 -p0 -a3  -t1 -s1"T11 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T11."
+#881 -p0 -a3  -t1 -s1"T12 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T12."
+#882 -p0 -a3  -t1 -s1"T13 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T13."
+#883 -p0 -a3  -t1 -s1"T14 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T14."
+#884 -p0 -a3  -t1 -s1"T15 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T15."
+#885 -p0 -a3  -t1 -s1"T16 Maschinenposition Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Maschinenkoordinate Z des Werkzeugplatzes T16."
+
+
+
+#890 -p0 -a3  -t1 -s1"T01 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#891 -p0 -a3  -t1 -s1"T02 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#892 -p0 -a3  -t1 -s1"T03 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#893 -p0 -a3  -t1 -s1"T04 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#894 -p0 -a3  -t1 -s1"T05 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#895 -p0 -a3  -t1 -s1"T06 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#896 -p0 -a3  -t1 -s1"T07 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#897 -p0 -a3  -t1 -s1"T08 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#898 -p0 -a3  -t1 -s1"T09 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#899 -p0 -a3  -t1 -s1"T10 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#900 -p0 -a3  -t1 -s1"T11 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#901 -p0 -a3  -t1 -s1"T12 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#902 -p0 -a3  -t1 -s1"T13 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#903 -p0 -a3  -t1 -s1"T14 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#904 -p0 -a3  -t1 -s1"T15 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#905 -p0 -a3  -t1 -s1"T16 Werkzeugversatz X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#910 -p0 -a3  -t1 -s1"T01 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#911 -p0 -a3  -t1 -s1"T02 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#912 -p0 -a3  -t1 -s1"T03 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#913 -p0 -a3  -t1 -s1"T04 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#914 -p0 -a3  -t1 -s1"T05 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#915 -p0 -a3  -t1 -s1"T06 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#916 -p0 -a3  -t1 -s1"T07 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#917 -p0 -a3  -t1 -s1"T08 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#918 -p0 -a3  -t1 -s1"T09 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#919 -p0 -a3  -t1 -s1"T10 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#920 -p0 -a3  -t1 -s1"T11 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#921 -p0 -a3  -t1 -s1"T12 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#922 -p0 -a3  -t1 -s1"T13 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#923 -p0 -a3  -t1 -s1"T14 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#924 -p0 -a3  -t1 -s1"T15 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#925 -p0 -a3  -t1 -s1"T16 Werkzeugversatz Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#930 -p0 -a3  -t1 -s1"T01 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#931 -p0 -a3  -t1 -s1"T02 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#932 -p0 -a3  -t1 -s1"T03 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#933 -p0 -a3  -t1 -s1"T04 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#934 -p0 -a3  -t1 -s1"T05 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#935 -p0 -a3  -t1 -s1"T06 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#936 -p0 -a3  -t1 -s1"T07 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#937 -p0 -a3  -t1 -s1"T08 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#938 -p0 -a3  -t1 -s1"T09 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#939 -p0 -a3  -t1 -s1"T10 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#940 -p0 -a3  -t1 -s1"T11 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#941 -p0 -a3  -t1 -s1"T12 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#942 -p0 -a3  -t1 -s1"T13 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#943 -p0 -a3  -t1 -s1"T14 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#944 -p0 -a3  -t1 -s1"T15 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#945 -p0 -a3  -t1 -s1"T16 Werkzeugversatz Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#973 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 01: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#974 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 02: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#975 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 03: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#976 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 04: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#977 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 05: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#978 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 06: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#979 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 07: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#980 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 08: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#981 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 09: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#982 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 10: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#983 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 11: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#984 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 12: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#985 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 13: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#986 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 14: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#987 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 15: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#988 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 16: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#989 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 17: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#990 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 18: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#991 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 19: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#992 -p0 -a3  -t1 -s1"Virtuelles Werkzeug 20: Z-Versatz" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#999 =0 -p0 -a3 -t2 -s1"Koordinatenversatzmodus" -m14 -min=0.000 -max=2.000 -i0"Standard" -i1"Wkz.-Versatz" -i2"Sonstiges"
+
+#299 -p0 -a3 -t2 -s1"Laengeneinheit" -s2"" -m15 -min=0.000 -max=1.000 -i0"Metrisch mm" -i1"Zoll in" -s3"Nach dem Speichern neu starten. Umrechnung nur fuer X, Y und Z./Die Einheit im NC-Programm wird mit G20 bzw. G21 festgelegt."
+#240 -p0 -a3  -t2 -s1"Sprache"  -m15 -min=0.000 -max=3.000 -i0"Englisch" -i1"Chinesisch" -i2"Russisch" -i3"Deutsch"
+-s3"Aenderung wird nach einem Neustart wirksam."
+#241 -p0 -a3  -t2 -s1"Summer freigeben" -m15 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+#242 -p0 -a3  -t2 -s1"Layout Hauptanzeige" -m0 -min=0.000 -max=2.000 -i0"1" -i1"2" -i2"3"
+#244 -p0 -a3  -t2 -s1"Werkzeugbahn live anzeigen" -m15 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+#245 -p0 -a3  -t2 -s1"Darstellung der Werkzeugbahn" -m15 -min=0.000 -max=2.000 -i0"Relief" -i1"Linien" -i2"3D"
+#246=600 -p0 -a3  -t0 -s1"Max. Segmente der Bahnvorplanung" -m0 -min=100.000 -max=3600.000
+#247 -p0 -a3  -t1 -s1"Interpolationszyklus" -s2"S" -m15 -min=0.001 -max=0.010
+-s3"Ein kuerzerer Interpolationszyklus erhoeht die Genauigkeit/und verringert die Bearbeitungsstoesse,/verlaengert jedoch die Bearbeitungszeit."
+#248 -p0 -a3  -t1  -s1"Anzeigedauer Kundenlogo" -s2"S" -m15 -min=0.1 -max=10.0
+
+#266 -p1 -a3 -t2 -s1"Baudrate Schnittstelle 1" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Aenderung wird nach einem Neustart wirksam."
+#267 -p1 -a3 -t2 -s1"Baudrate Schnittstelle 2" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Aenderung wird nach einem Neustart wirksam."
+
+#268 -p1 -a3 -t2 -s1"Zusaetzliches Bedienfeld" -m15 -min=0.000 -max=2.000 -i0"Keines" -i1"M3K" -i2"Reserve"
+-s3"Aenderung wird nach einem Neustart wirksam."
+
+
+#269 -p0 -a3  -t2 -s1"Diagnoseausgabe freigeben" -m15 -min=0.000 -max=1.000 -i0"Nein" -i1"Ja"
+
+#278 -p1 -a3 -t2 -s1"USB-Eingabegeraet" -m15 -min=0.000 -max=2.000 -i0"Aus" -i1"Tastatur" -i2"Scanner"
+-s3"Aenderung wird nach einem Neustart wirksam."
+
+
+
+
+#283 -p1 -a3 -t2 -s1"Bearbeitung per Barcode" -m0 -min=0.000 -max=2.000 -i0"Aus" -i1"Betrieb" -i2"Test"
+-s3"Vor der Freigabe das passende Scannermodell/beim Lieferanten erfragen. Danach neu starten."
+#284 -p1 -a3 -t2 -s1"Netzwerkmodus" -m15 -min=0.000 -max=2.000 -i0"Aus" -i1"IP automatisch" -i2"IP manuell" 
+-s3" "
+
+#279  -p1 -a3 -t2 -s1"Modbus RTU" -m15 -min=0.000 -max=2.000 -i0"Aus" -i1"Master" -i2"Slave" 
+-s3"Aenderung wird nach einem Neustart wirksam."
+
+#296 -p1 -a3 -t2 -s1"Paritaet Schnittstelle 2" -m15 -min=0.000 -max=2 -i0"Keine" -i1"Ungerade" -i2"Gerade"
+-s3"Aenderung wird nach einem Neustart wirksam."
+
+#297 -p1 -a3 -t2 -s1"Stoppbits Schnittstelle 2" -m15 -min=0.000 -max=1 -i0"1" -i1"2"
+-s3"Aenderung wird nach einem Neustart wirksam."
+#298 = 100
+#270 = 888888 -p0 -a3  -t0 -s1"Schluessel fuer Benutzerberechtigung" -m0 -min=0.000 -max=999999.000
+#249 =4 -p0 -a3  -t0=4.000 -s1"J-Parametergradient" -m0 -min=2.000 -max=512.000
+#250 -p0 -a3  -t1=0.000 -s1"Max. Konturabweichung bei Bearbeitung" -s2"mm" -m0 -min=0.000 -max=0.100
+#271 =0 -p0 -a3  -t1  -s1"Maximale Konturabweichung" -s2"mm" -m0 -min=0.000 -max=0.100
+
+
+
+
+#254 -p0 -a3  -t1=200.0 -s1"Breite Werkzeugbahndarstellung" -m0 -min=0.000 -max=999.999
+#255 -p0 -a3  -t1=200.0 -s1"Hoehe Werkzeugbahndarstellung" -m0 -min=0.000 -max=999.999
+#256 -p0 -a3  -t1=3.0 -s1"Dicke Werkzeugbahndarstellung" -m0 -min=0.000 -max=999.999
+#257 -p0 -a3  -t1=3.0 -s1"Plattendicke in Reliefdarstellung" -m0 -min=0.000 -max=999.999
+#258 -p0 -a3  -t1=100.0 -s1"Darstellungsursprung X" -m0 -min=0.000 -max=999.999
+#259 -p0 -a3  -t1=100.0 -s1"Darstellungsursprung Y" -m0 -min=0.000 -max=999.999
+#260 -p0 -a3  -t1=3.0 -s1"Darstellungsursprung Z" -m0 -min=0.000 -max=999.999
+#261 =0 -p0 -a3  -t1 -s1"3D-Drehwinkel um X" -s2"deg" -m0 -min=-180.000 -max=180.0
+#262 =0 -p0 -a3  -t1 -s1"3D-Drehwinkel um Y" -s2"deg" -m0 -min=-180.000 -max=180.0
+#263 =0 -p0 -a3  -t1 -s1"3D-Drehwinkel um Z" -s2"deg" -m0 -min=-180.000 -max=180.0
+
+#500 -p0 -a3  -t0 -s1"Servoalarm X-Achse" -m16 -min=0.000 -max=24.000
+#503 -p0 -a3  -t0 -s1"Servoalarm Y-Achse" -m16 -min=0.000 -max=24.000
+#506 -p0 -a3  -t0 -s1"Servoalarm Z-Achse" -m16 -min=0.000 -max=24.000
+#509 -p0 -a3  -t0 -s1"Servoalarm 4. Achse" -m16 -min=0.000 -max=24.000
+#512 -p0 -a5  -t0 -s1"Servoalarm 5. Achse" -m16 -min=0.000 -max=24.000
+
+
+#515 -p0 -a3  -t0 -s1"Endschalter X-Achse negativ" -m16 -min=0.000 -max=24.000
+#518 -p0 -a3  -t0 -s1"Endschalter Y-Achse negativ" -m16 -min=0.000 -max=24.000
+#521 -p0 -a3  -t0 -s1"Endschalter Z-Achse negativ" -m16 -min=0.000 -max=24.000
+#524 -p0 -a4  -t0 -s1"Endschalter 4. Achse negativ" -m16 -min=0.000 -max=24.000
+#527 -p0 -a5  -t0 -s1"Endschalter 5. Achse negativ" -m16 -min=0.000 -max=24.000
+
+
+#530 -p0 -a3  -t0 -s1"Endschalter X-Achse positiv" -m16 -min=0.000 -max=24.000
+#533 -p0 -a3  -t0 -s1"Endschalter Y-Achse positiv" -m16 -min=0.000 -max=24.000
+#536 -p0 -a3  -t0 -s1"Endschalter Z-Achse positiv" -m16 -min=0.000 -max=24.000
+#539 -p0 -a4  -t0 -s1"Endschalter 4. Achse positiv" -m16 -min=0.000 -max=24.000
+#542 -p0 -a5  -t0 -s1"Endschalter 5. Achse positiv" -m16 -min=0.000 -max=24.000
+
+
+#545 -p0 -a3  -t0 -s1"Referenzschalter X-Achse" -m16 -min=0.000 -max=24.000
+#548 -p0 -a3  -t0 -s1"Referenzschalter Y-Achse" -m16 -min=0.000 -max=24.000
+#551 -p0 -a3  -t0 -s1"Referenzschalter Z-Achse" -m16 -min=0.000 -max=24.000
+#554 -p0 -a4  -t0 -s1"Referenzschalter 4. Achse" -m16 -min=0.000 -max=24.000
+#557 -p0 -a5  -t0 -s1"Referenzschalter 5. Achse" -m16 -min=0.000 -max=24.000
+
+
+#575 -p0 -a3  -t0 -s1"Signal fester Werkzeugtaster" -m16 -min=0.000 -max=24.000
+#578 -p0 -a3  -t0 -s1"Signal mobiler Werkzeugtaster" -m16 -min=0.000 -max=24.000
+
+
+#581 -p0 -a3  -t0 -s1"Externe Taste 1" -m16 -min=0.000 -max=24.000
+#584 -p0 -a3  -t0 -s1"Externe Taste 2" -m16 -min=0.000 -max=24.000
+#587 -p0 -a3  -t0 -s1"Externe Taste 3" -m16 -min=0.000 -max=24.000
+#590 -p0 -a3  -t0 -s1"Externe Taste 4" -m16 -min=0.000 -max=24.000
+#593 -p0 -a3  -t0 -s1"Externe Taste 5" -m16 -min=0.000 -max=24.000
+#596 -p0 -a3  -t0 -s1"Externe Taste 6" -m16 -min=0.000 -max=24.000
+#599 -p0 -a3  -t0 -s1"Externer Start" -m16 -min=0.000 -max=24.000
+#602 -p0 -a3  -t0 -s1"Externer Vorschubhalt" -m16 -min=0.000 -max=24.000
+#605 -p0 -a3  -t0 -s1"Externer Not-Halt" -m16 -min=0.000 -max=24.000
+
+#620 -p0 -a3  -t0 -s1"Rueckmeldung Spindelstillstand (M300)" -m16 -min=0.000 -max=24.000
+#623 -p0 -a3  -t0 -s1"Rueckmeldung Werkzeug geloest (M301)" -m16 -min=0.000 -max=24.000
+#626 -p0 -a3  -t0 -s1"Rueckmeldung Werkzeug geklemmt (M302)" -m16 -min=0.000 -max=24.000
+#629 -p0 -a3  -t0 -s1"Rueckmeldung Magazin ausgefahren (M303)" -m16 -min=0.000 -max=24.000
+#632 -p0 -a3  -t0 -s1"Absaughaube offen/zu (M305/M306)" -m16 -min=0.000 -max=24.000
+
+#635 -p0 -a3  -t0 -s1"Alarmeingang Frequenzumrichter" -m16 -min=0.000 -max=24.000
+#638 -p0 -a3  -t0 -s1"Anwender-Alarmeingang 1" -m16 -min=0.000 -max=24.000
+#641 -p0 -a3  -t0 -s1"Anwender-Alarmeingang 2" -m16 -min=0.000 -max=24.000
+#644 -p0 -a3  -t0 -s1"Anwender-Alarmeingang 3" -m16 -min=0.000 -max=24.000
+#647 -p0 -a3  -t0 -s1"Anwender-Alarmeingang 4" -m16 -min=0.000 -max=24.000
+#650 -p0 -a3  -t0 -s1"Anwender-Alarmeingang 5" -m16 -min=0.000 -max=24.000
+#697 -p0 -a3  -t0 -s1"Rueckmeldung Magazin eingefahren (M304)" -m16 -min=0.000 -max=24.000
+
+
+#715 -p0 -a3  -t0 -s1"Spindel Rechtslauf" -m17 -min=0.000 -max=20.000
+#718 -p0 -a3  -t0 -s1"Spindel Linkslauf" -m17 -min=0.000 -max=20.000
+
+#721 -p0 -a3  -t0 -s1"Spindel-Drehzahlstufe: Ausgang 1" -m17 -min=0.000 -max=20.000
+#724 -p0 -a3  -t0 -s1"Spindel-Drehzahlstufe: Ausgang 2" -m17 -min=0.000 -max=20.000
+#727 -p0 -a3  -t0 -s1"Spindel-Drehzahlstufe: Ausgang 3" -m17 -min=0.000 -max=20.000
+
+#730 -p0 -a3  -t0 -s1"Kuehlmittel (M8/M9)" -m17 -min=0.000 -max=20.000
+#733 -p0 -a3  -t0 -s1"Schmierung (M10/M11)" -m17 -min=0.000 -max=20.000
+
+#736 -p0 -a3  -t0 -s1"Signalleuchte Alarm" -m17 -min=0.000 -max=20.000
+#739 -p0 -a3  -t0 -s1"Signalleuchte Betrieb" -m17 -min=0.000 -max=20.000
+#742 -p0 -a3  -t0 -s1"Haltebremse" -m17 -min=0.000 -max=20.000
+#745 -p0 -a3  -t0 -s1"Signalleuchte Bereit" -m17 -min=0.000 -max=20.000
+
+#750 -p0 -a3  -t0 -s1"Werkzeug loesen/klemmen (M154/M155)" -m17 -min=0.000 -max=20.000
+#753 -p0 -a3  -t0 -s1"Magazin aus-/einfahren (M152/M153)" -m17 -min=0.000 -max=20.000
+#756 -p0 -a3  -t0 -s1"Anschlag vorne ein/aus (M156/M157)" -m17 -min=0.000 -max=20.000
+#759 -p0 -a3  -t0 -s1"Vakuumpumpe ein/aus (M158/M159)" -m17 -min=0.000 -max=20.000
+#762 -p0 -a3  -t0 -s1"Absaughaube auf/zu (M150/M151)" -m17 -min=0.000 -max=20.000
+#765 -p0 -a3  -t0 -s1"Abschiebezylinder ein/aus (M160/M161)" -m17 -min=0.000 -max=20.000
+#768 -p0 -a3  -t0 -s1"Absaugung ein/aus (M162/M163)" -m17 -min=0.000 -max=20.000
+#771 -p0 -a3  -t0 -s1"Anschlag links ein/aus (M164/M165)" -m17 -min=0.000 -max=20.000
+#774 -p0 -a3  -t0 -s1"Vakuumventil auf/zu (M166/M167)" -m17 -min=0.000 -max=20.000
+#777 -p0 -a3  -t0 -s1"Zylinder Spindel 1 ein/aus (M168/M169)" -m17 -min=0.000 -max=20.000
+#780 -p0 -a3  -t0 -s1"Zylinder Spindel 2 ein/aus (M170/M171)" -m17 -min=0.000 -max=20.000
+#783 -p0 -a3  -t0 -s1"Zylinder Spindel 3 ein/aus (M172/M173)" -m17 -min=0.000 -max=20.000
+#786 -p0 -a3  -t0 -s1"Zylinder Spindel 4 ein/aus (M174/M175)" -m17 -min=0.000 -max=20.000
+#789 -p0 -a3  -t0 -s1"Kuehlmittel 1 ein/aus (M176/M177)" -m17 -min=0.000 -max=20.000
+#792 -p0 -a3  -t0 -s1"Kuehlmittel 2 ein/aus (M178/M179)" -m17 -min=0.000 -max=20.000
+
+
+#950 -p0 -a3  -t0 -s1"Dateinummer T1" -s2"T1xx.nc" -m18 -min=0 -max=99
+-s3"01:T101.nc, 0:keine"
+#951 -p0 -a3  -t0 -s1"Dateinummer T2" -s2"T2xx.nc" -m18 -min=-0 -max=99
+-s3"02:T202.nc, 0:keine"
+#952 -p0 -a3  -t1 -s1"Sicherheitshoehe Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#953 -p0 -a3  -t1 -s1"Startpunkt Y" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#954 -p0 -a3  -t1 -s1"Startpunkt Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#955 -p0 -a3  -t1 -s1"X-Position 1" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#956 -p0 -a3  -t1 -s1"X-Position 2" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#957 -p0 -a3  -t1 -s1"X-Position 3" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#958 -p0 -a3  -t1 -s1"X-Position 4" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#959 -p0 -a3  -t1 -s1"X-Position 5" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+#960 -p0 -a3  -t1 -s1"X-Position 6" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Wert im Werkstueckkoordinatensystem."
+
+#965 -p0 -a3  -t0 -s1"Halt zwischen T1 und T2" -s2" " -m18 -min=0 -max=1
+-s3"0:kein Halt, 1:Halt"
+
+#966 -p0 -a3  -t1 -s1"Spindeldrehzahl T1" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"Spindeldrehzahl fuer T1."
+
+#967 -p0 -a3  -t1 -s1"Spindeldrehzahl T2" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"Spindeldrehzahl fuer T2."
+
+#968 -p0 -a3  -t0 -s1"NC-Dateinummer" -s2"camxx.nc" -m18 -min=0 -max=9999
+-s3"0-9999:cam0-cam9999.nc"
+#969 -p0 -a3  -t0 -s1"   " -s2"Gxx" -m0 -min=100 -max=200
+-s3"100-199:      ."
+
+
+
+#1000 -p0 -a3  -t1 -s1"Endpunkt X" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der X-Achse."
+#1001 -p0 -a3  -t1 -s1"Endpunkt Y" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der Y-Achse."
+#1002 -p0 -a3  -t1 -s1"Endpunkt Z" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der Z-Achse."
+#1003 -p0 -a4  -t1 -s1"Endpunkt 4. Achse" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der 4. Achse."
+#1004 -p0 -a5  -t1 -s1"Endpunkt 5. Achse" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der 5. Achse."
+
+
+#1006 -p0 -a3  -t1 -s1"Endpunkt X" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der X-Achse."
+#1007 -p0 -a3  -t1 -s1"Endpunkt Y" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der Y-Achse."
+#1008 -p0 -a3  -t1 -s1"Endpunkt Z" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der Z-Achse."
+#1009 -p0 -a4  -t1 -s1"Endpunkt 4. Achse" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der 4. Achse."
+#1010 -p0 -a5  -t1 -s1"Endpunkt 5. Achse" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate der 5. Achse."
+#1011 -p0 -a3  -t0 -s1"Vorschub F" -s2"mm/min" -m21 -min=1 -max=99999.000
+-s3"Vorschubgeschwindigkeit F."
+
+#1012 -p0 -a3  -t1 -s1"Kreisbogenstart X0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Startkoordinate des Kreisbogens auf der X-Achse."
+#1013 -p0 -a3  -t1 -s1"Kreisbogenstart Y0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Startkoordinate des Kreisbogens auf der Y-Achse."
+#1014 -p0 -a3  -t1 -s1"Kreisbogenstart Z0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Startkoordinate des Kreisbogens auf der Z-Achse."
+#1015 -p0 -a4  -t1 -s1"Kreisbogenstart 4. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Startkoordinate des Kreisbogens auf der 4. Achse."
+#1016 -p0 -a5  -t1 -s1"Kreisbogenstart 5. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Startkoordinate des Kreisbogens auf der 5. Achse."
+
+#1017 -p0 -a3  -t1 -s1"Bogen-Zwischenpunkt X1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Zwischenpunkt des Kreisbogens auf der X-Achse."
+#1018 -p0 -a3  -t1 -s1"Bogen-Zwischenpunkt Y1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Zwischenpunkt des Kreisbogens auf der Y-Achse."
+#1019 -p0 -a3  -t1 -s1"Bogen-Zwischenpunkt Z1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Zwischenpunkt des Kreisbogens auf der Z-Achse."
+#1020 -p0 -a4  -t1 -s1"Bogen-Zwischenpunkt 4. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Zwischenpunkt des Kreisbogens auf der 4. Achse."
+#1021 -p0 -a5  -t1 -s1"Bogen-Zwischenpunkt 5. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Zwischenpunkt des Kreisbogens auf der 5. Achse."
+
+#1022 -p0 -a3  -t1 -s1"Kreisbogenende X2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate des Kreisbogens auf der X-Achse."
+#1023 -p0 -a3  -t1 -s1"Kreisbogenende Y2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate des Kreisbogens auf der Y-Achse."
+#1024 -p0 -a3  -t1 -s1"Kreisbogenende Z2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate des Kreisbogens auf der Z-Achse."
+#1025 -p0 -a4  -t1 -s1"Kreisbogenende 4. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate des Kreisbogens auf der 4. Achse."
+#1026 -p0 -a5  -t1 -s1"Kreisbogenende 5. Achse" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Endkoordinate des Kreisbogens auf der 5. Achse."
+#1027 -p0 -a3  -t0 -s1"Vorschub F" -s2"mm/min" -m22 -min=1 -max=99999.000
+-s3"Vorschubgeschwindigkeit F."
+
+
+#1030 -p0 -a3  -t0 -s1"Eingangsnummer IN_xx" -s2"" -m23 -min=1 -max=24
+-s3"1:IN01 2:IN02 3:IN03 ..."
+#1031 -p0 -a3  -t0 -s1"Aktiver Eingangspegel" -s2" " -m23 -min=0 -max=1
+-s3"NPN-Schalter verwenden: 0:Schliesser, 1:Oeffner."
+
+
+#1035 -p0 -a3  -t0 -s1"Ausgangsnummer OUT_xx" -s2"" -m24 -min=1 -max=21
+-s3"1:OUT01 2:OUT02 3:OUT03 ..."
+#1036 -p0 -a5  -t0 -s1"Ausgangspegel" -s2" " -m24 -min=0 -max=1
+-s3"0:Ausgang aus, 1:Ausgang ein"
+
+
+#1040 -p0 -a3  -t0 -s1"Sprungziel Satznummer" -s2"" -m25 -min=1 -max=999
+-s3"1:N001 2:N002 ..."
+#1041 -p0 -a5  -t0 -s1"Wiederholungen" -s2" " -m25 -min=0 -max=9999
+-s3"0:Endlosschleife, >0:Anzahl der Wiederholungen."
+
+
+#1045 -p0 -a3  -t0 -s1"Verweilzeit" -s2"ms" -m26 -min=1 -max=99999
+-s3"Zeit in Millisekunden. 1 Sekunde = 1000 Millisekunden."
+
+
+#1100 -p0 -a3  -t1 -s1"Parameter 1" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 1."
+#1101 -p0 -a3  -t1 -s1"Parameter 2" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 2."
+#1102 -p0 -a3  -t1 -s1"Parameter 3" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 3."
+
+
+
+#1103 -p0 -a3  -t1 -s1"Parameter 1" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 1."
+#1104 -p0 -a3  -t1 -s1"Parameter 2" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 2."
+#1105 -p0 -a3  -t1 -s1"Parameter 3" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Beschreibung von Parameter 3."
+
+
+
+
+
+
+&&

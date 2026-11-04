@@ -1,0 +1,1176 @@
+&& 
+  
+#0 -p0 -a3 -a3 -t1 -s1"Toc do khoi dong dong co" -s2"mm/min" -m1 -min=1.000 -max=999.000
+-s3"Neu toc do dat cao hon gia tri nay, dong co tang toc tu gia tri nay./Neu khong, dong co chay ngay o toc do dat./Pham vi: [1-999]"
+
+#1 -p0 -a3 -t1 -s1"Truc X: so xung moi don vi" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh: so xung moi vong quay./Pham vi: [50-99999]"
+#2 -p0 -a3 -t1 -s1"Truc Y: so xung moi don vi" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh: so xung moi vong quay./Pham vi: [50-99999]"
+#3 -p0 -a3 -t1 -s1"Truc Z: so xung moi don vi" -s2" pulse/mm" -m1 -min=50.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh: so xung moi vong quay./Pham vi: [50-99999]"
+#6 -p0 -a4 -t1 -s1"Truc 4: so xung moi don vi" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Neu truc dung dan dong truc chinh: so xung moi vong quay./Pham vi: [50-999999]"
+#7 -p0 -a4 -t2 -s1"Truc 4: don vi xung" -m1 -min=0.000 -max=1.000 -i0"Xung/do" -i1"Xung/vong"
+-s3"Neu truc nay dan dong truc chinh, phai chon 0!"
+#8 -p0 -a5 -t1 -s1"Truc 5: so xung moi don vi" -s2"" -m1 -min=50.000 -max=999999.000
+-s3"Neu truc dung dan dong truc chinh: so xung moi vong quay./Pham vi: [50-999999]"
+#9 -p0 -a5 -t2 -s1"Truc 5: don vi xung" -m1 -min=0.000 -max=1.000 -i0"Xung/do" -i1"Xung/vong"
+-s3"Neu truc nay dan dong truc chinh, phai chon 0!"
+
+#11 -p0 -a3 -t0 -s1"Thoi gian tu tin hieu chieu den xung" -s2"ns" -m1 -min=0.000 -max=9999.000
+-s3"Gia tri 7000 phu hop voi phan lon bo truyen dong./Pham vi: [0-9999]"
+
+
+#12 -p0 -a3  -t2 -s1"Truc X: muc tin hieu chieu" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Quyet dinh chieu chuyen dong cua truc. Chon phu hop voi may."
+#13 -p0 -a3 -t2 -s1"Truc Y: muc tin hieu chieu" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Quyet dinh chieu chuyen dong cua truc. Chon phu hop voi may."
+#14 -p0 -a3 -t2 -s1"Truc Z: muc tin hieu chieu" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Quyet dinh chieu chuyen dong cua truc. Chon phu hop voi may."
+#15 -p0 -a4 -t2 -s1"Truc 4: muc tin hieu chieu" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Quyet dinh chieu chuyen dong cua truc. Chon phu hop voi may."
+#16 -p0 -a5 -t2 -s1"Truc 5: muc tin hieu chieu" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Quyet dinh chieu chuyen dong cua truc. Chon phu hop voi may."
+
+#17 -p0 -a3 -t2 -s1"Truc X: muc ngo ra khi khong co xung" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Neu vi tri bi troi dan, thu doi muc tin hieu nay./Day la muc ngo ra khi KHONG phat xung./Xung thuc te co muc nguoc lai!"
+#18 -p0 -a3 -t2 -s1"Truc Y: muc ngo ra khi khong co xung" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Neu vi tri bi troi dan, thu doi muc tin hieu nay./Day la muc ngo ra khi KHONG phat xung./Xung thuc te co muc nguoc lai!"
+#19 -p0 -a3 -t2 -s1"Truc Z: muc ngo ra khi khong co xung" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Neu vi tri bi troi dan, thu doi muc tin hieu nay./Day la muc ngo ra khi KHONG phat xung./Xung thuc te co muc nguoc lai!"
+#20 -p0 -a4 -t2 -s1"Truc 4: muc ngo ra khi khong co xung" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Neu vi tri bi troi dan, thu doi muc tin hieu nay./Day la muc ngo ra khi KHONG phat xung./Xung thuc te co muc nguoc lai!"
+#21 -p0 -a5 -t2 -s1"Truc 5: muc ngo ra khi khong co xung" -m1 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Neu vi tri bi troi dan, thu doi muc tin hieu nay./Day la muc ngo ra khi KHONG phat xung./Xung thuc te co muc nguoc lai!"
+
+
+#22 -p0 -a3 -t2 -s1"Lien ket truc khi gia cong" -m0 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+-s3"Truc di theo chi chuyen dong cung truc dan khi gia cong./Trong che do MDI, hai truc di chuyen doc lap."
+#23 -p0 -a3 -t2 -s1"Truc dan cua lien ket truc" -m0 -min=0.000 -max=4.000 -i0"Truc X" -i1"Truc Y" -i2"Truc Z" -i3"Truc 4" -i4"Truc 5"
+#24 -p0 -a3 -t2 -s1"Truc di theo cua lien ket truc" -m0 -min=0.000 -max=4.000 -i0"Truc X" -i1"Truc Y" -i2"Truc Z" -i3"Truc 4" -i4"Truc 5"
+
+
+#30 =146 -p1 -a3 -a4  -t0 -s1"Cau hinh dong hoc may" -s2" " -m0 -min=100 -max=1000
+-s3"1xx: ban quay 2 truc; 2xx: dau xoay 2 truc; 3xx: hon hop; 4xx: robot/1 2 3: dau xoay A B C; 4 5 6: ban quay A B C/Vi du: 146 = ban quay AC; 116 = dau xoay A va ban quay C."	
+
+#31 =0.1 -p1 -a3 -a4  -t1 -s1"Do phan giai RTCP" -s2"Don vi" -m0 -min=0.001 -max=0.5
+
+#440 -p1 -a3 -a3 =0  -t2 -s1"Truc X: ten truc"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Co hieu luc sau khi luu va khoi dong lai."
+#441 -p1 -a3 =1  -t2 -s1"Truc Y: ten truc"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Co hieu luc sau khi luu va khoi dong lai."
+#442 -p1 -a3 =2  -t2 -s1"Truc Z: ten truc"  -m0 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Co hieu luc sau khi luu va khoi dong lai."
+#443 -p1 -a4   -t2 -s1"Truc 4: ten truc"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Co hieu luc sau khi luu va khoi dong lai."
+#444 -p1 -a5   -t2 -s1"Truc 5: ten truc"  -m1 -min=0.000 -max=5.000 -i0"X" -i1"Y" -i2"Z" -i3"A" -i4"B" -i5"C"
+-s3"Co hieu luc sau khi luu va khoi dong lai."
+
+#449 -p1 -a4  -t2 -s1"Loai truc 4"  -m1 -min=0.000 -max=1.000 -i0"Tinh tien" -i1"Quay"
+#450 -p1 -a5  -t2 -s1"Loai truc 5"  -m1 -min=0.000 -max=1.000 -i0"Tinh tien" -i1"Quay"
+
+#455 =0 -p1 -a4  -t1 -s1"Truc 4: do lech X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#456 =0 -p1 -a5  -t1 -s1"Truc 5: do lech X" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+
+#461 =0 -p1 -a4  -t1 -s1"Truc 4: do lech Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#462 =0 -p1 -a5  -t1 -s1"Truc 5: do lech Y" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#467 =0 -p1 -a4  -t1 -s1"Truc 4: do lech Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#468 =0 -p1 -a5  -t1 -s1"Truc 5: do lech Z" -s2"mm" -m0 -min=-999.000 -max=999.000
+-s3" "
+#473 =0 -p1 -a4  -t1 -s1"Truc 4: thanh phan vecto U"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#474 =0 -p1 -a5  -t1 -s1"Truc 5: thanh phan vecto U"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#479 =0 -p1 -a4  -t1 -s1"Truc 4: thanh phan vecto V"  -m0 -min=-1.000 -max=1.000
+-s3" "
+#480 =0 -p1 -a5  -t1 -s1"Truc 5: thanh phan vecto V"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#485 =0 -p1 -a4  -t1 -s1"Truc 4: thanh phan vecto W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+#486 =0 -p1 -a5  -t1 -s1"Truc 5: thanh phan vecto W"  -m0 -min=-1.000 -max=1.000 
+-s3" "
+
+#488 -p1 -a3   -t2 -s1"Truc vat ly 1: truc lap trinh"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"Truc 4" -i4"Truc 5"
+-s3"  "
+#489 -p1 -a3   -t2 -s1"Truc vat ly 2: truc lap trinh"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"Truc 4" -i4"Truc 5"
+-s3"  "
+#490 -p1 -a3   -t2 -s1"Truc vat ly 3: truc lap trinh"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"Truc 4" -i4"Truc 5"
+-s3"  "
+#491 -p1 -a4   -t2 -s1"Truc vat ly 4: truc lap trinh"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"Truc 4" -i4"Truc 5"
+-s3"  "
+#492 -p1 -a5   -t2 -s1"Truc vat ly 5: truc lap trinh"  -m1 -min=0.000 -max=4.000 -i0"X" -i1"Y" -i2"Z" -i3"Truc 4" -i4"Truc 5"
+-s3"  "
+
+
+
+
+#35 -p0 -a3 -t1 -s1"Truc X: toc do bang tay toi da" -s2"mm/min" -m2 -min=99.000 -max=99999.000
+-s3"Gioi han toc do bang tay ke ca khi tang he so SJR./Dat lon hon tham so #40./Pham vi: [99-99999]"	
+#36 -p0 -a3 -t1 -s1"Truc Y: toc do bang tay toi da" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"Gioi han toc do bang tay ke ca khi tang he so SJR./Dat lon hon tham so #41./Pham vi: [99-99999]"	
+#37 -p0 -a3 -t1 -s1"Truc Z: toc do bang tay toi da" -s2"mm/min" -m2 -min=99.000 -max=99999.000	
+-s3"Gioi han toc do bang tay ke ca khi tang he so SJR./Dat lon hon tham so #42./Pham vi: [99-99999]"	
+#38 -p0 -a4 -t1 -s1"Truc 4: toc do bang tay toi da" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"Gioi han toc do bang tay ke ca khi tang he so SJR./Dat lon hon tham so #43./Pham vi: [99-99999]"	
+#39 -p0 -a5 -t1 -s1"Truc 5: toc do bang tay toi da" -s2"deg/min" -m2 -min=99.000 -max=99999.000	
+-s3"Gioi han toc do bang tay ke ca khi tang he so SJR./Dat lon hon tham so #44./Pham vi: [99-99999]"	
+
+
+#40 -p0 -a3  -t1 -s1"Truc X: toc do bang tay nhanh" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"		
+#41 -p0 -a3  -t1 -s1"Truc Y: toc do bang tay nhanh" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#42 -p0 -a3  -t1 -s1"Truc Z: toc do bang tay nhanh" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#43 -p0 -a4  -t1 -s1"Truc 4: toc do bang tay nhanh" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#44 -p0 -a5  -t1 -s1"Truc 5: toc do bang tay nhanh" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+
+#45 -p0 -a3  -t1 -s1"Truc X: toc do bang tay cham" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"		
+#46 -p0 -a3  -t1 -s1"Truc Y: toc do bang tay cham" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#47 -p0 -a3  -t1 -s1"Truc Z: toc do bang tay cham" -s2"mm/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#48 -p0 -a4  -t1 -s1"Truc 4: toc do bang tay cham" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+#49 -p0 -a5  -t1 -s1"Truc 5: toc do bang tay cham" -s2"deg/min" -m2 -min=1.000 -max=99999.000
+-s3"Neu truc dung dan dong truc chinh, don vi la rpm./Pham vi: [1-99999]"	
+
+#50 -p0 -a3 -t1 -s1"Truc X: gia toc bang tay" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#51 -p0 -a3 -t1 -s1"Truc Y: gia toc bang tay" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#52 -p0 -a3 -t1 -s1"Truc Z: gia toc bang tay" -s2"mm/s2" -m2 -min=1.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#53 -p0 -a4 -t1 -s1"Truc 4: gia toc bang tay" -s2"deg/s2" -m2 -min=1.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#54 -p0 -a5 -t1 -s1"Truc 5: gia toc bang tay" -s2"deg/s2" -m2 -min=1.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+
+#55 -p0 -a3 -t1 -s1"Truc X: giam toc bang tay" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#56 -p0 -a3 -t1 -s1"Truc Y: giam toc bang tay" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#57 -p0 -a3 -t1 -s1"Truc Z: giam toc bang tay" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#58 -p0 -a4 -t1 -s1"Truc 4: giam toc bang tay" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+#59 -p0 -a5 -t1 -s1"Truc 5: giam toc bang tay" -s2"deg/s2" -m2 -min=9.000 -max=9999.000
+-s3"Neu truc dung dan dong truc chinh: so vong tren s^2./Pham vi: [9-9999]"
+
+
+#285 -p0 -a3  -t1 -s1"Truc X: gia toc G00 toi da" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc toi da khi chay G00."
+#286 -p0 -a3  -t1 -s1"Truc Y: gia toc G00 toi da" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc toi da khi chay G00."
+#287 -p0 -a3  -t1 -s1"Truc Z: gia toc G00 toi da" -s2"mm/s2" -m2 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc toi da khi chay G00."
+#288 -p0 -a4  -t1 -s1"Truc 4: gia toc G00 toi da" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"Gia toc va giam toc toi da khi chay G00."
+
+#289 -p0 -a5  -t1 -s1"Truc 5: gia toc G00 toi da" -s2"deg/s2" -m2 -min=0 -max=9999.000
+-s3"Gia toc va giam toc toi da khi chay G00."
+
+#78 -p0 -a3  -t1 -s1"He toa do hien tai" -s2" " -m0 -min=1.000 -max=7.000
+
+#60 -p0 -a3  -t2 -s1"Nguon toc do chay dao" -m3 -min=0.000 -max=1.000 -i0"Lenh F" -i1"Mac dinh"
+-s3"Mac dinh: dung toc do o #61./Lenh F: dung toc do F trong chuong trinh NC./Cung co the chon truc tiep tren man hinh chinh."
+#61 -p0 -a3  -t1 -s1"Toc do chay dao mac dinh" -s2"mm/min" -m3 -min=1.000 -max=99999.000
+-s3"Dung khi khong co lenh F hoac #60 chon Mac dinh./Cung co the dat truc tiep tren man hinh chinh."
+
+#62 -p0 -a3  -t1 -s1"Gia toc duong chay dao G01" -s2"mm/s2" -m3 -min=9.000 -max=9999.000
+-s3"Gia toc khi chay G01, G02 va G03./Dieu chinh phu hop voi dac tinh co khi cua may."
+#63 -p0 -a3  -t1 -s1"Toc do chay nhanh G00" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Chay doc lap: toc do cua tung truc./Noi suy: toc do tong hop tren duong chay."
+
+#64 -p0 -a3  -t1 -s1"Toc do gia cong toi da" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han toc do khi gia cong./Van co hieu luc khi tang he so toc do chay dao (FRO)."
+
+#65 -p0 -a3  -t1 -s1"Truc Z+: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc Z+./Cung co hieu luc voi G00."
+#66 -p0 -a3  -t1 -s1"Truc Z-: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc Z-./Cung co hieu luc voi G00."
+#67 -p0 -a3  -t1 -s1"Truc X: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc X./Cung co hieu luc voi G00."
+#68 -p0 -a3  -t1 -s1"Truc Y: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc Y./Cung co hieu luc voi G00."
+
+#69 -p0 -a3  -t1 -s1"Vi tri Z an toan" -s2"mm" -m3 -min=0.000 -max=999.000
+-s3"Vi tri Z an toan trong he toa do phoi./Khi bat dau, tiep tuc (#90=1) hoac ve goc phoi,/chi nang Z len neu Z dang thap hon vi tri nay."
+#70 -p0 -a3  -t1 -s1"Khoang rut Z khi tam dung" -s2"mm" -m3 -min=0.000 -max=99.000
+-s3"Khoang rut Z tuong doi khi tam dung gia cong."
+
+#71 -p0 -a3 =0  -t2 -s1"G0    "  -m0 -min=0.000 -max=1.000 -i0"  " -i1"  "
+#72 =0 -p0 -a3 -t2 -s1"Kieu chuyen dong G00" -m0 -min=0.000 -max=1.000 -i0"Noi suy" -i1"Doc lap"
+-s3"Noi suy: cac truc phoi hop va den dich cung luc./Doc lap: tung truc di chuyen rieng theo toc do G00."
+
+#73 -p0 -a3 -t2 -s1"Phuong phap noi suy cung tron" -m3 -min=0.000 -max=1.000 -i0"Phan cung" -i1"Phan mem"
+-s3"Phan cung: chinh xac 0.5 xung; phan mem: theo #74./Noi suy phan cung can cac truc cung tron co cung don vi xung."
+#74 -p0 -a3  -t1 -s1"Sai so noi suy cung tron bang phan mem" -s2"mm" -m3 -min=0.001 -max=0.1
+#75 -p0 -a3  -t1 -s1"Gia toc huong tam khi chay cung tron" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"Khac 0: dung gia tri nay gioi han toc do G02 va G03./Bang 0: dung gia toc tai #62."
+
+#76 -p0 -a3  -t2 -s1"Phan tich truoc chuong trinh macro" -m3 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+-s3"Tat: khong phan tich tep truoc khi gia cong./Bat: phan tich cau truc chuong trinh truoc khi gia cong."
+#77 -p0 -a3  -t0 -s1"So chuong trinh chinh trong tep macro" -m3 -min=0.000 -max=9999.000
+-s3"Neu tep co nhieu so chuong trinh, nhap so cua/chuong trinh chinh can thuc hien."
+
+#90 -p0 -a3  -t2 -s1"Xu ly Z truoc khi bat dau gia cong" -s2"" -m3 -min=0.000 -max=1.000 -i0"Khong doi" -i1"Z an toan" 
+-s3"Tac dong khi bat dau hoac tiep tuc gia cong./Vi tri Z an toan duoc dat tai #69."
+#91 -p0 -a3  -t2 -s1"Xu ly Z khi tam dung gia cong" -s2"" -m3 -min=0.000 -max=1.000 -i0"Khong doi" -i1"Rut Z" 
+-s3"Tac dong khi tam dung gia cong./Khoang rut Z duoc dat tai #70."
+
+#93 -p0 -a3  -t2 -s1"Che do tiep tuc sau tam dung" -s2"" -m3 -min=0.000 -max=1.000 -i0"Tu diem dau" -i1"Vi tri hien tai" 
+-s3" "
+
+#220 -p0 -a3  -t2 -s1"Phai ve goc may truoc khi gia cong" -s2"" -m3 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Co: chi cho gia cong tu dong sau khi da ve goc may."
+
+#221 -p0 -a3  -t1 -s1"Toc do chuan cua cung tron R = 5 mm" -s2"mm/min" -m3 -min=0.000 -max=3600000.000
+-s3"Toc do chay dao tham chieu cho cung tron ban kinh 5 mm./Bang 0: tinh toc do cung tron theo #62 va #75."
+
+#222 -p0 -a4  -t1 -s1"Truc 4: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc 4./Cung co hieu luc voi G00."
+
+#223 -p0 -a5  -t1 -s1"Truc 5: gioi han toc do" -s2"mm/min" -m3 -min=99.000 -max=99999.000
+-s3"Gioi han thanh phan toc do theo truc 5./Cung co hieu luc voi G00."
+
+#230 -p0 -a3  -t2 -s1"Tac dong khi ket thuc chuong trinh" -s2"" -m3 -min=0.000 -max=2.000 -i0"Khong doi" -i1"Diem chuan" -i2"Goc phoi"
+-s3"Them M30 o cuoi chuong trinh./Diem chuan: vi tri may theo #122-126."
+
+#253 -p0 -a3  -t2 -s1"He so chay dao tac dong voi G00" -s2"" -m3 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+
+
+
+
+
+#224 -p0 -a3  -t1 -s1"Khoang rut dao G73/G83" -s2"mm" -m3 -min=0.000 -max=20
+-s3"Khoang rut dao cua chu trinh khoan G73 va G83."
+
+#225 =1 -p0 -a3  -t1 -s1"Buoc thay doi he so chay dao" -s2"ms" -m0 -min=1 -max=100
+-s3"Buoc thay doi he so khi thoat dieu khien bang tay quay/hoac khi chinh he so bang tay."
+
+#226 =10 -p0 -a3  -t1 -s1"Buoc giam he so khi tam dung" -s2"ms" -m0 -min=1 -max=100
+-s3"Buoc giam he so toc do chay dao khi giam toc/den dung han khi tam dung gia cong."
+
+#227 =500 -p0 -a3  -t1 -s1"Chu ky thay doi he so chay dao" -s2"us" -m0 -min=1 -max=100000
+-s3"Khoang thoi gian giua cac buoc thay doi he so; ket hop voi #225."
+
+#228 =1 -p0 -a3  -t1 -s1"Buoc giam he so khi reset/bao loi" -s2"ms" -m0 -min=1 -max=100
+-s3"Buoc giam he so toc do chay dao khi reset hoac bao loi."
+
+
+#229 =100 -p0 -a3  -t1 -s1"Chu ky giam he so khi reset/bao loi" -s2"us" -m0 -min=1 -max=100000
+-s3"Khoang thoi gian giua cac buoc giam he so khi reset hoac bao loi."
+
+#280 -p0 -a3  -t1 -s1"Gia toc tai goc noi hai doan" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3" "
+
+#281 -p0 -a3  -t1 -s1"Do giat J cua duong cong S" -s2"mm/s3" -m3 -min=0.000 -max=99999.000
+-s3" "
+#282 -p0 -a3  -t1 -s1"Gia toc noi suy G00" -s2"mm/s2" -m3 -min=0.000 -max=9999.000
+-s3"Gia toc khi noi suy G00. Bang 0: dung #62./Khac 0: dung gia tri nay, gioi han boi #285-289 theo tung truc."
+
+#295 -p0 -a3  -t0 -s1"He so toc do chay dao toi da" -s2"%" -m3 -min=50.000 -max=300.000
+-s3" "
+
+
+#79 -p0 -a3  -t2 -s1"Kieu dieu khien truc chinh" -s2"" -m5 -min=0.000 -max=2.000 -i0"Analog" -i1"Xung/chieu" -i2"Nhieu cap"
+-s3"Kieu tin hieu dieu khien bo truyen dong truc chinh."
+#80 -p0 -a3  -t2 -s1"Truc dan dong truc chinh servo" -m5 -min=0.000 -max=5.000 -i0"Truc X" -i1"Truc Y" -i2"Truc Z" -i3"Truc 4" -i4"Truc 5"
+-s3"Neu dung lam truc chinh servo, cac tham so lien quan/cua truc nay tinh theo so vong quay (R)."
+#81 -p0 -a3  -t1 -s1"Thoi gian cho sau khi bat truc chinh" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Thoi gian cho sau khi thuc hien M03 hoac M04."
+#82 -p0 -a3  -t1 -s1"Toc do truc chinh toi da" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"Toc do quay toi da cua bo truyen dong truc chinh."
+#83 -p0 -a3  -t2 -s1"Bo qua lenh S" -s2"" -m5 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Co: khi bat dau hoac tiep tuc, truc chinh quay thuan (CW)./Dung toc do #85 va bo qua lenh S./Cung co the chon truc tiep tren man hinh chinh."
+#84 -p0 -a3  -t2 -s1"Dung truc chinh khi tam dung" -s2"" -m5 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Chon co dung truc chinh khi tam dung gia cong hay khong."
+#85 -p0 -a3  -t1 -s1"Toc do truc chinh mac dinh" -s2"rpm" -m5 -min=0 -max=99999.000
+-s3"Dung khi khong co lenh S hoac bo qua lenh S (#83)./Cung co the dat truc tiep tren man hinh chinh."
+#86=0 -p0 -a3  -t2 -s1"Muc tin hieu PWM truc chinh" -s2"" -m0 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+#87=0 -p0 -a3  -t0 -s1"Toc do tang PWM tu 0 V len 10 V" -s2"" -m0 -min=0.000 -max=65535.000
+#88 -p0 -a3  -t0 -s1"So cap toc do truc chinh" -s2"" -m5 -min=2.000 -max=8.000
+-s3"Tong so cap khi dung dieu khien truc chinh nhieu cap."
+#89 -p0 -a3  -t1 -s1"Thoi gian cho sau khi dung truc chinh" -s2"S" -m5 -min=0.000 -max=9.000
+-s3"Thoi gian cho sau khi thuc hien M05."
+
+
+#92 -p0 -a3  -t1 -s1"Thoi gian cho sau M8/M9" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Thoi gian cho sau lenh tuoi nguoi."
+#94 -p0 -a3  -t1 -s1"Thoi gian cho sau M10/M11" -s2"S" -m6 -min=0.000 -max=9.000
+-s3"Thoi gian cho sau lenh boi tron."
+#95 -p0 -a3  -t1 -s1"Thoi gian loc tin hieu ngo vao"  -s2"ms" -m6 -min=0 -max=1000000
+
+#96 -p0 -a3  -t0 -s1"Tat ngo ra khi reset: 01-16"   -m6 -min=0 -max=65535
+-s3"Bit = 1: tat ngo ra tuong ung khi reset./Vi du: 7=0111 tat OUT01-OUT03; cac ngo ra khac giu nguyen."
+#97 -p0 -a3  -t0 -s1"Tat ngo ra khi reset: 17-21"   -m6 -min=0 -max=65535
+-s3"Vi du: 7=0111 tat OUT17, OUT18, OUT19 khi reset./Cac ngo ra khac giu nguyen."
+
+#98 -p0 -a3  -t0 -s1"Trang thai ngo ra khi bao loi: 01-16"   -m6 -min=0 -max=65535
+-s3"Vi du: 7=0111 bat OUT01, OUT02, OUT03 khi bao loi./Cac ngo ra duoc cho phep khac se tat./Truoc tien dat bit tuong ung o #264 va #265 thanh 1."
+#99 -p0 -a3  -t0 -s1"Trang thai ngo ra khi bao loi: 17-21"   -m6 -min=0 -max=65535
+-s3"Vi du: 7=0111 bat OUT17, OUT18, OUT19 khi bao loi./Cac ngo ra duoc cho phep khac se tat./Truoc tien dat bit tuong ung o #264 va #265 thanh 1."
+
+#264 -p0 -a3  -t0 -s1"Cho phep ngo ra khi bao loi: 01-16"   -m6 -min=0 -max=65535
+-s3"Dat bit tuong ung thanh 1 truoc khi cau hinh #98."
+#265 -p0 -a3  -t0 -s1"Cho phep ngo ra khi bao loi: 17-21"   -m6 -min=0 -max=65535
+-s3"Dat bit tuong ung thanh 1 truoc khi cau hinh #99."
+
+
+
+#210 -p0 -a3  -t0 -s1"Chuc nang phim K1"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-1.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#211 -p0 -a3  -t0 -s1"Chuc nang phim K2"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-2.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#212 -p0 -a3  -t0 -s1"Chuc nang phim K3"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-3.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#213 -p0 -a3  -t0 -s1"Chuc nang phim K4"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-4.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#214 -p0 -a3  -t0 -s1"Chuc nang phim K5"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-5.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#215 -p0 -a3  -t0 -s1"Chuc nang phim K6"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-6.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#216 -p0 -a3  -t0 -s1"Chuc nang phim K7"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-7.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#217 -p0 -a3  -t0 -s1"Chuc nang phim K8"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-8.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#218 -p0 -a3  -t0 -s1"Chuc nang phim K9"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-9.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#219 -p0 -a3  -t0 -s1"Chuc nang phim K10"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-10.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#231 -p0 -a3  -t0 -s1"Chuc nang phim K11"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-11.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#232 -p0 -a3  -t0 -s1"Chuc nang phim K12"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-12.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#233 -p0 -a3  -t0 -s1"Chuc nang phim K13"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-13.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#234 -p0 -a3  -t0 -s1"Chuc nang phim K14"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-14.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#251 -p0 -a3  -t0 -s1"Chuc nang phim K15"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-15.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#252 -p0 -a3  -t0 -s1"Chuc nang phim K16"  -s2"OUT" -m6 -min=0 -max=2000
+-s3"0: chay key-16.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+
+
+#272 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 1"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-1.nc, extnc1-1.nc, extnc2-1.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#273 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 2"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-2.nc, extnc1-2.nc, extnc2-2.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#274 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 3"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-3.nc, extnc1-3.nc, extnc2-3.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#275 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 4"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-4.nc, extnc1-4.nc, extnc2-4.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#276 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 5"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-5.nc, extnc1-5.nc, extnc2-5.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+#277 -p0 -a3  -t0 -s1"Chuc nang phim ngoai 6"  -s2" " -m6 -min=0 -max=2000
+-s3"0: chay extnc0-6.nc, extnc1-6.nc, extnc2-6.nc./1-32: bat hoac tat OUT1-OUT32./>1000: phim tat chuc nang."
+
+
+
+#100 -p1 -a3  -t2 -s1"Phuong phap xac dinh goc may" -m7 -min=0.000 -max=1.000 -i0"Cong tac" -i1"Servo tuyet doi"
+-s3"Cong tac: can cong tac goc may co khi./Servo tuyet doi: truyen dong servo tuyet doi giao tiep qua bus."
+
+#101 -p0 -a3  -t1 -s1"Truc X: so vong tuyet doi tai goc may" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"So vong quay servo tai goc may./Gia tri thap phan, dau cho biet chieu quay."
+#102 -p0 -a3  -t1 -s1"Truc Y: so vong tuyet doi tai goc may" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"So vong quay servo tai goc may./Gia tri thap phan, dau cho biet chieu quay."
+#103 -p0 -a3  -t1 -s1"Truc Z: so vong tuyet doi tai goc may" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"So vong quay servo tai goc may./Gia tri thap phan, dau cho biet chieu quay."
+#104 -p0 -a4  -t1 -s1"Truc 4: so vong tuyet doi tai goc may" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"So vong quay servo tai goc may./Gia tri thap phan, dau cho biet chieu quay."
+#105 -p0 -a5  -t1 -s1"Truc 5: so vong tuyet doi tai goc may" -s2"r" -m7 -min=-99999.000 -max=99999.000
+-s3"So vong quay servo tai goc may./Gia tri thap phan, dau cho biet chieu quay."
+
+#106 -p0 -a3  -t0 -s1"So lan do cong tac goc may" -m7 -min=1 -max=5
+-s3"So lan lap lai viec do cong tac khi ve goc may."
+
+#107 -p0 -a3  -t1 -s1"Truc X: toc do tim goc may" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Toc do ban dau khi bat dau ve goc may."
+#108 -p0 -a3  -t1 -s1"Truc Y: toc do tim goc may" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Toc do ban dau khi bat dau ve goc may."
+#109 -p0 -a3  -t1 -s1"Truc Z: toc do tim goc may" -s2"mm/min" -m7 -min=99.000 -max=99999.000
+-s3"Toc do ban dau khi bat dau ve goc may."
+#110 -p0 -a4  -t1 -s1"Truc 4: toc do tim goc may" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Toc do ban dau khi bat dau ve goc may."
+#111 -p0 -a5 -t1 -s1"Truc 5: toc do tim goc may" -s2"deg/min" -m7 -min=99.000 -max=99999.000
+-s3"Toc do ban dau khi bat dau ve goc may."
+
+
+
+#112 -p0 -a3  -t2 -s1"Truc X: chieu tim goc may" -m7 -min=0.000 -max=1.000 -i0"Am (-)" -i1"Duong (+)"
+-s3"Chieu chuyen dong ban dau khi bat dau ve goc may."
+#113 -p0 -a3  -t2 -s1"Truc Y: chieu tim goc may" -m7 -min=0.000 -max=1.000 -i0"Am (-)" -i1"Duong (+)"
+-s3"Chieu chuyen dong ban dau khi bat dau ve goc may."
+#114 -p0 -a3  -t2 -s1"Truc Z: chieu tim goc may" -m7 -min=0.000 -max=1.000 -i0"Am (-)" -i1"Duong (+)"
+-s3"Chieu chuyen dong ban dau khi bat dau ve goc may."
+#115 -p0 -a4  -t2 -s1"Truc 4: chieu tim goc may" -m7 -min=0.000 -max=1.000 -i0"Am (-)" -i1"Duong (+)"
+-s3"Chieu chuyen dong ban dau khi bat dau ve goc may."
+#116 -p0 -a5 -t2 -s1"Truc 5: chieu tim goc may" -m7 -min=0.000 -max=1.000 -i0"Am (-)" -i1"Duong (+)"
+-s3"Chieu chuyen dong ban dau khi bat dau ve goc may."
+#117 -p0 -a3  -t1 -s1"Sai lech cong tac goc may toi da" -s2"mm" -m7 -min=0.000 -max=1
+-s3"Bang 0: khong kiem tra. Khac 0: kiem tra sai lech toi da."
+#118 -p0 -a3  -t1 -s1"Toc do tim tinh goc may" -s2"mm/min" -m7 -min=1.000 -max=999.000
+-s3"Bang 0: dung toc do khoi dong dong co tai #0."
+
+#122 -p0 -a3  -t1 -s1"Truc X: vi tri may sau ve goc" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Vi tri trong he toa do may duoc di chuyen den/sau khi xac dinh goc may hoac sau G28."
+#123 -p0 -a3  -t1 -s1"Truc Y: vi tri may sau ve goc" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Vi tri trong he toa do may duoc di chuyen den/sau khi xac dinh goc may hoac sau G28."
+#124 -p0 -a3  -t1 -s1"Truc Z: vi tri may sau ve goc" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Vi tri trong he toa do may duoc di chuyen den/sau khi xac dinh goc may hoac sau G28."
+#125 -p0 -a4  -t1 -s1"Truc 4: vi tri may sau ve goc" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Vi tri trong he toa do may duoc di chuyen den/sau khi xac dinh goc may hoac sau G28."
+#126 -p0 -a5  -t1 -s1"Truc 5: vi tri may sau ve goc" -s2"deg" -m7 -min=-999.000 -max=999.000
+-s3"Vi tri trong he toa do may duoc di chuyen den/sau khi xac dinh goc may hoac sau G28."
+
+
+#235 -p0 -a3  -t1 -s1"Truc X: do lech goc may" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Toa do may tai vi tri chuyen mach cua cong tac goc may."
+#236 -p0 -a3  -t1 -s1"Truc Y: do lech goc may" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Toa do may tai vi tri chuyen mach cua cong tac goc may."
+#237 -p0 -a3  -t1 -s1"Truc Z: do lech goc may" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Toa do may tai vi tri chuyen mach cua cong tac goc may."
+#238 -p0 -a4  -t1 -s1"Truc 4: do lech goc may" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Toa do may tai vi tri chuyen mach cua cong tac goc may."
+#239 -p0 -a5  -t1 -s1"Truc 5: do lech goc may" -s2"mm" -m7 -min=-999.000 -max=999.000
+-s3"Toa do may tai vi tri chuyen mach cua cong tac goc may."
+
+
+#127 -p0 -a3  -t2 -s1"Hoi ve goc may khi bat nguon" -m7 -min=0.000 -max=1.000 -i0"Co" -i1"Khong"
+-s3"Co: khi bat nguon, hoi co thuc hien ve goc may hay khong."
+
+
+#128 -p0 -a3  -t2 -s1"Bat bo do dao di dong" -m8 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+#129 -p0 -a3  -t1 -s1"Do day bo do dao di dong" -s2"mm" -m8 -min=0 -max=99.000
+#130 -p0 -a3  -t2 -s1"Bat bo do dao co dinh" -m8 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+#131 -p0 -a3  -t0 -s1"So lan cham khi do dao" -m8 -min=1 -max=5
+-s3"So lan lap lai viec cham dau do trong qua trinh do dao."
+#132 -p0 -a3  -t1 -s1"Toc do ban dau khi do dao" -s2"mm/min" -m8 -min=50.000 -max=99999.000
+-s3"Toc do ha Z ban dau khi do dao."
+#133 -p0 -a3  -t1 -s1"Do day khoi can dao" -s2"mm" -m0 -min=-99.000 -max=99.000
+-s3"Dung khi do dao bang bo do dao di dong."
+#134 -p0 -a3  -t2 -s1"    " -m0 -min=0.000 -max=1.000 -i0"   " -i1"   "
+-s3"    "
+#135 -p0 -a3  -t1 -s1"Truc X: vi tri bat dau do dao co dinh" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Toa do may khi bat dau do bang bo do dao co dinh."
+#136 -p0 -a3  -t1 -s1"Truc Y: vi tri bat dau do dao co dinh" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Toa do may khi bat dau do bang bo do dao co dinh."
+#137 -p0 -a3  -t1 -s1"Truc Z: vi tri bat dau do dao co dinh" -s2"mm" -m8 -min=-9999.000 -max=9999.000
+-s3"Toa do may khi bat dau do bang bo do dao co dinh."
+#138 -p0 -a4  -t1 -s1"Truc 4: vi tri bat dau do dao co dinh" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Toa do may khi bat dau do bang bo do dao co dinh."
+#139 -p0 -a5  -t1 -s1"Truc 5: vi tri bat dau do dao co dinh" -s2"deg" -m8 -min=-9999.000 -max=9999.000
+-s3"Toa do may khi bat dau do bang bo do dao co dinh."
+
+#140 -p0 -a3  -t1 -s1"Khoang rut len sau khi do dao" -s2"mm" -m8 -min=0.000 -max=999.000
+-s3"Hanh trinh Z tuong doi rut len sau khi cham do dao xong."
+
+#141 -p0 -a3  -t1 -s1"Z an toan truoc khi do dao (toa do may)" -s2"mm" -m8 -min=-9999 -max=9999.000
+-s3"  "
+#149 -p0 -a3 -t2 -s1"Sap xep tep" -m0 -min=0.000 -max=2.000 -i0"Ten tep" -i1"Duoi tep" -i2"Ngay"
+#150 -p0 -a3 -t2 -s1"Truc X: dung tai gioi han cung" -m9 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#151 -p0 -a3 -t2 -s1"Truc Y: dung tai gioi han cung" -m9 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#152 -p0 -a3 -t2 -s1"Truc Z: dung tai gioi han cung" -m9 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#153 -p0 -a4 -t2 -s1"Truc 4: dung tai gioi han cung" -m9 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#154 -p0 -a5 -t2 -s1"Truc 5: dung tai gioi han cung" -m9 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+
+#155 -p1 -a3  -t2 -s1"Bat gioi han hanh trinh mem" -m10 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+-s3"Cho phep chuc nang gioi han hanh trinh mem./Tung truc: gioi han am >= gioi han duong se vo hieu gioi han."
+
+#156 -p0 -a3 -t2 -s1"Truc X: dung tai gioi han mem" -m10 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#157 -p0 -a3 -t2 -s1"Truc Y: dung tai gioi han mem" -m10 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#158 -p0 -a3 -t2 -s1"Truc Z: dung tai gioi han mem" -m10 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#159 -p0 -a4 -t2 -s1"Truc 4: dung tai gioi han mem" -m10 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+#160 -p0 -a5 -t2 -s1"Truc 5: dung tai gioi han mem" -m10 -min=0.000 -max=1.000 -i0"Giam toc" -i1"Dung ngay"
+
+
+#161 -p0 -a3 -t1 -s1"Truc X: gioi han mem phia am" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#162 -p0 -a3 -t1 -s1"Truc Y: gioi han mem phia am" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#163 -p0 -a3 -t1 -s1"Truc Z: gioi han mem phia am" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#164 -p0 -a4 -t1 -s1"Truc 4: gioi han mem phia am" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#165 -p0 -a5 -t1 -s1"Truc 5: gioi han mem phia am" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+
+#166 -p0 -a3 -t1 -s1"Truc X: gioi han mem phia duong" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#167 -p0 -a3 -t1 -s1"Truc Y: gioi han mem phia duong" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#168 -p0 -a3 -t1 -s1"Truc Z: gioi han mem phia duong" -s2"mm" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#169 -p0 -a4 -t1 -s1"Truc 4: gioi han mem phia duong" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+#170 -p0 -a5 -t1 -s1"Truc 5: gioi han mem phia duong" -s2"deg" -m10 -min=-9999.000 -max=9999.000
+-s3"Neu gioi han am lon hon hoac bang gioi han duong,/gioi han mem cua truc nay se bi vo hieu."
+
+#171 -p0 -a3  -t2 -s1"Che do tay quay chinh xac" -m11 -min=0.000 -max=1.000 -i0"Bat" -i1"Tat"
+-s3"0 Bat: sau khi dung tay quay, phat het so xung con lai./1 Tat: giam toc ngay khi dung tay quay."
+#172 -p0 -a3  -t1 -s1"Tay quay X1: quang duong moi nac"  -m11 -min=0.001 -max=0.01
+-s3"Quang duong truc di chuyen khi quay 1 nac voi he so X1."
+#173 -p0 -a3  -t2 -s1"Bat tin hieu dung khan tay quay" -m11 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"
+-s3"Cho phep reset bang tin hieu dung khan tren tay quay."
+#174 -p0 -a3  -t2 -s1"Muc tin hieu dung khan tay quay" -m11 -min=0.000 -max=1.000 -i0"LOW" -i1"HIGH"
+-s3"Chon theo muc tin hieu cua tay quay dang su dung."
+#175 -p0 -a3  -t2 -s1"Chieu quay tay quay" -m11 -min=0.000 -max=1.000 -i0"Duong (+)" -i1"Am (-)"
+#176 -p0 -a3  -t1 -s1"Tay quay X1: toc do" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Toc do truc khi dung he so tay quay X1."
+#177 -p0 -a3  -t1 -s1"Tay quay X10: toc do" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Toc do truc khi dung he so tay quay X10."
+#178 -p0 -a3  -t1 -s1"Tay quay X100: toc do" -s2"mm/min" -m11 -min=50.000 -max=99999.000
+-s3"Toc do truc khi dung he so tay quay X100."
+
+#179 -p0 -a3  -t1 -s1"Thu cat MPG: buoc giam he so khi dung"  -m11 -min=0.001 -max=0.5
+-s3"Buoc giam he so toc do chay dao khi ngung quay tay quay/trong che do gia cong dieu khien bang tay quay."
+
+#180 -p0 -a3  -t1 -s1"Thu cat MPG: buoc thay doi he so"  -m11 -min=0.001 -max=0.5
+-s3"Buoc thay doi he so khi toc do tay quay thay doi/trong che do gia cong dieu khien bang tay quay."
+
+#181 -p0 -a3  -t1 -s1"Truc X: gia toc khi dung tay quay" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc cua truc khi dieu khien bang tay quay."
+#182 -p0 -a3  -t1 -s1"Truc Y: gia toc khi dung tay quay" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc cua truc khi dieu khien bang tay quay."
+#183 -p0 -a3  -t1 -s1"Truc Z: gia toc khi dung tay quay" -s2"mm/s2" -m11 -min=9.000 -max=9999.000
+-s3"Gia toc va giam toc cua truc khi dieu khien bang tay quay."
+#184 -p0 -a4  -t1 -s1"Truc 4: gia toc khi dung tay quay" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"Gia toc va giam toc cua truc khi dieu khien bang tay quay."
+#185 -p0 -a5  -t1 -s1"Truc 5: gia toc khi dung tay quay" -s2"deg/s2" -m11 -min=0 -max=9999.000
+-s3"Gia toc va giam toc cua truc khi dieu khien bang tay quay."
+
+#190 -p0 -a3  -t2 -s1"Truc X: bat bu do ro" -m13 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"	
+-s3"Bu do ro da dat khi truc dao chieu trong qua trinh gia cong."
+#191 -p0 -a3  -t2 -s1"Truc Y: bat bu do ro" -m13 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"	
+-s3"Bu do ro da dat khi truc dao chieu trong qua trinh gia cong."
+#192 -p0 -a3  -t2 -s1"Truc Z: bat bu do ro" -m13 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"	
+-s3"Bu do ro da dat khi truc dao chieu trong qua trinh gia cong."
+#193=0 -p0 -a4  -t2 -s1"Truc 4: bat bu do ro" -m13 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"	
+-s3"Bu do ro da dat khi truc dao chieu trong qua trinh gia cong."
+#194=0 -p0 -a5  -t2 -s1"Truc 5: bat bu do ro" -m13 -min=0.000 -max=1.000 -i0"Tat" -i1"Bat"	
+-s3"Bu do ro da dat khi truc dao chieu trong qua trinh gia cong."
+
+
+
+#195 -p0 -a3 -t1 -s1"Do ro truc X" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Do ro khi dao chieu truc X./Dat theo do ro thuc te cua may."
+#196 -p0 -a3 -t1 -s1"Do ro truc Y" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Do ro khi dao chieu truc Y./Dat theo do ro thuc te cua may."
+#197 -p0 -a3 -t1 -s1"Do ro truc Z" -s2"mm" -m13 -min=0.000 -max=9.999
+-s3"Do ro khi dao chieu truc Z./Dat theo do ro thuc te cua may."
+#198 -p0 -a4 -t1 -s1"Do ro truc 4" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"Do ro khi dao chieu truc 4./Dat theo do ro thuc te cua may."
+#199 -p0 -a5 -t1 -s1"Do ro truc 5" -s2"deg" -m13 -min=0.000 -max=9.999
+-s3"Do ro khi dao chieu truc 5./Dat theo do ro thuc te cua may."
+
+
+#200  -p0 -a3  -t1 -s1"Toc do bu do ro" -s2"mm/min" -m13 -min=0.000 -max=99999.000
+-s3"Toc do khi bu do ro./Gia tri nho hon 1.0: dung toc do chay dao hien tai."
+
+#400 -p0 -a3  -t1 -s1"H01 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H01 khi dung G43 hoac G44."
+#401 -p0 -a3  -t1 -s1"H02 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H02 khi dung G43 hoac G44."
+#402 -p0 -a3  -t1 -s1"H03 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H03 khi dung G43 hoac G44."
+#403 -p0 -a3  -t1 -s1"H04 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H04 khi dung G43 hoac G44."
+#404 -p0 -a3  -t1 -s1"H05 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H05 khi dung G43 hoac G44."
+#405 -p0 -a3  -t1 -s1"H06 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H06 khi dung G43 hoac G44."
+#406 -p0 -a3  -t1 -s1"H07 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H07 khi dung G43 hoac G44."
+#407 -p0 -a3  -t1 -s1"H08 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H08 khi dung G43 hoac G44."
+#408 -p0 -a3  -t1 -s1"H09 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H09 khi dung G43 hoac G44."
+#409 -p0 -a3  -t1 -s1"H10 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H10 khi dung G43 hoac G44."
+#410 -p0 -a3  -t1 -s1"H11 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H11 khi dung G43 hoac G44."
+#411 -p0 -a3  -t1 -s1"H12 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H12 khi dung G43 hoac G44."
+#412 -p0 -a3  -t1 -s1"H13 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H13 khi dung G43 hoac G44."
+#413 -p0 -a3  -t1 -s1"H14 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H14 khi dung G43 hoac G44."
+#414 -p0 -a3  -t1 -s1"H15 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H15 khi dung G43 hoac G44."
+#415 -p0 -a3  -t1 -s1"H16 Bu chieu dai dao" -s2"mm" -m13 -min=-999.999 -max=999.999
+-s3"Bu chieu dai H16 khi dung G43 hoac G44."
+#420 -p0 -a3  -t1 -s1"D01 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D01 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#421 -p0 -a3  -t1 -s1"D02 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D02 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#422 -p0 -a3  -t1 -s1"D03 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D03 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#423 -p0 -a3  -t1 -s1"D04 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D04 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#424 -p0 -a3  -t1 -s1"D05 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D05 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#425 -p0 -a3  -t1 -s1"D06 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D06 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#426 -p0 -a3  -t1 -s1"D07 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D07 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#427 -p0 -a3  -t1 -s1"D08 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D08 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#428 -p0 -a3  -t1 -s1"D09 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D09 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#429 -p0 -a3  -t1 -s1"D10 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D10 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#430 -p0 -a3  -t1 -s1"D11 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D11 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#431 -p0 -a3  -t1 -s1"D12 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D12 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#432 -p0 -a3  -t1 -s1"D13 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D13 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#433 -p0 -a3  -t1 -s1"D14 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D14 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#434 -p0 -a3  -t1 -s1"D15 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D15 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+#435 -p0 -a3  -t1 -s1"D16 Bu ban kinh dao" -s2"mm" -m13 -min=-99.999 -max=99.999
+-s3"Bu ban kinh D16 khi dung G41 hoac G42./Gia tri am dao phia bu trai va phai."
+
+
+
+#800 -p0 -a3  -t0 -s1"So hieu dao hien tai" -m14 -min=0 -max=20
+-s3"So dao lon hon suc chua o dao (tham so 801)/duoc coi la so dao ao."
+#801 -p0 -a3  -t0 -s1"Suc chua o dao" -m14 -min=0 -max=20
+-s3"Dat so vi tri dao thuc te trong o chua dao./Toi da 20 vi tri."
+
+#802 -p0 -a3  -t2 -s1"Kieu o chua dao" -m14 -min=0.000 -max=4.000 -i0"Khong co" -i1"Nhieu truc chinh" -i2"Hang di dong" -i3"Hang co dinh" -i4"Dia servo"
+-s3"Chon khong co o dao, nhieu truc chinh, hang dao di dong,/hang dao co dinh hoac dia dao servo."
+
+#803 -p1 -a3  -t2 -s1"Cho phep dao ao" -m14 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Khi bat, so dao vuot suc chua o dao/se duoc xu ly nhu mot lan thay dao ao."
+
+#804 -p0 -a3  -t2 -s1"Xac nhan khi thay dao" -m0 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Dung khi gap lenh thay dao/va yeu cau xac nhan thay dao."
+#805 -p0 -a3  -t2 -s1"Tu dong do sau thay dao" -m14 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Tu dong do dao sau khi thay dao."
+#806 -p0 -a3  -t1 -s1"Vi tri Z tren khi thay dao" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri tren khi thay dao."
+#807 -p0 -a3  -t1 -s1"Vi tri Z duoi khi thay dao" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri duoi khi thay dao."
+#808 -p0 -a3  -t1 -s1"Vi tri giam toc thay dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri giam toc/truoc khi vao o chua dao."
+#809 -p0 -a3  -t1 -s1"Vi tri giam toc thay dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri giam toc/truoc khi vao o chua dao."
+#810 -p0 -a3  -t1 -s1"Vi tri giam toc thay dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri giam toc/truoc khi vao o chua dao."
+#811 -p0 -a3  -t1 -s1"Toc do di chuyen khi thay dao" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Toc do di chuyen truc chinh trong qua trinh thay dao."
+#812 -p0 -a3  -t1 -s1"Toc do nang Z khi thay dao" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Toc do di toi vi tri Z tren khi thay dao."
+#813 -p0 -a3  -t1 -s1"Toc do ngang tai o chua dao" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Toc do di chuyen ngang khi vao va ra o chua dao."
+#814 -p0 -a3  -t0 -s1"Thoi gian cho sau kep truc chinh" -s2"ms" -m14 -min=0 -max=600000
+-s3"Thoi gian cho sau khi phat tin hieu kep truc chinh/trong qua trinh thay dao."
+#815 -p0 -a3  -t2 -s1"Tro ve sau thay dao" -m14 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+-s3"Z di toi vi tri tren khi thay dao./X, Y va A ve toa do may truoc luc thay dao."
+
+#816 -p0 -a3  -t1 -s1"Vi tri thay dao tay X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X khi thay dao bang tay."
+#817 -p0 -a3  -t1 -s1"Vi tri thay dao tay Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y khi thay dao bang tay."
+#818 -p0 -a3  -t1 -s1"Vi tri thay dao tay Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z khi thay dao bang tay."
+
+#819 -p0 -a3  -t1 -s1"Toc do ha Z khi thay dao" -s2"mm/min" -m14 -min=9 -max=99999
+-s3"Toc do di toi vi tri Z duoi (tham so 807)."
+
+#820 -p0 -a3  -t1 -s1"Diem dau day phoi X (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#821 -p0 -a3  -t1 -s1"Diem dau day phoi Y (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#822 -p0 -a3  -t0 -s1"Thoi gian cho day phoi" -s2"ms" -m14 -min=0 -max=600000
+#823 -p0 -a3  -t1 -s1"Diem cuoi day phoi X (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#824 -p0 -a3  -t1 -s1"Diem cuoi day phoi Y (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#825 -p0 -a3  -t1 -s1"Vi tri rut bo day X (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#826 -p0 -a3  -t1 -s1"Vi tri rut bo day Y (toa do may)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#827 -p0 -a3  -t1 -s1"Toc do day phoi" -s2"mm/min" -m14 -min=9 -max=99999
+
+
+#830 -p0 -a3  -t1 -s1"T01 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T01."
+#831 -p0 -a3  -t1 -s1"T02 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T02."
+#832 -p0 -a3  -t1 -s1"T03 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T03."
+#833 -p0 -a3  -t1 -s1"T04 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T04."
+#834 -p0 -a3  -t1 -s1"T05 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T05."
+#835 -p0 -a3  -t1 -s1"T06 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T06."
+#836 -p0 -a3  -t1 -s1"T07 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T07."
+#837 -p0 -a3  -t1 -s1"T08 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T08."
+#838 -p0 -a3  -t1 -s1"T09 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T09."
+#839 -p0 -a3  -t1 -s1"T10 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T10."
+#840 -p0 -a3  -t1 -s1"T11 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T11."
+#841 -p0 -a3  -t1 -s1"T12 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T12."
+#842 -p0 -a3  -t1 -s1"T13 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T13."
+#843 -p0 -a3  -t1 -s1"T14 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T14."
+#844 -p0 -a3  -t1 -s1"T15 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T15."
+#845 -p0 -a3  -t1 -s1"T16 Vi tri may X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may X cua vi tri dao T16."
+
+#850 -p0 -a3  -t1 -s1"T01 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T01."
+#851 -p0 -a3  -t1 -s1"T02 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T02."
+#852 -p0 -a3  -t1 -s1"T03 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T03."
+#853 -p0 -a3  -t1 -s1"T04 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T04."
+#854 -p0 -a3  -t1 -s1"T05 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T05."
+#855 -p0 -a3  -t1 -s1"T06 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T06."
+#856 -p0 -a3  -t1 -s1"T07 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T07."
+#857 -p0 -a3  -t1 -s1"T08 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T08."
+#858 -p0 -a3  -t1 -s1"T09 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T09."
+#859 -p0 -a3  -t1 -s1"T10 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T10."
+#860 -p0 -a3  -t1 -s1"T11 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T11."
+#861 -p0 -a3  -t1 -s1"T12 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T12."
+#862 -p0 -a3  -t1 -s1"T13 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T13."
+#863 -p0 -a3  -t1 -s1"T14 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T14."
+#864 -p0 -a3  -t1 -s1"T15 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T15."
+#865 -p0 -a3  -t1 -s1"T16 Vi tri may Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Y cua vi tri dao T16."
+
+#870 -p0 -a3  -t1 -s1"T01 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T01."
+#871 -p0 -a3  -t1 -s1"T02 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T02."
+#872 -p0 -a3  -t1 -s1"T03 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T03."
+#873 -p0 -a3  -t1 -s1"T04 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T04."
+#874 -p0 -a3  -t1 -s1"T05 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T05."
+#875 -p0 -a3  -t1 -s1"T06 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T06."
+#876 -p0 -a3  -t1 -s1"T07 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T07."
+#877 -p0 -a3  -t1 -s1"T08 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T08."
+#878 -p0 -a3  -t1 -s1"T09 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T09."
+#879 -p0 -a3  -t1 -s1"T10 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T10."
+#880 -p0 -a3  -t1 -s1"T11 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T11."
+#881 -p0 -a3  -t1 -s1"T12 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T12."
+#882 -p0 -a3  -t1 -s1"T13 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T13."
+#883 -p0 -a3  -t1 -s1"T14 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T14."
+#884 -p0 -a3  -t1 -s1"T15 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T15."
+#885 -p0 -a3  -t1 -s1"T16 Vi tri may Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+-s3"Toa do may Z cua vi tri dao T16."
+
+
+
+#890 -p0 -a3  -t1 -s1"T01 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#891 -p0 -a3  -t1 -s1"T02 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#892 -p0 -a3  -t1 -s1"T03 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#893 -p0 -a3  -t1 -s1"T04 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#894 -p0 -a3  -t1 -s1"T05 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#895 -p0 -a3  -t1 -s1"T06 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#896 -p0 -a3  -t1 -s1"T07 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#897 -p0 -a3  -t1 -s1"T08 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#898 -p0 -a3  -t1 -s1"T09 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#899 -p0 -a3  -t1 -s1"T10 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#900 -p0 -a3  -t1 -s1"T11 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#901 -p0 -a3  -t1 -s1"T12 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#902 -p0 -a3  -t1 -s1"T13 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#903 -p0 -a3  -t1 -s1"T14 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#904 -p0 -a3  -t1 -s1"T15 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#905 -p0 -a3  -t1 -s1"T16 Do lech dao X" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#910 -p0 -a3  -t1 -s1"T01 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#911 -p0 -a3  -t1 -s1"T02 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#912 -p0 -a3  -t1 -s1"T03 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#913 -p0 -a3  -t1 -s1"T04 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#914 -p0 -a3  -t1 -s1"T05 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#915 -p0 -a3  -t1 -s1"T06 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#916 -p0 -a3  -t1 -s1"T07 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#917 -p0 -a3  -t1 -s1"T08 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#918 -p0 -a3  -t1 -s1"T09 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#919 -p0 -a3  -t1 -s1"T10 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#920 -p0 -a3  -t1 -s1"T11 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#921 -p0 -a3  -t1 -s1"T12 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#922 -p0 -a3  -t1 -s1"T13 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#923 -p0 -a3  -t1 -s1"T14 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#924 -p0 -a3  -t1 -s1"T15 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#925 -p0 -a3  -t1 -s1"T16 Do lech dao Y" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#930 -p0 -a3  -t1 -s1"T01 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#931 -p0 -a3  -t1 -s1"T02 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#932 -p0 -a3  -t1 -s1"T03 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#933 -p0 -a3  -t1 -s1"T04 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#934 -p0 -a3  -t1 -s1"T05 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#935 -p0 -a3  -t1 -s1"T06 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#936 -p0 -a3  -t1 -s1"T07 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#937 -p0 -a3  -t1 -s1"T08 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#938 -p0 -a3  -t1 -s1"T09 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#939 -p0 -a3  -t1 -s1"T10 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#940 -p0 -a3  -t1 -s1"T11 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#941 -p0 -a3  -t1 -s1"T12 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#942 -p0 -a3  -t1 -s1"T13 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#943 -p0 -a3  -t1 -s1"T14 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#944 -p0 -a3  -t1 -s1"T15 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#945 -p0 -a3  -t1 -s1"T16 Do lech dao Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#973 -p0 -a3  -t1 -s1"Dao ao 01: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#974 -p0 -a3  -t1 -s1"Dao ao 02: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#975 -p0 -a3  -t1 -s1"Dao ao 03: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#976 -p0 -a3  -t1 -s1"Dao ao 04: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#977 -p0 -a3  -t1 -s1"Dao ao 05: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#978 -p0 -a3  -t1 -s1"Dao ao 06: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#979 -p0 -a3  -t1 -s1"Dao ao 07: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#980 -p0 -a3  -t1 -s1"Dao ao 08: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#981 -p0 -a3  -t1 -s1"Dao ao 09: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#982 -p0 -a3  -t1 -s1"Dao ao 10: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#983 -p0 -a3  -t1 -s1"Dao ao 11: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#984 -p0 -a3  -t1 -s1"Dao ao 12: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#985 -p0 -a3  -t1 -s1"Dao ao 13: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#986 -p0 -a3  -t1 -s1"Dao ao 14: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#987 -p0 -a3  -t1 -s1"Dao ao 15: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#988 -p0 -a3  -t1 -s1"Dao ao 16: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#989 -p0 -a3  -t1 -s1"Dao ao 17: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#990 -p0 -a3  -t1 -s1"Dao ao 18: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#991 -p0 -a3  -t1 -s1"Dao ao 19: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+#992 -p0 -a3  -t1 -s1"Dao ao 20: do lech Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
+
+
+#999 =0 -p0 -a3 -t2 -s1"Che do dich toa do" -m14 -min=0.000 -max=2.000 -i0"Tieu chuan" -i1"Dich theo dao" -i2"Khac"
+
+#299 -p0 -a3 -t2 -s1"Don vi chieu dai" -s2"" -m15 -min=0.000 -max=1.000 -i0"He met mm" -i1"Inch in" -s3"Luu va khoi dong lai. Chi quy doi cho truc X, Y, Z./Don vi trong chuong trinh NC do G20 hoac G21 quy dinh."
+#240 -p0 -a3  -t2 -s1"Ngon ngu"  -m15 -min=0.000 -max=3.000 -i0"Tieng Anh" -i1"Tieng Trung" -i2"Tieng Nga" -i3"Tieng Viet"
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+#241 -p0 -a3  -t2 -s1"Cho phep coi bao" -m15 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+#242 -p0 -a3  -t2 -s1"Bo cuc man hinh chinh" -m0 -min=0.000 -max=2.000 -i0"1" -i1"2" -i2"3"
+#244 -p0 -a3  -t2 -s1"Ve duong chay dao thoi gian thuc" -m15 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+#245 -p0 -a3  -t2 -s1"Kieu hien thi duong chay dao" -m15 -min=0.000 -max=2.000 -i0"Phu dieu" -i1"Duong net" -i2"3D"
+#246=600 -p0 -a3  -t0 -s1"So doan nhin truoc toi da" -m0 -min=100.000 -max=3600.000
+#247 -p0 -a3  -t1 -s1"Chu ky noi suy" -s2"S" -m15 -min=0.001 -max=0.010
+-s3"Chu ky noi suy ngan hon lam tang do chinh xac,/giam rung giat khi gia cong,/nhung lam tang thoi gian gia cong."
+#248 -p0 -a3  -t1  -s1"Thoi gian hien thi logo khach hang" -s2"S" -m15 -min=0.1 -max=10.0
+
+#266 -p1 -a3 -t2 -s1"Toc do baud cong 1" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+#267 -p1 -a3 -t2 -s1"Toc do baud cong 2" -m15 -min=0.000 -max=4.000 -i0"B2400" -i1"B4800" -i2"B9600" -i3"B19200" -i4"B115200" 
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+
+#268 -p1 -a3 -t2 -s1"Bang dieu khien mo rong" -m15 -min=0.000 -max=2.000 -i0"Khong co" -i1"M3K" -i2"Du phong"
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+
+
+#269 -p0 -a3  -t2 -s1"Cho phep xuat chan doan" -m15 -min=0.000 -max=1.000 -i0"Khong" -i1"Co"
+
+#278 -p1 -a3 -t2 -s1"Thiet bi nhap USB" -m15 -min=0.000 -max=2.000 -i0"Tat" -i1"Ban phim" -i2"May quet"
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+
+
+
+
+#283 -p1 -a3 -t2 -s1"Gia cong theo ma vach" -m0 -min=0.000 -max=2.000 -i0"Tat" -i1"Hoat dong" -i2"Kiem tra"
+-s3"Hoi nha cung cap ve loai may quet phu hop/truoc khi bat chuc nang. Sau do khoi dong lai."
+#284 -p1 -a3 -t2 -s1"Che do mang" -m15 -min=0.000 -max=2.000 -i0"Tat" -i1"IP tu dong" -i2"IP thu cong" 
+-s3" "
+
+#279  -p1 -a3 -t2 -s1"Modbus RTU" -m15 -min=0.000 -max=2.000 -i0"Tat" -i1"Master" -i2"Slave" 
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+
+#296 -p1 -a3 -t2 -s1"Bit chan le cong 2" -m15 -min=0.000 -max=2 -i0"Khong" -i1"Le" -i2"Chan"
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+
+#297 -p1 -a3 -t2 -s1"Bit dung cong 2" -m15 -min=0.000 -max=1 -i0"1" -i1"2"
+-s3"Thay doi co hieu luc sau khi khoi dong lai."
+#298 = 100
+#270 = 888888 -p0 -a3  -t0 -s1"   " -m0 -min=0.000 -max=999999.000
+#249 =4 -p0 -a3  -t0=4.000 -s1"   " -m0 -min=2.000 -max=512.000
+#250 -p0 -a3  -t1=0.000 -s1"Sai lech bien dang gia cong toi da" -s2"mm" -m0 -min=0.000 -max=0.100
+#271 =0 -p0 -a3  -t1  -s1"Sai lech bien dang toi da" -s2"mm" -m0 -min=0.000 -max=0.100
+
+
+
+
+#254 -p0 -a3  -t1=200.0 -s1"  " -m0 -min=0.000 -max=999.999
+#255 -p0 -a3  -t1=200.0 -s1" " -m0 -min=0.000 -max=999.999
+#256 -p0 -a3  -t1=3.0 -s1"  " -m0 -min=0.000 -max=999.999
+#257 -p0 -a3  -t1=3.0 -s1"   " -m0 -min=0.000 -max=999.999
+#258 -p0 -a3  -t1=100.0 -s1"  " -m0 -min=0.000 -max=999.999
+#259 -p0 -a3  -t1=100.0 -s1"   " -m0 -min=0.000 -max=999.999
+#260 -p0 -a3  -t1=3.0 -s1"   " -m0 -min=0.000 -max=999.999
+#261 =0 -p0 -a3  -t1 -s1"Goc xoay 3D quanh X" -s2"deg" -m0 -min=-180.000 -max=180.0
+#262 =0 -p0 -a3  -t1 -s1"Goc xoay 3D quanh Y" -s2"deg" -m0 -min=-180.000 -max=180.0
+#263 =0 -p0 -a3  -t1 -s1"Goc xoay 3D quanh Z" -s2"deg" -m0 -min=-180.000 -max=180.0
+
+#500 -p0 -a3  -t0 -s1"Bao loi servo truc X" -m16 -min=0.000 -max=24.000
+#503 -p0 -a3  -t0 -s1"Bao loi servo truc Y" -m16 -min=0.000 -max=24.000
+#506 -p0 -a3  -t0 -s1"Bao loi servo truc Z" -m16 -min=0.000 -max=24.000
+#509 -p0 -a3  -t0 -s1"Bao loi servo truc 4" -m16 -min=0.000 -max=24.000
+#512 -p0 -a5  -t0 -s1"Bao loi servo truc 5" -m16 -min=0.000 -max=24.000
+
+
+#515 -p0 -a3  -t0 -s1"Cong tac hanh trinh am truc X" -m16 -min=0.000 -max=24.000
+#518 -p0 -a3  -t0 -s1"Cong tac hanh trinh am truc Y" -m16 -min=0.000 -max=24.000
+#521 -p0 -a3  -t0 -s1"Cong tac hanh trinh am truc Z" -m16 -min=0.000 -max=24.000
+#524 -p0 -a4  -t0 -s1"Cong tac hanh trinh am truc 4" -m16 -min=0.000 -max=24.000
+#527 -p0 -a5  -t0 -s1"Cong tac hanh trinh am truc 5" -m16 -min=0.000 -max=24.000
+
+
+#530 -p0 -a3  -t0 -s1"Cong tac hanh trinh duong truc X" -m16 -min=0.000 -max=24.000
+#533 -p0 -a3  -t0 -s1"Cong tac hanh trinh duong truc Y" -m16 -min=0.000 -max=24.000
+#536 -p0 -a3  -t0 -s1"Cong tac hanh trinh duong truc Z" -m16 -min=0.000 -max=24.000
+#539 -p0 -a4  -t0 -s1"Cong tac hanh trinh duong truc 4" -m16 -min=0.000 -max=24.000
+#542 -p0 -a5  -t0 -s1"Cong tac hanh trinh duong truc 5" -m16 -min=0.000 -max=24.000
+
+
+#545 -p0 -a3  -t0 -s1"Cong tac goc may truc X" -m16 -min=0.000 -max=24.000
+#548 -p0 -a3  -t0 -s1"Cong tac goc may truc Y" -m16 -min=0.000 -max=24.000
+#551 -p0 -a3  -t0 -s1"Cong tac goc may truc Z" -m16 -min=0.000 -max=24.000
+#554 -p0 -a4  -t0 -s1"Cong tac goc may truc 4" -m16 -min=0.000 -max=24.000
+#557 -p0 -a5  -t0 -s1"Cong tac goc may truc 5" -m16 -min=0.000 -max=24.000
+
+
+#575 -p0 -a3  -t0 -s1"Tin hieu bo do dao co dinh" -m16 -min=0.000 -max=24.000
+#578 -p0 -a3  -t0 -s1"Tin hieu bo do dao di dong" -m16 -min=0.000 -max=24.000
+
+
+#581 -p0 -a3  -t0 -s1"Phim ngoai 1" -m16 -min=0.000 -max=24.000
+#584 -p0 -a3  -t0 -s1"Phim ngoai 2" -m16 -min=0.000 -max=24.000
+#587 -p0 -a3  -t0 -s1"Phim ngoai 3" -m16 -min=0.000 -max=24.000
+#590 -p0 -a3  -t0 -s1"Phim ngoai 4" -m16 -min=0.000 -max=24.000
+#593 -p0 -a3  -t0 -s1"Phim ngoai 5" -m16 -min=0.000 -max=24.000
+#596 -p0 -a3  -t0 -s1"Phim ngoai 6" -m16 -min=0.000 -max=24.000
+#599 -p0 -a3  -t0 -s1"Khoi dong ngoai" -m16 -min=0.000 -max=24.000
+#602 -p0 -a3  -t0 -s1"Dung chay dao ngoai" -m16 -min=0.000 -max=24.000
+#605 -p0 -a3  -t0 -s1"Dung khan cap ngoai" -m16 -min=0.000 -max=24.000
+
+#620 -p0 -a3  -t0 -s1"Bao truc chinh da dung (M300)" -m16 -min=0.000 -max=24.000
+#623 -p0 -a3  -t0 -s1"Bao dao da nha kep (M301)" -m16 -min=0.000 -max=24.000
+#626 -p0 -a3  -t0 -s1"Bao dao da kep (M302)" -m16 -min=0.000 -max=24.000
+#629 -p0 -a3  -t0 -s1"Bao o dao da dua ra (M303)" -m16 -min=0.000 -max=24.000
+#632 -p0 -a3  -t0 -s1"Chup hut bui mo/dong (M305/M306)" -m16 -min=0.000 -max=24.000
+
+#635 -p0 -a3  -t0 -s1"Ngo vao bao loi bien tan" -m16 -min=0.000 -max=24.000
+#638 -p0 -a3  -t0 -s1"Ngo vao bao loi tuy chon 1" -m16 -min=0.000 -max=24.000
+#641 -p0 -a3  -t0 -s1"Ngo vao bao loi tuy chon 2" -m16 -min=0.000 -max=24.000
+#644 -p0 -a3  -t0 -s1"Ngo vao bao loi tuy chon 3" -m16 -min=0.000 -max=24.000
+#647 -p0 -a3  -t0 -s1"Ngo vao bao loi tuy chon 4" -m16 -min=0.000 -max=24.000
+#650 -p0 -a3  -t0 -s1"Ngo vao bao loi tuy chon 5" -m16 -min=0.000 -max=24.000
+#697 -p0 -a3  -t0 -s1"Bao o dao da thu vao (M304)" -m16 -min=0.000 -max=24.000
+
+
+#715 -p0 -a3  -t0 -s1"Truc chinh quay thuan" -m17 -min=0.000 -max=20.000
+#718 -p0 -a3  -t0 -s1"Truc chinh quay nghich" -m17 -min=0.000 -max=20.000
+
+#721 -p0 -a3  -t0 -s1"Cap toc do truc chinh: ngo ra 1" -m17 -min=0.000 -max=20.000
+#724 -p0 -a3  -t0 -s1"Cap toc do truc chinh: ngo ra 2" -m17 -min=0.000 -max=20.000
+#727 -p0 -a3  -t0 -s1"Cap toc do truc chinh: ngo ra 3" -m17 -min=0.000 -max=20.000
+
+#730 -p0 -a3  -t0 -s1"Tuoi nguoi (M8/M9)" -m17 -min=0.000 -max=20.000
+#733 -p0 -a3  -t0 -s1"Boi tron (M10/M11)" -m17 -min=0.000 -max=20.000
+
+#736 -p0 -a3  -t0 -s1"Den bao loi" -m17 -min=0.000 -max=20.000
+#739 -p0 -a3  -t0 -s1"Den bao dang chay" -m17 -min=0.000 -max=20.000
+#742 -p0 -a3  -t0 -s1"Phanh giu" -m17 -min=0.000 -max=20.000
+#745 -p0 -a3  -t0 -s1"Den bao san sang" -m17 -min=0.000 -max=20.000
+
+#750 -p0 -a3  -t0 -s1"Nha/kep dao (M154/M155)" -m17 -min=0.000 -max=20.000
+#753 -p0 -a3  -t0 -s1"Dua o dao ra/vao (M152/M153)" -m17 -min=0.000 -max=20.000
+#756 -p0 -a3  -t0 -s1"Chan truoc bat/tat (M156/M157)" -m17 -min=0.000 -max=20.000
+#759 -p0 -a3  -t0 -s1"Bom chan khong bat/tat (M158/M159)" -m17 -min=0.000 -max=20.000
+#762 -p0 -a3  -t0 -s1"Chup hut bui mo/dong (M150/M151)" -m17 -min=0.000 -max=20.000
+#765 -p0 -a3  -t0 -s1"Xi lanh day phoi bat/tat (M160/M161)" -m17 -min=0.000 -max=20.000
+#768 -p0 -a3  -t0 -s1"Hut bui bat/tat (M162/M163)" -m17 -min=0.000 -max=20.000
+#771 -p0 -a3  -t0 -s1"Chan trai bat/tat (M164/M165)" -m17 -min=0.000 -max=20.000
+#774 -p0 -a3  -t0 -s1"Van chan khong mo/dong (M166/M167)" -m17 -min=0.000 -max=20.000
+#777 -p0 -a3  -t0 -s1"Xi lanh truc chinh 1 bat/tat (M168/M169)" -m17 -min=0.000 -max=20.000
+#780 -p0 -a3  -t0 -s1"Xi lanh truc chinh 2 bat/tat (M170/M171)" -m17 -min=0.000 -max=20.000
+#783 -p0 -a3  -t0 -s1"Xi lanh truc chinh 3 bat/tat (M172/M173)" -m17 -min=0.000 -max=20.000
+#786 -p0 -a3  -t0 -s1"Xi lanh truc chinh 4 bat/tat (M174/M175)" -m17 -min=0.000 -max=20.000
+#789 -p0 -a3  -t0 -s1"Tuoi nguoi 1 bat/tat (M176/M177)" -m17 -min=0.000 -max=20.000
+#792 -p0 -a3  -t0 -s1"Tuoi nguoi 2 bat/tat (M178/M179)" -m17 -min=0.000 -max=20.000
+
+
+#950 -p0 -a3  -t0 -s1"So tep T1" -s2"T1xx.nc" -m18 -min=0 -max=99
+-s3"01:T101.nc, 0:khong"
+#951 -p0 -a3  -t0 -s1"So tep T2" -s2"T2xx.nc" -m18 -min=-0 -max=99
+-s3"02:T202.nc, 0:khong"
+#952 -p0 -a3  -t1 -s1"Cao do an toan Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#953 -p0 -a3  -t1 -s1"Diem dau Y" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#954 -p0 -a3  -t1 -s1"Diem dau Z" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#955 -p0 -a3  -t1 -s1"Vi tri X thu 1" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#956 -p0 -a3  -t1 -s1"Vi tri X thu 2" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#957 -p0 -a3  -t1 -s1"Vi tri X thu 3" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#958 -p0 -a3  -t1 -s1"Vi tri X thu 4" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#959 -p0 -a3  -t1 -s1"Vi tri X thu 5" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+#960 -p0 -a3  -t1 -s1"Vi tri X thu 6" -s2"mm" -m18 -min=-9999.999 -max=9999.999
+-s3"Gia tri theo he toa do phoi."
+
+#965 -p0 -a3  -t0 -s1"Dung giua T1 va T2" -s2" " -m18 -min=0 -max=1
+-s3"0:khong dung, 1:dung"
+
+#966 -p0 -a3  -t1 -s1"Toc do truc chinh T1" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"Toc do quay truc chinh khi dung T1."
+
+#967 -p0 -a3  -t1 -s1"Toc do truc chinh T2" -s2"rpm" -m18 -min=0 -max=99999.000
+-s3"Toc do quay truc chinh khi dung T2."
+
+#968 -p0 -a3  -t0 -s1"So tep NC" -s2"camxx.nc" -m18 -min=0 -max=9999
+-s3"0-9999:cam0-cam9999.nc"
+#969 -p0 -a3  -t0 -s1"   " -s2"Gxx" -m0 -min=100 -max=200
+-s3"100-199:      ."
+
+
+
+#1000 -p0 -a3  -t1 -s1"Diem cuoi truc X" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc X."
+#1001 -p0 -a3  -t1 -s1"Diem cuoi truc Y" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc Y."
+#1002 -p0 -a3  -t1 -s1"Diem cuoi truc Z" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc Z."
+#1003 -p0 -a4  -t1 -s1"Diem cuoi truc 4" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc 4."
+#1004 -p0 -a5  -t1 -s1"Diem cuoi truc 5" -s2"mm" -m20 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc 5."
+
+
+#1006 -p0 -a3  -t1 -s1"Diem cuoi truc X" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc X."
+#1007 -p0 -a3  -t1 -s1"Diem cuoi truc Y" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc Y."
+#1008 -p0 -a3  -t1 -s1"Diem cuoi truc Z" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc Z."
+#1009 -p0 -a4  -t1 -s1"Diem cuoi truc 4" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc 4."
+#1010 -p0 -a5  -t1 -s1"Diem cuoi truc 5" -s2"mm" -m21 -min=-9999.999 -max=9999.999
+-s3"Toa do cuoi cua truc 5."
+#1011 -p0 -a3  -t0 -s1"Toc do chay dao F" -s2"mm/min" -m21 -min=1 -max=99999.000
+-s3"Toc do chay dao F."
+
+#1012 -p0 -a3  -t1 -s1"Diem dau cung X0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem dau cung tron tren truc X."
+#1013 -p0 -a3  -t1 -s1"Diem dau cung Y0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem dau cung tron tren truc Y."
+#1014 -p0 -a3  -t1 -s1"Diem dau cung Z0" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem dau cung tron tren truc Z."
+#1015 -p0 -a4  -t1 -s1"Diem dau cung truc 4" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem dau cung tron tren truc 4."
+#1016 -p0 -a5  -t1 -s1"Diem dau cung truc 5" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem dau cung tron tren truc 5."
+
+#1017 -p0 -a3  -t1 -s1"Diem giua cung X1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem giua cung tron tren truc X."
+#1018 -p0 -a3  -t1 -s1"Diem giua cung Y1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem giua cung tron tren truc Y."
+#1019 -p0 -a3  -t1 -s1"Diem giua cung Z1" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem giua cung tron tren truc Z."
+#1020 -p0 -a4  -t1 -s1"Diem giua cung truc 4" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem giua cung tron tren truc 4."
+#1021 -p0 -a5  -t1 -s1"Diem giua cung truc 5" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem giua cung tron tren truc 5."
+
+#1022 -p0 -a3  -t1 -s1"Diem cuoi cung X2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem cuoi cung tron tren truc X."
+#1023 -p0 -a3  -t1 -s1"Diem cuoi cung Y2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem cuoi cung tron tren truc Y."
+#1024 -p0 -a3  -t1 -s1"Diem cuoi cung Z2" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem cuoi cung tron tren truc Z."
+#1025 -p0 -a4  -t1 -s1"Diem cuoi cung truc 4" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem cuoi cung tron tren truc 4."
+#1026 -p0 -a5  -t1 -s1"Diem cuoi cung truc 5" -s2"mm" -m22 -min=-9999.999 -max=9999.999
+-s3"Toa do diem cuoi cung tron tren truc 5."
+#1027 -p0 -a3  -t0 -s1"Toc do chay dao F" -s2"mm/min" -m22 -min=1 -max=99999.000
+-s3"Toc do chay dao F."
+
+
+#1030 -p0 -a3  -t0 -s1"So ngo vao IN_xx" -s2"" -m23 -min=1 -max=24
+-s3"1:IN01 2:IN02 3:IN03 ..."
+#1031 -p0 -a3  -t0 -s1"Muc tac dong ngo vao" -s2" " -m23 -min=0 -max=1
+-s3"Dung cam bien NPN: 0:thuong mo, 1:thuong dong."
+
+
+#1035 -p0 -a3  -t0 -s1"So ngo ra OUT_xx" -s2"" -m24 -min=1 -max=21
+-s3"1:OUT01 2:OUT02 3:OUT03 ..."
+#1036 -p0 -a5  -t0 -s1"Muc ngo ra" -s2" " -m24 -min=0 -max=1
+-s3"0:tat ngo ra, 1:bat ngo ra"
+
+
+#1040 -p0 -a3  -t0 -s1"So khoi dich khi nhay" -s2"" -m25 -min=1 -max=999
+-s3"1:N001 2:N002 ..."
+#1041 -p0 -a5  -t0 -s1"So lan lap" -s2" " -m25 -min=0 -max=9999
+-s3"0:lap vo han, >0:so lan lap."
+
+
+#1045 -p0 -a3  -t0 -s1"Thoi gian dung cho" -s2"ms" -m26 -min=1 -max=99999
+-s3"Thoi gian tinh bang mili giay. 1 giay = 1000 mili giay."
+
+
+#1100 -p0 -a3  -t1 -s1"Tham so 1" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 1."
+#1101 -p0 -a3  -t1 -s1"Tham so 2" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 2."
+#1102 -p0 -a3  -t1 -s1"Tham so 3" -s2" " -m30 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 3."
+
+
+
+#1103 -p0 -a3  -t1 -s1"Tham so 1" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 1."
+#1104 -p0 -a3  -t1 -s1"Tham so 2" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 2."
+#1105 -p0 -a3  -t1 -s1"Tham so 3" -s2" " -m31 -min=-9999.999 -max=99999.999
+-s3"Mo ta tham so 3."
+
+
+
+
+
+
+&&
