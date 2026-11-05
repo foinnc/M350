@@ -22,6 +22,10 @@
 | --- | --- |
 | [![德语实机主界面](German/images/02-main-screen.png)](German/images/02-main-screen.png) | [![越南语实机主界面](Vietnamese/images/02-main-screen.png)](Vietnamese/images/02-main-screen.png) |
 
+| [法语 · Français](French/README.md) | [意大利语 · Italiano](Italian/README.md) |
+| --- | --- |
+| [![法语实机主界面](French/images/02-main-screen.png)](French/images/02-main-screen.png) | [![意大利语实机主界面](Italian/images/02-main-screen.png)](Italian/images/02-main-screen.png) |
+
 #### 240 号语言参数页
 
 | [葡萄牙语 · Português](Portuguese/README.md) | [韩语 · 한국어](Korean/README.md) |
@@ -32,14 +36,26 @@
 | --- | --- |
 | [![德语 240 号语言参数页](German/images/01-language-selection.png)](German/images/01-language-selection.png) | [![越南语 240 号语言参数页](Vietnamese/images/01-language-selection.png)](Vietnamese/images/01-language-selection.png) |
 
+| [法语 · Français](French/README.md) | [意大利语 · Italiano](Italian/README.md) |
+| --- | --- |
+| [![法语 240 号语言参数页](French/images/01-language-selection.png)](French/images/01-language-selection.png) | [![意大利语 240 号语言参数页](Italian/images/01-language-selection.png)](Italian/images/01-language-selection.png) |
+
 ### 配套语言包
+
+下载包统一使用 `M350-语言名.zip`，文件名不带日期或版本后缀。配套软件版本请查看下表及包内说明书。
 
 | 语言 | 配套软件版本 | 文件与使用说明 |
 | --- | --- | --- |
-| 葡萄牙语（巴西 CNC 常用术语） | 2026-10-23-05，V1/V2 | [葡萄牙语安装说明](Portuguese/README.md) · [V1 文件夹](Portuguese/V1/install/) · [V2 文件夹](Portuguese/V2/psys/) · [下载配置包](Portuguese/M350-Portuguese-2026-10-23-05.zip) |
-| 韩语（韩国 CNC 常用术语） | 2026-10-23-05，V1/V2 | [韩文安装说明](Korean/README.md) · [V1 文件夹](Korean/V1/install/) · [V2 文件夹](Korean/V2/psys/) · [下载配置包](Korean/M350-Korean-2026-10-23-05.zip) |
-| 德语（德语 CNC 常用术语） | 2026-10-23-05，V1/V2 | [德文安装说明](German/README.md) · [V1 文件夹](German/V1/install/) · [V2 文件夹](German/V2/psys/) · [下载配置包](German/M350-German-2026-10-23-05.zip) |
-| 越南语（越南 CNC 常用术语） | 2026-10-23-05，V1/V2 | [越文安装说明](Vietnamese/README.md) · [V1 文件夹](Vietnamese/V1/install/) · [V2 文件夹](Vietnamese/V2/psys/) · [下载配置包](Vietnamese/M350-Vietnamese-2026-10-23-05.zip) |
+| 葡萄牙语（巴西 CNC 常用术语） | 2026-10-23-05，V1/V2 | [葡萄牙语安装说明](Portuguese/README.md) · [V1 文件夹](Portuguese/V1/install/) · [V2 文件夹](Portuguese/V2/psys/) · [下载配置包](Portuguese/M350-Portuguese.zip) |
+| 韩语（韩国 CNC 常用术语） | 2026-11-05-02，V1/V2 | [韩文安装说明](Korean/README.md) · [V1 文件夹](Korean/V1/install/) · [V2 文件夹](Korean/V2/psys/) · [下载配置包](Korean/M350-Korean.zip) |
+| 德语（德语 CNC 常用术语） | 2026-10-23-05，V1/V2 | [德文安装说明](German/README.md) · [V1 文件夹](German/V1/install/) · [V2 文件夹](German/V2/psys/) · [下载配置包](German/M350-German.zip) |
+| 越南语（越南 CNC 常用术语） | 2026-10-23-05，V1/V2 | [越文安装说明](Vietnamese/README.md) · [V1 文件夹](Vietnamese/V1/install/) · [V2 文件夹](Vietnamese/V2/psys/) · [下载配置包](Vietnamese/M350-Vietnamese.zip) |
+| 法语（法国 CNC 常用术语） | 2026-11-05-02，V1/V2 | [法文安装说明](French/README.md) · [V1 文件夹](French/V1/install/) · [V2 文件夹](French/V2/psys/) · [下载配置包](French/M350-French.zip) |
+| 意大利语（意大利 CNC 常用术语） | 2026-11-05-02，V1/V2 | [意大利文安装说明](Italian/README.md) · [V1 文件夹](Italian/V1/install/) · [V2 文件夹](Italian/V2/psys/) · [下载配置包](Italian/M350-Italian.zip) |
+
+**法语与意大利语：** 配套软件为 **2026-11-05-02**，保留各自语言的重音字母。两份说明均已加入该版本 M350 V2 的语言选择页和主界面实机图。请按对应语言的说明配套安装两份资源，设置 240=3，保存并重启。开机示意图用于识别硬件，软件版本请在系统信息中单独确认。
+
+**韩语更新（2026-11-05-02）：** 通用弹窗标题为 `메시지`（[弹窗示例](Korean/images/03-korean-dialog-title.png)）；三条权限密码输入提示存在原有超宽问题。上方韩文主界面、240 页图片为此前版本的操作示例。
 
 解压所需语言的配置包后，**V1 用户将 `V1` 内的整个 `install` 文件夹复制到 U 盘根目录；V2 用户将 `V2` 内的整个 `psys` 文件夹复制到 U 盘根目录**。两个配置文件已放在对应位置。只复制本机硬件对应的文件夹，不要把外层 `V1`、`V2` 或语种文件夹（如 `Portuguese`、`Korean`、`German`、`Vietnamese`）一起复制到 U 盘。
 
@@ -49,7 +65,7 @@
 
 **注意：文件名显示**
 
-为了兼容已发布的各版本系统并支持多国语言功能，使用新增语种时，文件名的英文部分仍可正常显示，非英文字符部分可能显示异常。除此之外，界面和参数中的文字正常显示。
+为了兼容已发布的各版本系统并支持多国语言功能，使用新增语种时，文件名的英文部分仍可正常显示，非英文字符部分可能显示异常。界面和参数中的文字显示仍需按下文检查，具体语言包的已知限制见对应说明。
 
 ## 开机时确认 V1 或 V2
 

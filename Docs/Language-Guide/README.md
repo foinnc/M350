@@ -22,6 +22,10 @@ These are actual M350 V2 screens, grouped into main screens and parameter 240 la
 | --- | --- |
 | [![German main screen on the controller](German/images/02-main-screen.png)](German/images/02-main-screen.png) | [![Vietnamese main screen on the controller](Vietnamese/images/02-main-screen.png)](Vietnamese/images/02-main-screen.png) |
 
+| [French · Français](French/README.md) | [Italian · Italiano](Italian/README.md) |
+| --- | --- |
+| [![French main screen on the controller](French/images/02-main-screen.png)](French/images/02-main-screen.png) | [![Italian main screen on the controller](Italian/images/02-main-screen.png)](Italian/images/02-main-screen.png) |
+
 #### Parameter 240 language selection
 
 | [Portuguese · Português](Portuguese/README.md) | [Korean · 한국어](Korean/README.md) |
@@ -32,14 +36,26 @@ These are actual M350 V2 screens, grouped into main screens and parameter 240 la
 | --- | --- |
 | [![German parameter 240 language-selection page](German/images/01-language-selection.png)](German/images/01-language-selection.png) | [![Vietnamese parameter 240 language-selection page](Vietnamese/images/01-language-selection.png)](Vietnamese/images/01-language-selection.png) |
 
+| [French · Français](French/README.md) | [Italian · Italiano](Italian/README.md) |
+| --- | --- |
+| [![French parameter 240 language-selection page](French/images/01-language-selection.png)](French/images/01-language-selection.png) | [![Italian parameter 240 language-selection page](Italian/images/01-language-selection.png)](Italian/images/01-language-selection.png) |
+
 ### Available language packs
+
+Download archives use the fixed name `M350-Language.zip`, without a date or version suffix. Check the matching software version in the table and the included guide.
 
 | Language | Matching software version | Files and instructions |
 | --- | --- | --- |
-| Portuguese (Brazilian CNC terminology) | 2026-10-23-05, V1/V2 | [Portuguese guide](Portuguese/README.md) · [V1 folder](Portuguese/V1/install/) · [V2 folder](Portuguese/V2/psys/) · [Download pack](Portuguese/M350-Portuguese-2026-10-23-05.zip) |
-| Korean (Korean CNC terminology) | 2026-10-23-05, V1/V2 | [Korean guide](Korean/README.md) · [V1 folder](Korean/V1/install/) · [V2 folder](Korean/V2/psys/) · [Download pack](Korean/M350-Korean-2026-10-23-05.zip) |
-| German (German CNC terminology) | 2026-10-23-05, V1/V2 | [German guide](German/README.md) · [V1 folder](German/V1/install/) · [V2 folder](German/V2/psys/) · [Download pack](German/M350-German-2026-10-23-05.zip) |
-| Vietnamese (Vietnamese CNC terminology) | 2026-10-23-05, V1/V2 | [Vietnamese guide](Vietnamese/README.md) · [V1 folder](Vietnamese/V1/install/) · [V2 folder](Vietnamese/V2/psys/) · [Download pack](Vietnamese/M350-Vietnamese-2026-10-23-05.zip) |
+| Portuguese (Brazilian CNC terminology) | 2026-10-23-05, V1/V2 | [Portuguese guide](Portuguese/README.md) · [V1 folder](Portuguese/V1/install/) · [V2 folder](Portuguese/V2/psys/) · [Download pack](Portuguese/M350-Portuguese.zip) |
+| Korean (Korean CNC terminology) | 2026-11-05-02, V1/V2 | [Korean guide](Korean/README.md) · [V1 folder](Korean/V1/install/) · [V2 folder](Korean/V2/psys/) · [Download pack](Korean/M350-Korean.zip) |
+| German (German CNC terminology) | 2026-10-23-05, V1/V2 | [German guide](German/README.md) · [V1 folder](German/V1/install/) · [V2 folder](German/V2/psys/) · [Download pack](German/M350-German.zip) |
+| Vietnamese (Vietnamese CNC terminology) | 2026-10-23-05, V1/V2 | [Vietnamese guide](Vietnamese/README.md) · [V1 folder](Vietnamese/V1/install/) · [V2 folder](Vietnamese/V2/psys/) · [Download pack](Vietnamese/M350-Vietnamese.zip) |
+| French (French CNC terminology) | 2026-11-05-02, V1/V2 | [French guide](French/README.md) · [V1 folder](French/V1/install/) · [V2 folder](French/V2/psys/) · [Download pack](French/M350-French.zip) |
+| Italian (Italian CNC terminology) | 2026-11-05-02, V1/V2 | [Italian guide](Italian/README.md) · [V1 folder](Italian/V1/install/) · [V2 folder](Italian/V2/psys/) · [Download pack](Italian/M350-Italian.zip) |
+
+**French and Italian:** These packs require software **2026-11-05-02** and retain their native accented letters. Each guide includes the language-selection page and main screen captured on an M350 V2 running this version. Follow the guide for your language: install both resource files, set parameter 240 to 3, save and restart. The startup illustration identifies the hardware; check the software version separately in system information.
+
+**Korean update (2026-11-05-02):** The dialog title is `메시지` ([dialog example](Korean/images/03-korean-dialog-title.png)). Three permission-password prompts retain existing width issues. The Korean main-screen and parameter-240 previews above are examples from the previous version.
 
 Extract the required pack. **For V1, copy the entire `install` folder inside `V1` to the USB drive's root. For V2, copy the entire `psys` folder inside `V2` to the USB drive's root.** The two resource files are already in the correct folders. Copy only the folder for your hardware; do not copy the outer `V1`, `V2`, or language folder (such as `Portuguese`, `Korean`, `German`, or `Vietnamese`) to the USB drive.
 
@@ -49,7 +65,7 @@ After installation, **set parameter 240 to 3, save, and restart**. To update an 
 
 **Note: filename display**
 
-To maintain multilingual compatibility across released system versions, when using an added language, the English-letter portion of a filename continues to display normally, while non-English characters may display incorrectly. Text elsewhere in the interface and parameters displays normally.
+To maintain multilingual compatibility across released system versions, when using an added language, the English-letter portion of a filename continues to display normally, while non-English characters may display incorrectly. Check interface and parameter text using the steps below; see each language guide for known limitations.
 
 ## Identify V1 or V2 at startup
 
