@@ -33,7 +33,7 @@ Entscheidend ist das Bild, das **unmittelbar nach dem Einschalten zuerst erschei
 
 Die Dateinamen bleiben unverändert, ohne zusätzliche Endung `.txt`. Beide Dateien sind in **UTF-8 ohne BOM mit CRLF-Zeilenenden** gespeichert. Zum Installieren genügt es, die Dateien unverändert zu kopieren.
 
-**Hinweis:** Um die Kompatibilität mit bereits veröffentlichten Systemversionen zu erhalten und mehrere Sprachen zu unterstützen, werden bei neu hinzugefügten Sprachen die englischen Bestandteile von Dateinamen weiterhin normal angezeigt; nichtenglische Zeichen können fehlerhaft dargestellt werden. Abgesehen davon werden die Texte der Benutzeroberfläche und der Parameter normal angezeigt.
+**Hinweis zur Anzeige von Dateinamen:** Zur Kompatibilität mit bereits veröffentlichten Systemversionen werden bei einer zusätzlichen Sprache (**Pr240 = 3, UTF-8**) englische Zeichen in Dateinamen normal angezeigt; nichtenglische Zeichen können fehlerhaft dargestellt werden. Verwenden Sie englische Buchstaben ohne Umlaute, Ziffern und Unterstriche, zum Beispiel `PART_001.nc`, und behalten Sie die Dateiendung bei. Prüfen Sie nach der Installation die Texte der Benutzeroberfläche und der Parameter; beachten Sie die bekannten Einschränkungen dieses Pakets.
 
 Das Paket belegt den **benutzerdefinierten Sprachplatz 3**. Wenn dort bisher Portugiesisch, Koreanisch oder eine andere Sprache installiert war, wird sie durch Deutsch ersetzt. Es entsteht kein zusätzlicher Eintrag in der Sprachauswahl.
 

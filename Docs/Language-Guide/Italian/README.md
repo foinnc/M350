@@ -8,6 +8,8 @@ Questo pacchetto traduce in italiano i testi dell'interfaccia, dei parametri e d
 
 Le immagini di questa guida mostrano la selezione dell'italiano e la schermata principale su un M350 V2 con software 2026-11-05-02.
 
+**Attenzione: visualizzazione dei nomi dei file.** Per mantenere la compatibilità con le versioni del sistema già pubblicate, quando si usa una lingua aggiuntiva (**Pr240 = 3, UTF-8**), i caratteri inglesi nei nomi dei file vengono visualizzati normalmente, mentre i caratteri non inglesi possono apparire in modo errato. Usare lettere inglesi senza accenti, numeri e trattini bassi, ad esempio `PART_001.nc`, mantenendo l’estensione. Dopo l’installazione verificare i testi dell’interfaccia e dei parametri; consultare le limitazioni note di questo pacchetto.
+
 ## Contenuto
 
 | File | Contenuto | V1 | V2 |

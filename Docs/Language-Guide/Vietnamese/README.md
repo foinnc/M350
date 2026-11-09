@@ -35,9 +35,7 @@ Giữ nguyên tên tệp, viết thường và không thêm đuôi `.txt`. Hai t
 
 Gói này sử dụng **vị trí ngôn ngữ tùy chỉnh số 3**. Nếu trước đó vị trí này chứa tiếng Đức, tiếng Hàn hoặc tiếng Bồ Đào Nha, cài hai tệp sẽ thay thế ngôn ngữ đó bằng tiếng Việt. Gói không tạo thêm một mục ngôn ngữ mới.
 
-**Lưu ý về hiển thị tên tệp**
-
-Để duy trì khả năng tương thích đa ngôn ngữ với các phiên bản hệ thống đã phát hành, khi dùng ngôn ngữ bổ sung, phần tên tệp viết bằng chữ cái tiếng Anh vẫn hiển thị bình thường; các ký tự không phải chữ cái tiếng Anh có thể hiển thị không đúng. Ngoài phần tên tệp này, chữ trong giao diện và các tham số hiển thị bình thường.
+**Lưu ý về hiển thị tên tệp:** Để duy trì khả năng tương thích với các phiên bản hệ thống đã phát hành, khi dùng ngôn ngữ bổ sung (**Pr240 = 3, UTF-8**), các ký tự tiếng Anh trong tên tệp vẫn hiển thị bình thường; các ký tự không phải tiếng Anh có thể hiển thị không đúng. Hãy dùng chữ cái tiếng Anh không dấu, chữ số và dấu gạch dưới, ví dụ `PART_001.nc`, đồng thời giữ phần mở rộng. Sau khi cài đặt, kiểm tra chữ trên giao diện và các tham số; xem các giới hạn đã biết của gói này.
 
 ## Chuẩn bị trước khi cài
 

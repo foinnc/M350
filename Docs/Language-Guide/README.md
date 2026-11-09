@@ -6,7 +6,7 @@ This guide explains how to select an M350 interface language and translate, inst
 
 To use an existing pack, follow the language selection and installation instructions below. To create a translation, start with complete resource files for the controller's software version. Language packs change parameter names, menus, and messages; they do not automatically translate NC programs or text embedded in images.
 
-This directory contains the Chinese and English overview guides. Each language folder and downloadable pack contains its installation guide only in that language, together with the resource files and illustrations.
+This directory contains the Chinese and English overview guides. Each downloadable pack contains its installation guide in the corresponding language, together with the resource files and illustrations.
 
 ### Interface previews
 
@@ -26,6 +26,10 @@ These are actual M350 V2 screens, grouped into main screens and parameter 240 la
 | --- | --- |
 | [![French main screen on the controller](French/images/02-main-screen.png)](French/images/02-main-screen.png) | [![Italian main screen on the controller](Italian/images/02-main-screen.png)](Italian/images/02-main-screen.png) |
 
+| [English UTF-8](English/README.md) | [Spanish · Español](Spanish/README.md) |
+| --- | --- |
+| [![English UTF-8 main screen on M350 V2](English/images/02-main-screen.png)](English/images/02-main-screen.png) | [![Spanish main screen on M350 V2](Spanish/images/02-main-screen.png)](Spanish/images/02-main-screen.png) |
+
 #### Parameter 240 language selection
 
 | [Portuguese · Português](Portuguese/README.md) | [Korean · 한국어](Korean/README.md) |
@@ -40,6 +44,10 @@ These are actual M350 V2 screens, grouped into main screens and parameter 240 la
 | --- | --- |
 | [![French parameter 240 language-selection page](French/images/01-language-selection.png)](French/images/01-language-selection.png) | [![Italian parameter 240 language-selection page](Italian/images/01-language-selection.png)](Italian/images/01-language-selection.png) |
 
+| [English UTF-8](English/README.md) | [Spanish · Español](Spanish/README.md) |
+| --- | --- |
+| [![English UTF-8 parameter 240 language-selection page](English/images/01-language-selection.png)](English/images/01-language-selection.png) | [![Spanish parameter 240 language-selection page](Spanish/images/01-language-selection.png)](Spanish/images/01-language-selection.png) |
+
 ### Available language packs
 
 Download archives use the fixed name `M350-Language.zip`, without a date or version suffix. Check the matching software version in the table and the included guide.
@@ -52,6 +60,10 @@ Download archives use the fixed name `M350-Language.zip`, without a date or vers
 | Vietnamese (Vietnamese CNC terminology) | 2026-10-23-05, V1/V2 | [Vietnamese guide](Vietnamese/README.md) · [V1 folder](Vietnamese/V1/install/) · [V2 folder](Vietnamese/V2/psys/) · [Download pack](Vietnamese/M350-Vietnamese.zip) |
 | French (French CNC terminology) | 2026-11-05-02, V1/V2 | [French guide](French/README.md) · [V1 folder](French/V1/install/) · [V2 folder](French/V2/psys/) · [Download pack](French/M350-French.zip) |
 | Italian (Italian CNC terminology) | 2026-11-05-02, V1/V2 | [Italian guide](Italian/README.md) · [V1 folder](Italian/V1/install/) · [V2 folder](Italian/V2/psys/) · [Download pack](Italian/M350-Italian.zip) |
+| English (UTF-8, Other slot) | 2026-11-05-02, V1/V2 | [English guide](English/README.md) · [V1 folder](English/V1/install/) · [V2 folder](English/V2/psys/) · [Download pack](English/M350-English.zip) |
+| Spanish (CNC terminology) | 2026-11-05-02, V1/V2 | [Spanish installation guide](Spanish/README.md) · [V1 folder](Spanish/V1/install/) · [V2 folder](Spanish/V2/psys/) · [Download pack](Spanish/M350-Spanish.zip) |
+
+**English UTF-8:** Use Pr240 = 3; this does not add automatic encoding detection. Font appearance differs from legacy English mode. The pack aligns Pr950-972 with the current Chinese four-tool layout (Pr969 = T3 spindle speed; custom G code = Pr972). It does not migrate saved values or CAM templates. Review old two-tool configurations before installation.
 
 **French and Italian:** These packs require software **2026-11-05-02** and retain their native accented letters. Each guide includes the language-selection page and main screen captured on an M350 V2 running this version. Follow the guide for your language: install both resource files, set parameter 240 to 3, save and restart. The startup illustration identifies the hardware; check the software version separately in system information.
 
@@ -63,9 +75,7 @@ All packs use **parameter 240 = 3** and replace the existing “Other language�
 
 After installation, **set parameter 240 to 3, save, and restart**. To update an installed language pack, update both files through the same installation procedure, then restart the controller. See the guides in the table for instructions and common abbreviations in each language.
 
-**Note: filename display**
-
-To maintain multilingual compatibility across released system versions, when using an added language, the English-letter portion of a filename continues to display normally, while non-English characters may display incorrectly. Check interface and parameter text using the steps below; see each language guide for known limitations.
+**Note: filename display.** To maintain compatibility with released system versions, when using an additional language (**Pr240 = 3, UTF-8**), English characters in filenames display normally, while non-English characters may display incorrectly. Use English letters, digits and underscores in filenames, for example `PART_001.nc`, and keep the file extension. Check interface and parameter text after installation; see each language guide for known limitations.
 
 ## Identify V1 or V2 at startup
 

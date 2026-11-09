@@ -8,6 +8,8 @@ Ce pack traduit les paramètres, menus, boutons, états, messages et alarmes du 
 
 Les captures de ce guide présentent la sélection du français et l'écran principal sur un M350 V2 exécutant la version 2026-11-05-02.
 
+**Attention : affichage des noms de fichiers.** Pour maintenir la compatibilité avec les versions du système déjà publiées, lors de l’utilisation d’une langue supplémentaire (**Pr240 = 3, UTF-8**), les caractères anglais des noms de fichiers s’affichent normalement, tandis que les caractères non anglais peuvent s’afficher incorrectement. Utilisez des lettres anglaises sans accent, des chiffres et le trait de soulignement, par exemple `PART_001.nc`, et conservez l’extension. Vérifiez les textes de l’interface et des paramètres après l’installation ; consultez les limites connues de ce paquet.
+
 ## Installation rapide
 
 1. Identifier le matériel V1 ou V2 et vérifier la version logicielle dans les informations système.

@@ -13,7 +13,7 @@ Este pacote traduz os textos da interface e dos parâmetros do M350 para portugu
 
 Os arquivos usam **UTF-8 sem BOM**, com finais de linha **CRLF**. Mantenha os nomes exatamente como estão, em letras minúsculas e sem extensão `.txt`.
 
-> **Atenção aos nomes de arquivos:** Para manter a compatibilidade com as versões do sistema já lançadas e oferecer suporte a vários idiomas, ao usar um idioma adicional, a parte em inglês dos nomes de arquivos continua sendo exibida normalmente, enquanto os caracteres de outros idiomas podem apresentar problemas de exibição. Fora isso, os textos da interface e dos parâmetros são exibidos normalmente.
+**Atenção aos nomes de arquivos:** Para manter a compatibilidade com as versões do sistema já lançadas, ao usar um idioma adicional (**Pr240 = 3, UTF-8**), os caracteres em inglês dos nomes de arquivos são exibidos normalmente, enquanto os caracteres de outros idiomas podem apresentar problemas de exibição. Use letras inglesas sem acentos, números e sublinhados, por exemplo `PART_001.nc`, e mantenha a extensão. Após a instalação, verifique os textos da interface e dos parâmetros; consulte as limitações conhecidas deste pacote.
 
 O pacote ocupa a opção **3 — Outros** do parâmetro 240. Após a instalação, essa opção passa a ser identificada como **Português**. O valor continua sendo **3**.
 

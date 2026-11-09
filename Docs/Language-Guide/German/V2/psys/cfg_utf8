@@ -386,9 +386,9 @@
 -s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
 #103 -p0 -a3  -t1 -s1"Z: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
 -s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
-#104 -p0 -a4  -t1 -s1"4. Achse: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+#104 -p0 -a4  -t1 -s1"4. Achse: Absolutumdrehungen am Ref.-Punkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
 -s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
-#105 -p0 -a5  -t1 -s1"5. Achse: Absolutumdrehungen am Referenzpunkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
+#105 -p0 -a5  -t1 -s1"5. Achse: Absolutumdrehungen am Ref.-Punkt" -s2"r" -m7 -min=-99999.000 -max=99999.000
 -s3"Servoumdrehungen am Maschinennullpunkt./Dezimalwert mit Vorzeichen fuer die Richtung."
 
 #106 -p0 -a3  -t0 -s1"Anzahl der Referenzpunkt-Antastungen" -m7 -min=1 -max=5
@@ -428,9 +428,9 @@
 -s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
 #124 -p0 -a3  -t1 -s1"Z: Maschinenposition am Referenzpunkt" -s2"mm" -m7 -min=-999.000 -max=999.000
 -s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
-#125 -p0 -a4  -t1 -s1"4. Achse: Maschinenposition am Referenzpunkt" -s2"deg" -m7 -min=-999.000 -max=999.000
+#125 -p0 -a4  -t1 -s1"4. Achse: Maschinenpos. am Ref.-Punkt" -s2"deg" -m7 -min=-999.000 -max=999.000
 -s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
-#126 -p0 -a5  -t1 -s1"5. Achse: Maschinenposition am Referenzpunkt" -s2"deg" -m7 -min=-999.000 -max=999.000
+#126 -p0 -a5  -t1 -s1"5. Achse: Maschinenpos. am Ref.-Punkt" -s2"deg" -m7 -min=-999.000 -max=999.000
 -s3"Maschinenposition, die nach der Referenzpunkterfassung/oder nach G28 angefahren wird."
 
 
@@ -475,7 +475,7 @@
 #140 -p0 -a3  -t1 -s1"Rueckzugsweg nach Werkzeugmessung" -s2"mm" -m8 -min=0.000 -max=999.000
 -s3"Relativer Z-Hub nach abgeschlossener Werkzeug-Antastung."
 
-#141 -p0 -a3  -t1 -s1"Z-Sicherheit vor Werkzeugmessung (Maschine)" -s2"mm" -m8 -min=-9999 -max=9999.000
+#141 -p0 -a3  -t1 -s1"Z-Sicherheit vor Werkzeugmessung (Masch.)" -s2"mm" -m8 -min=-9999 -max=9999.000
 -s3"  "
 #149 -p0 -a3 -t2 -s1"Dateisortierung" -m0 -min=0.000 -max=2.000 -i0"Name" -i1"Erweiterung" -i2"Datum"
 #150 -p0 -a3 -t2 -s1"X: Stopp am Hardware-Endschalter" -m9 -min=0.000 -max=1.000 -i0"Abbremsen" -i1"Sofortstopp"
@@ -687,7 +687,7 @@
 #818 -p0 -a3  -t1 -s1"Manueller Werkzeugwechsel Z" -s2"mm" -m14 -min=-9999.999 -max=9999.999
 -s3"Maschinenkoordinate Z fuer den manuellen Werkzeugwechsel."
 
-#819 -p0 -a3  -t1 -s1"Senkgeschwindigkeit Z beim Werkzeugwechsel" -s2"mm/min" -m14 -min=9 -max=99999
+#819 -p0 -a3  -t1 -s1"Z-Senkgeschw. beim Werkzeugwechsel" -s2"mm/min" -m14 -min=9 -max=99999
 -s3"Geschwindigkeit zur unteren Z-Position (Parameter 807)."
 
 #820 -p0 -a3  -t1 -s1"Abschieber Startposition X (Masch.)" -s2"mm" -m14 -min=-9999.999 -max=9999.999
